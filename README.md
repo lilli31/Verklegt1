@@ -9,7 +9,20 @@ Dagbók og samantekt á stöðumati eftir hvern dag gildir 10%.
 
 Dagur 1 (25.11.24) - Morgunfundur
 
-Í dag mættum við þrjár (Regína, Vigdís K og Tinna) á fyrirlesturinn og restin af hópnum (Vigdís H, Rakel og Þorbjörg) horfði á upptökuna. Þar sem þetta er fyrsti dagurinn byrjuðum við á því að koma öllum meðlimum hópsins inn á GitHub. Í dag ætlum við að skipuleggja vikuna eins vel og við getum og úthluta öllum meðlimum hópsins verkefni. Vigdís H er með mestu reynsluna af okkur og hefur tekið að sér að vera GitHub sérfræðingur hópsins. Hún ætlar að byrja á GitHub handbókina. Regína ætlar að byrja að gera klasarit, Tinna og Vigdís K notkunartilvik og kröfulista, og Rakel og Þorbjörg notendagreiningar.
+Í dag mættum við þrjár (Regína, Vigdís K og Tinna) á fyrirlesturinn og restin af hópnum (Vigdís H, Rakel og Þorbjörg) horfði á upptökuna.
+Þar sem þetta er fyrsti dagurinn byrjuðum við á því að koma öllum meðlimum hópsins inn á GitHub. 
+Í dag ætlum við að skipuleggja vikuna eins vel og við getum og úthluta öllum meðlimum hópsins verkefni. 
+Vigdís H er með mestu reynsluna af okkur og hefur tekið að sér að vera GitHub sérfræðingur hópsins. Hún ætlar að byrja á GitHub handbókina. 
+Regína ætlar að byrja að gera klasarit, Tinna og Vigdís K notkunartilvik og kröfulista, og Rakel og Þorbjörg notendagreiningar.
 
 
  Dagur 1 (25.11.24) - Fundur í lok dags
+
+Eftir fyrirlesturinn í dag fórum við að setja upp Github og github desktop. Það tók sirka klt að koma öllum inn.
+Um hádegi voru allir að vinna í sínu "verkefni" sem við skipulögðum í upphaf dags.
+Það tók langan tíma bara að "skilja" verkefnið og brjóta það upp í litla hluta sem hver og einn tekur að sér.
+Regína er búin að vera vinna í klasaritinu í lucidchart á góðu róli.
+Tinna og Vigdís K eru langt komnar í norkunartilvikunum og kröfulistanum.
+Vigdís H er byrjuð á að gera handbókina fyrir Github og Github dekstop sem gekk mjög vel.
+Rakel og :orbjörg voru byrjaðar á notendagreiningunni sem gekk einnig vel.
+Fórum heim um kl 16 leytið og má segja að við eyddum sirka 2-3 tímum að vinna í okkar "verkefnum" sem við settum á okkur eftir að hafa sett upp github og kynnt okkur verkefnið.
