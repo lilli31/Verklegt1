@@ -9,7 +9,7 @@ Dagbók og samantekt á stöðumati eftir hvern dag gildir 10%.
 
 Dagur 1 (25.11.24) - Morgunfundur
 
-Í dag mættum við þrjár á fyrirlesturinn og restin af hópnum horfði á upptökuna. Þar sem þetta er fyrsti dagurinn byrjuðum við á því að koma öllum meðlimum hópsins inn á GitHub. Í dag ætlum við að skipuleggja vikuna eins vel og við getum og úthluta öllum meðlimum hópsins verkefni. Vigdís H er með mestu reynsluna af okkur og hefur tekið að sér að vera GitHub sérfræðingur hópsins. 
+Í dag mættum við þrjár (Regína, Vigdís K og Tinna) á fyrirlesturinn og restin af hópnum (Vigdís H, Rakel og Þorbjörg) horfði á upptökuna. Þar sem þetta er fyrsti dagurinn byrjuðum við á því að koma öllum meðlimum hópsins inn á GitHub. Í dag ætlum við að skipuleggja vikuna eins vel og við getum og úthluta öllum meðlimum hópsins verkefni. Vigdís H er með mestu reynsluna af okkur og hefur tekið að sér að vera GitHub sérfræðingur hópsins. Hún ætlar að byrja á GitHub handbókina. Regína ætlar að byrja að gera klasarit, Tinna og Vigdís K notkunartilvik og kröfulista, og Rakel og Þorbjörg notendagreiningar.
 
 
  Dagur 1 (25.11.24) - Fundur í lok dags
