@@ -25,4 +25,4 @@ Regína er búin að vera vinna í klasaritinu í lucidchart á góðu róli.
 Tinna og Vigdís K eru langt komnar í norkunartilvikunum og kröfulistanum.
 Vigdís H er byrjuð á að gera handbókina fyrir Github og Github dekstop sem gekk mjög vel.
 Rakel og :orbjörg voru byrjaðar á notendagreiningunni sem gekk einnig vel.
-Fórum heim um kl 16 leytið og má segja að við eyddum sirka 2-3 tímum að vinna í okkar "verkefnum" sem við settum á okkur eftir að hafa sett upp github og kynnt okkur verkefnið.
+Fórum heim um kl 16 leytið og má segja að við eyddum sirka 2-3 tímum að vinna í okkar "verkefnum" sem við settum á okkur eftir að hafa sett upp github og kynnt okkur verkefnið. Á næsta fundi er markmiðið að allir haldi áfram að vinna í sínu verkefni og tala saman um hver staðan er á verkefnunum og hvað við viljum áorka í lok dags ogútskýra það ítarlegra á morgunfundinum. Annars mjög góður fyrsti dagur og allir vinna mjög vel saman.
