@@ -31,14 +31,8 @@ Rakel og :orbjörg voru byrjað
 
 Dagur 2 (26.11.24) - Morgunfundur
 =======
+Allur hópurinn er mættur og við hefjumst strax handa við að skipuleggja daginn okkar. Við vitum að við eigum eftir að klára use cases, klasarit, stöðurit, happy paths og github verkefnið. Þorbjörg, Rakel, Vigdís K og Tinna byrja á að klára use casein þar sem að þau eru mjög mörg og taka langan tíma. Vigdís H heldur áfram með github verkefnið á meðan Regína einbeitir sér að klasaritinu. Planið í dag er að vonandi geta byrjað á happy paths og verið búnar með use casein.
 
-Mættir:
-Vigdís K kl 10:30
-Tinna kl 10:30
-Regína kl 9:30
-Ísold kl 9:30
-Tinna kl 9
-Vigdís H kl 12:00
+Dagur 2 (26.11.24) - Kvöldfundur
 
-Fyrstu á staðinn hélt áfram með verkefni gærdagsins og þegar allur hópurinn var kominn þá skipulögðum við daginn.
-Þorbjörg, Rakel, Vigdís K og Tinna eru að klára use casein, notkunartilvik, kröfulistann
+Vigdís H náði að klára github handbókina og er byrjuð að vinna að klasaritinu með Regínu. Regína komst að því að hún þurfti að breyta klasaritinu og ætlar að byrja upp á nýtt. Rakel, Tinna, Vigdís K og Þorbjörg kláruðu use casein og ætla því að byrja á happy paths á morgun. Dagurinn gekk vel en verkefnin drógust aðeins á langinn. Verkefni morgundagsins er að vonandi klára klasaritið, happy paths og fara að huga að stöðuritinu. 
