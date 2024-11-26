@@ -35,5 +35,9 @@ Allur hópurinn er mættur og við hefjumst strax handa við að skipuleggja dag
 
 Dagur 2 (26.11.24) - Kvöldfundur
 
-ærdjgslfjlæl
-Vigdís H náði að klára github handbókina og er byrjuð að vinna að klasaritinu með Regínu. Regína komst að því að hún þurfti að breyta klasaritinu og ætlar að byrja upp á nýtt. Rakel, Tinna, Vigdís K og Þorbjörg kláruðu use casein og ætla því að byrja á happy paths á morgun. Dagurinn gekk vel en verkefnin drógust aðeins á langinn. Verkefni morgundagsins er að vonandi klára klasaritið, happy paths og fara að huga að stöðuritinu. 
+Vigdís H náði að klára github handbókina og er byrjuð að vinna að klasaritinu með Regínu.
+Regína komst að því að hún þurfti að breyta klasaritinu og ætlar að byrja upp á nýtt. 
+Rakel, Tinna, Vigdís K og Þorbjörg kláruðu use casein og ætla því að byrja á happy paths á morgun. 
+Dagurinn gekk vel en verkefnin drógust aðeins á langinn. Verkefni morgundagsins er að vonandi klára klasaritið, happy paths og fara að huga að stöðuritinu. 
+
+ Dagur 3 (27.11.24) - Morgunfundur
