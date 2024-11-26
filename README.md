@@ -14,6 +14,9 @@ Dagur 1 (25.11.24) - Morgunfundur
 Í dag ætlum við að skipuleggja vikuna eins vel og við getum og úthluta öllum meðlimum hópsins verkefni. 
 Vigdís H er með mestu reynsluna af okkur og hefur tekið að sér að vera GitHub sérfræðingur hópsins. Hún ætlar að byrja á GitHub handbókina. 
 Regína ætlar að byrja að gera klasarit, Tinna og Vigdís K notkunartilvik og kröfulista, og Rakel og Þorbjörg notendagreiningar.
+ar á notendagreiningunni sem gekk einnig vel.
+<<<<<<< Updated upstream
+Fórum heim um kl 16 leytið og má segja að við eyddum sirka 2-3 tímum að vinna í okkar "verkefnum" sem við settum á okkur eftir að hafa sett upp github og kynnt okkur verkefnið. Á næsta fundi er markmiðið að allir haldi áfram að vinna í sínu verkefni og tala saman um hver staðan er á verkefnunum og hvað við viljum áorka í lok dags ogútskýra það ítarlegra á morgunfundinum. Annars mjög góður fyrsti dagur og allir vinna mjög vel saman.
 
 
  Dagur 1 (25.11.24) - Fundur í lok dags
@@ -24,8 +27,18 @@ Um hádegi voru allir að vinna í sínu "verkefni" sem við skipulögðum í up
 Regína er búin að vera vinna í klasaritinu í lucidchart á góðu róli.
 Tinna og Vigdís K eru langt komnar í norkunartilvikunum og kröfulistanum.
 Vigdís H er byrjuð á að gera handbókina fyrir Github og Github dekstop sem gekk mjög vel.
-Rakel og :orbjörg voru byrjaðar á notendagreiningunni sem gekk einnig vel.
-Fórum heim um kl 16 leytið og má segja að við eyddum sirka 2-3 tímum að vinna í okkar "verkefnum" sem við settum á okkur eftir að hafa sett upp github og kynnt okkur verkefnið. Á næsta fundi er markmiðið að allir haldi áfram að vinna í sínu verkefni og tala saman um hver staðan er á verkefnunum og hvað við viljum áorka í lok dags ogútskýra það ítarlegra á morgunfundinum. Annars mjög góður fyrsti dagur og allir vinna mjög vel saman.
-
+Rakel og :orbjörg voru byrjað
 
 Dagur 2 (26.11.24) - Morgunfundur
+=======
+
+Mættir:
+Vigdís K kl 10:30
+Tinna kl 10:30
+Regína kl 9:30
+Ísold kl 9:30
+Tinna kl 9
+Vigdís H kl 12:00
+
+Fyrstu á staðinn hélt áfram með verkefni gærdagsins og þegar allur hópurinn var kominn þá skipulögðum við daginn.
+Þorbjörg, Rakel, Vigdís K og Tinna eru að klára use casein, notkunartilvik, kröfulistann
