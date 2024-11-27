@@ -41,3 +41,8 @@ Rakel, Tinna, Vigdís K og Þorbjörg kláruðu use casein og ætla því að by
 Dagurinn gekk vel en verkefnin drógust aðeins á langinn. Verkefni morgundagsins er að vonandi klára klasaritið, happy paths og fara að huga að stöðuritinu. 
 
  Dagur 3 (27.11.24) - Morgunfundur
+
+Allur hópurinn er mættur og hefur nú verið ákveðið að Þorbjörg og Rakel ætlar að byrja á stöðuritinu, Vigdís K og Tinna ætla að gera wireframes og með því lagfæra notkunartilvikin skulu einhverjar breytingar verða út frá wireframes. Regína og Vigdís H ætla að halda áfram með klasaritið og eru nú þegar komnar mjög langt eftir að hafa byrjað aftur. Þetta er því planið í dag hjá öllum meðlimum hópsins og viljum við ná að klára sem mest af því.
+
+Dagur 3 (27.11.24) - Kvöldfundur
+
