@@ -42,7 +42,9 @@ Dagurinn gekk vel en verkefnin drógust aðeins á langinn. Verkefni morgundagsi
 
  Dagur 3 (27.11.24) - Morgunfundur
 
-Allur hópurinn er mættur og hefur nú verið ákveðið að Þorbjörg og Rakel ætlar að byrja á stöðuritinu, Vigdís K og Tinna ætla að gera wireframes og með því lagfæra notkunartilvikin skulu einhverjar breytingar verða út frá wireframes. Regína og Vigdís H ætla að halda áfram með klasaritið og eru nú þegar komnar mjög langt eftir að hafa byrjað aftur. Þetta er því planið í dag hjá öllum meðlimum hópsins og viljum við ná að klára sem mest af því.
+Allur hópurinn er mættur og hefur nú verið ákveðið að Þorbjörg og Rakel ætla að byrja á stöðuritinu, Vigdís K og Tinna ætla að gera wireframes og með því lagfæra notkunartilvikin skulu einhverjar breytingar verða út frá wireframes. Regína og Vigdís H ætla að halda áfram með klasaritið og eru nú þegar komnar mjög langt eftir að hafa byrjað aftur. Þetta er því planið í dag hjá öllum meðlimum hópsins og viljum við ná að klára sem mest af því.
 
 Dagur 3 (27.11.24) - Kvöldfundur
 
+Við náðum að vinna vel í dag, dagurinn gekk ágætlega. Regína vann allan daginn í klasaritinu því hún fattaði villu sem hún var að gera í því og ákvað að byrja upp á nýtt aftur þannig að þriggja laga högunin sé rétt. Vigdís H hjálpaði við það einnig eftir hádegi og náðu þær að klára UI layer. Þorbjörg og Rakel byrjuðu og kláruðu state diagram og eftir það fóru þær að fínpússa hönnunarskýrsluna. Tinna og Vigdís K byrjuðu á wireframes og með því náðu þær að laga og aðlaga notkunartilvikin í samræmi við það.
+Plan morgundagsins er að Regína og Vigdís H ætla að byrja á logic og data layer. Þorbjörg og Rakel ætla að hjálpa Tinnu og Vigdísi K með wireframe og passa að það tengist vel við use casein. 
