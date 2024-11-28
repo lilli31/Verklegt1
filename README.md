@@ -48,3 +48,11 @@ Dagur 3 (27.11.24) - Kvöldfundur
 
 Við náðum að vinna vel í dag, dagurinn gekk ágætlega. Regína vann allan daginn í klasaritinu því hún fattaði villu sem hún var að gera í því og ákvað að byrja upp á nýtt aftur þannig að þriggja laga högunin sé rétt. Vigdís H hjálpaði við það einnig eftir hádegi og náðu þær að klára UI layer. Þorbjörg og Rakel byrjuðu og kláruðu state diagram og eftir það fóru þær að fínpússa hönnunarskýrsluna. Tinna og Vigdís K byrjuðu á wireframes og með því náðu þær að laga og aðlaga notkunartilvikin í samræmi við það.
 Plan morgundagsins er að Regína og Vigdís H ætla að byrja á logic og data layer. Þorbjörg og Rakel ætla að hjálpa Tinnu og Vigdísi K með wireframe og passa að það tengist vel við use casein. 
+
+Dagur 4 (28.11.24) - Morgunfundur
+
+Við erum mættar og við byrjum á að fara yfir hvað þarf að gera í dag. Regína og Vigdís H ætla að halda áfram í class diagraminu mögulega ná þær að klára en þetta er langt og flókið diagram svo við þurfum að sjá til. Vigdís K og Tinna ætla að halda áfram með wireframe, þær eru komnar langt á leið og telja sig geta mögulega klárað í dag. Rakel og Þorbjörg ætla að fara yfir allt skjalið og passa að allt stemmi, að öll use case séu rétt og með réttu tungumáli og að diagramin stemmi við restina af verkefninu.
+
+Dagur 4 (28.11.24) - Kvöldfundur
+
+Þessi dagur hefur verið mjög árangursríkur. Tinna og Vigdís K kláruðu wireframeið og komu því inn í skýrsluna á formi happy-paths. Regína og Vigdís K kláruðu diagramið. Rakel og Þorbjörg gerðu skýrsluna tilbúna, þær komust að því að það þurfti að bæta öllum B og C kröfunum okkar við use casein svo þær gerðu það. Við höfum því nánast lokið hönnunarskýrslunni og á morgun er planið að við allar tökum okkur saman og proof lesum yfir hana til að ganga úr skugga um að allt sé fínt.
