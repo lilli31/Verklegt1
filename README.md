@@ -56,3 +56,11 @@ Við erum mættar og við byrjum á að fara yfir hvað þarf að gera í dag. R
 Dagur 4 (28.11.24) - Kvöldfundur
 
 Þessi dagur hefur verið mjög árangursríkur. Tinna og Vigdís K kláruðu wireframeið og komu því inn í skýrsluna á formi happy-paths. Regína og Vigdís H kláruðu diagramið. Rakel og Þorbjörg gerðu skýrsluna tilbúna, þær komust að því að það þurfti að bæta öllum B og C kröfunum okkar við use casein svo þær gerðu það. Við höfum því nánast lokið hönnunarskýrslunni og á morgun er planið að við allar tökum okkur saman og proof lesum yfir hana til að ganga úr skugga um að allt sé fínt.
+
+Dagur 5 (29.11.24) - Morgunfundur
+
+Allur hópurinn er mættur og er áætlunin í dag klára skýrsluna. Við ætlum að lesa yfir hana og laga það sem við sjáum, klára happy path og skila verkefninu inn í lok dags. 
+
+Dagur 5 (29.11.24) - Kvöldfundur 
+
+Við náðum að klára skýrsluna í dag! Tinna skrifaði um hvert og eitt happy path, Vigdís K, Vigdís H, Þorbjörg, Rakel og Regína fóru yfir skýrsluna og bættu við inn í use casein þar sem vantaði. Við vorum að skila inn skýrslunni og byrjum þá eftir helgi að kóða. 
