@@ -1,0 +1,573 @@
+                                ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
+               __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
+         ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
+                " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
+
+
+
+ Choose:
+[D]irector
+[E]mployee
+__________
+Command: 
+
+
+______________________________________________________________________________________________________________
+
+    DIRECTOR
+
+1. View employees
+2. View properties
+3. View contractors
+4. View work orders
+5. View reports
+6. Back to main page
+___________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    EMPLOYEE
+
+1. View my work orders 
+2. View my reports
+3. Look for maintenance tasks
+4. Back to main page
+_____________________________
+Command:
+
+[B]ack                            
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees
+
+    //List//
+
+1. Add new employee
+2. Search for an employee
+3. List employees by it's location
+_______________________________________________________
+Command:
+
+[B]ack
+___________________________________________________________________________________________________________
+
+    DIRECTOR > view properties
+
+    //List//
+
+1. Add new property
+2. Search for a property
+3. List properties by it's location
+_______________________________________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view contractors
+
+    //List//
+
+1. Add new contractor
+2. Search for a contractor
+__________________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders
+
+    //List//
+
+1. Search for work order by it's identity
+2. Find all work orders for specific property
+3. Find all work orders processed by a specific employee
+4. Prioritization of work orders
+5. View my work orders
+________________________________________________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view reports
+
+1. Approve finished reports
+2. Find reports for sepcific property 
+3. Find reports from specific employee
+______________________________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    EMPLOYEE > view my work orders
+
+    //List//
+
+Choose work order by ID: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    EMPLOYEE > view my work orders > choose work order by ID
+
+    //Work order//
+
+1. Add information 
+2. Mark as done 
+_____________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    EMPLOYEE > view my work orders > choose work order by ID > mark as done 
+
+1. Add a constructor to work order
+2. Mark as done #ef ekki er bætt við verktaka þá mark as done
+_____________________________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    EMPLOYEE > view my work orders > choose work order by ID > mark as done > add a constructor to work order
+
+    //Constructor list with information//
+
+1. Add a constructor
+2. Cancel #fýla engan verktaka
+______________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    EMPLOYEE > view my work orders > choose work order by ID > mark as done > add a constructor to work order > add a constructor 
+    
+    //Name of the constructor//
+
+Pay amount: 
+
+[B]ack
+______________________________________________________________________________________________________________
+    
+    EMPLOYEE > view my reports
+
+    //List//
+
+1. Look for report by ID number
+2. File a report on an open work order
+3. Look for maintenance tasks 
+_______________________________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+    
+    EMPLOYEE > view my reports > look for report by ID number
+
+    //List//
+
+ID number: 
+
+[B]ack
+______________________________________________________________________________________________________________
+    
+    EMPLOYEE > view my reports > file a report on an open work order
+
+    //List//
+
+1. Work order ID number
+2. Work order address
+________________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+    
+    EMPLOYEE > look for maintenance tasks
+
+    //List//
+
+Era from and to:   # from, to (dd.mm.yyyy) 
+Location: #kemur eitt í einu og bæði fyllt út
+ 
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > add new employee
+
+Name:    #prentast út eitt og sér, fyllt inn í og ýtt á enter þá kemur næsta sem þarf að fylla út 
+Social security number:
+Home phone:
+GSM phone: 
+Email:
+Destination: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > search for an employee
+
+1. Filter
+2. Search
+3. Change information
+4. Overview of work 
+______________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > list employees by it's location
+
+Location: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > search for an employee > filter 
+
+1. Turn filter on 
+2. Clear filter
+__________________
+Command:   #ef 1 þá skal skrif hvaða filtera og double enter til að savea og svo beint í search val
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > search for an employee > search
+
+Search for an employee:  #slegið er inn hvað sem er, allt prentast út því það er enginn filter
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > search for an employee > overview of work
+
+Era from and to:   # from, to (dd.mm.yyyy)  
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view employees > search for an employee > change informations
+
+1. Name:  
+2. Social security number: 
+3. Home phone: 
+4. GSM phone: 
+5. Email: 
+6. Destination: 
+__________________________
+Command: #nr: breyting, eitt enter= hægt að breyta meira, tvö enter = save - prentast allur listinn með breytingum 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > Add new property
+
+ID:
+Address:
+Additional info:
+State of property:
+Special facilities (y/n):
+State of facility:   #kemur aðeins upp ef til er facility
+Active work order:   #bool
+
+[B]ack
+
+
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > look for a property by it's property number
+    
+Property ID:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > Search for a property
+
+1. Filter
+2. Search
+3. Change information
+______________________
+Command:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > List properties by it's location
+
+Location: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > search for a property > filter
+
+1. Turn filter on 
+2. Clear filter
+__________________
+Command:       #ef 1 þá skal skrif hvaða filtera og double enter til að savea og svo beint í search val
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > search for a property > search
+
+Search for a property:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view properties > search for a property > search > overview of work
+
+Era from and to:   # from, to (dd.mm.yyyy)
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR >  view properties > search for a property > change information
+
+1. ID:
+2. Address:
+3. Additional info:
+4. State of property:
+5. Special facilities (y/n):
+6. State of facility:  
+7. Active work order:
+_________________________
+Command: #nr: breyting, eitt enter= hægt að breyta meira, tvö enter = save - prentast allur listinn með breytingum 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view contractors > Add new contractor
+
+Company (y/n): #bool
+Name:  #company name if boolean true - else contractor name
+Phone number: 
+Opening hours:
+Location:
+Speciality: 
+
+    #birtist hvort eftir öðru þegar búið að skrifa
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view contractors > Search for a contractor
+
+1. Name 
+2. Speciality
+______________
+Command:    #nr. bla
+
+[B]ack
+
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view contractors > Search for a contractor > information
+
+    //List//
+
+1. Change information 
+2. See previous works 
+______________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view contractors > Search for a contractor > information > see previous works
+
+1. Era from and to:   # from, to (dd.mm.yyyy)
+2. See previous works from NaN
+_______________________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view contractors > Search for a contractor > information > change information
+
+1. Company (y/n): #bool
+2. Name:  #company name if boolean true - else contractor name
+3. Phone number: 
+4. Opening hours:
+5. Location:
+6. Speciality:
+___________________
+Command:  #nr: breyting, eitt enter= hægt að breyta meira, tvö enter = save - prentast allur listinn með breytingum
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > search for work order by it's identity
+
+    //List//
+
+Identity: #hafa þetta hliðina á lista til að þurfa ekki að skrolla lengst niður?
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > find all work orders for specific property 
+
+    //List//
+
+1. Address
+2. ID number
+_____________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > find all work orders processed by a specific employee
+
+Employee name:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > Prioritization of work orders 
+
+1. Prioritize work orders (A,B,C)
+2. Prioritize outstanding work orders
+3. Change priority of outstanding work orders #not after submission 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > Prioritization of work orders > prioritize work orders
+
+Work order: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > Prioritization of work orders > prioritize work orders > work order
+
+1. A (urgent)
+2. B (immediately)
+3. C (no later than yesterday)
+_______________________________
+Command: 
+ 
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > Prioritization of work orders > prioritize outstanding work orders
+
+    //List// #of outstanding orders
+
+1. List of date
+2. List from importance
+________________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > Prioritization of work orders > Change priority of outstanding work orders 
+    
+    //List//
+
+Select work order: #vel work order - #þetta prentast fyrst, ef ekki opin verkbeiðni þá kemur villuboð!
+Change priority:  #færa úr A yfir í B til dæmis
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > view my work orders
+
+    //List//
+
+1. Make new work orders for my properties 
+2. Change work orders for my properties 
+3. Close my work orders
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > view my work orders > make a new work orders for my properties
+
+ID number:
+Address: 
+Maintenance info: 
+Regular maintenance (Y/N): 
+Days between maintenance: #ef Y 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > view my work orders > change work orders for my properties 
+
+    //List//
+
+Select work order to change: #hvaða verkbeiðni viltu breyta?
+
+1. ID number:
+2. Address: 
+3. Maintenance info: 
+4. Regular maintenance (Y/N): 
+5. Days between maintenance: #ef Y 
+_______________________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view work orders > view my work orders > close my work orders 
+
+    //List//
+
+Select work order to close: #hvaða verkbeiðni viltu breyta?
+
+1. Mark as done 
+2. Approve work order
+3. Make comment about work order 
+_________________________________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view reports > approve finished reports
+
+    //List// #listi af tilbúnum skýrslum fyrir samþykki 
+
+Select report to approve: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view reports > find reports for specific property
+
+    //List// 
+
+1. Address
+2. ID number
+_____________
+Command: 
+
+[B]ack
+______________________________________________________________________________________________________________
+
+    DIRECTOR > view reports > find reports from specific employee
+
+    //List//
+
+Employee name:
+
+[B]ack
+______________________________________________________________________________________________________________
+
+
