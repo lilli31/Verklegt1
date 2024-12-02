@@ -1,2 +1,3 @@
 ID,Job_title,Name,SSN,Address,Homephone,Telephone,Email,Destination,Destination_ID
-1, Director,
+1, Director, Jan Jacobsen,3112992559,Vei 230 12, Longyearbyen, Svalbard
+2, Employee,
