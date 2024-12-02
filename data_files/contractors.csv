@@ -1,1 +1,19 @@
-ID,Name,Company,Contact_name,Contact_phone,Opening_hours,Address,Former_jobs
+Contractor_ID,Name,Company,Contact_name,Contact_phone,Specialty,Opening_hours,Address,Former_jobs
+
+# Svalbarði:
+xxx,VVS Ingeniør Ryno Hansen,True,Ryno Hansen,+47 917 14 583,Plumber,9:00-17:00,Vei 238 32,True
+xxx,
+
+# Kulusuk:
+xxx,Tinna Sigurrós Traustadóttir,False,Tinna Sigurrós Traustadóttir,+354 7800505,Electrician,10:00-18:00,,True
+xxx
+
+# Nuuk:
+xxx,Regína Sjöfn Sveinsdóttir,False,Regína Sjöfn Sveinsdóttir,+354 6907628,Painter,15:00-22:00,3620 Manngua, True 
+
+# Færeyjar:
+xxx,Vigdís Klara Stefánsdóttir,False,Vigdís Klara Stefánsdóttir,+354 6125581,Electrician,8:00-16:00,3 Heiðastubbi,True
+xxx,Tórsteinur Magnussen,False,Tórsteinur Magnussen,+298 ,Plumber,9:00-17:00,32 Torfinsgøta,False
+xxx,Anna Dam,False,Anna Dam,+298 510522,Roofer,8:00-16:00,Íslandsvegur,False
+xxx,Hallmar Joensen,False,Hallmar Joensen,+298 580632,Painter,10:00-18:00,,True
+xxx,C.C.Jensen,True,Olivar Rasmussen,+298 447425,Carpenter,8:00-16:00,380 Sørvágur,True
