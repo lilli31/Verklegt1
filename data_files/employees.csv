@@ -1,4 +1,4 @@
-ID,Job_title, Name,SSN,Address,Homephone,Telephone,Email,Place,Place_ID,Country
+ID,Job_title,Name,SSN,Address,Homephone,Telephone,Email,Place,Place_ID,Country
 
 #Manangers and Employees of Svalbarði#
 
@@ -8,4 +8,12 @@ ID,Job_title, Name,SSN,Address,Homephone,Telephone,Email,Place,Place_ID,Country
 
 #Manangers and Employees of Nuuk#
 
-4, Director, Minik Wallace, 3112962559, Isaajap Aqqutaa 1 3900, +299 34 24 67, +354 777 1361, minik.wallace@nanair.is, Nuuk, Greenland
+4, Director,Minik Wallace,3112962559,Isaajap Aqqutaa 1 3900,+299 34 24 67,+354 777 1361,minik.wallace@nanair.is,Nuuk,444,Greenland
+5, Employee,Aqqaluk Lynge,3112952559,Qattaaq 44 390,+299 35 24 66,,+354 777 1362,aqqaluk.lynge@nanair.is,Nuuk,555,Greenland
+6, Employee,Nauja Lynge, 3112942559,Qunguleq 3759 3905,+299 31 21 64,+354 777 1363,nauja.lynge@nanair.is,Nuuk,666,Greenland
+
+#Manangers and Employees of Færeyjar#
+
+7, Director,Annette Djurhuus,3112932559,Tjarnardeild 8 100,+298 772000,+354 777 1381,annette.djurhuus@nanair.is,Tórshavn,777,Faroe Islands
+8, Employee,Áki Knudsen,3112922559,Traðartún 3 108,+298 617210,+354 777 1381,aki.knudsen@nanair.is,Tórshavn,888,Faroe Islands
+9, Employee,André Hjaltalin,3112912559,Í Lágni 19 100,+298 661441,+354 777 1382,Andre.hjaltalin@nanair.is,Tórshavn,999,Faroe Islands
