@@ -1,17 +1,21 @@
-Destination,Destination_ID,Country,Country_ID,Property,Property_ID,Address,Additional_info,State_of_property,Special_facility,Active_work_order
+Destination_ID,Property,Property_ID,Address,Additional_info,State_of_property,Special_facility,Active_work_order
 
 
 
-Kulusuk,xxx,Greenland,xxx,iGloo-Ville,xxx,Fredereciavej 4,Snow House,Good,True,True
+3,iGloo-Ville,xxx,Fredereciavej 4,Snow House,Good,True,True
 
-Thorshavn,xxx,Faroe Islands,xxx,Hotel Mud,xxx,Nyggivegur 1,Mud House,Bad,False,True
+4,Hotel Mud,xxx,Nyggivegur 1,Mud House,Bad,False,True
 
-Thorshavn,xxx,Faroe Islands,xxx,Chess,xxx,Skakid 15,Town House,Good,True,True
+4,Chess,xxx,Skakid 15,Town House,Good,True,True
 
-Thorshavn,xxx,Faroe Islands,xxx,Svalla villa,xxx,Svalbardsvegur 22,House,Very good,True,True
+4,Svalla villa,xxx,Svalbardsvegur 22,House,Very good,True,True
 
-Longyearbyen,xxx,Svalbard,xxx,Hotel Akula,xxx,Harbour 1,Submarine,Okay,True,True
+6,Hotel Akula,xxx,Harbour 1,Submarine,Okay,True,True
 
-Longyearbyen,xxx,Svalbard,xxx,Lykke,xxx,Vei 212,House,Bad,False,True
+6,Lykke,xxx,Vei 212,House,Bad,False,True
 
+2,Hotel Suma Nuuk,xxx,Suloraq 42,Town House,Okay,False,True
 
+2,Hotel Aurora,xxx,Igimaq 7,Snow House,Good,True,True
+
+2,Hotel NK,xxx,Nuussuaq 4,House,Very good,False,True
