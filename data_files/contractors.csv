@@ -1,19 +1,19 @@
 Contractor_ID,Name,Company,Contact_name,Contact_phone,Specialty,Opening_hours,Address,Former_jobs
 
-# Svalbarði:
-xxx,VVS Ingeniør Ryno Hansen,True,Ryno Hansen,+47 917 14 583,Plumber,9:00-17:00,Vei 238 32,True
-xxx,
+SVA,VVS Ingeniør Ryno Hansen,True,Ryno Hansen,+47 917 14 583,Plumber,9:00-17:00,Vei 238 32,True
+SVA,Johannes Hansen,False,Johannes Hansen,+47 654 12 874,Electrician,8:00-15:00,Riisløkka 13,True
+SVA,Julia Skågard,False,Julia Skågard,+47 910 20 397,Carpenter,8:00-17:00,Rødgate 54,False
 
-# Kulusuk:
-xxx,Tinna Sigurrós Traustadóttir,False,Tinna Sigurrós Traustadóttir,+354 7800505,Electrician,10:00-18:00,,True
-xxx
+KUL,Tinna Sigurrós Traustadóttir,False,Tinna Sigurrós Traustadóttir,+299 78 00 50,Electrician,10:00-18:00,Gardagaden 5,True
+KUL,Malik Anse,False,Malik Anse,+299 12 62 91,Painter,9:00-17:00,Tunu 10,False
+KUL,Hitvit co,True,Jakkubiina Olsen,+299 34 35 36,Cleaning,17:00-24:00,Pirhuk 4,True
 
-# Nuuk:
-xxx,Regína Sjöfn Sveinsdóttir,False,Regína Sjöfn Sveinsdóttir,+354 6907628,Painter,15:00-22:00,3620 Manngua, True 
+NUU,Regína Sjöfn Sveinsdóttir,False,Regína Sjöfn Sveinsdóttir,+299 69 07 62,Painter,15:00-22:00,3620 Manngua,True
+NUU,Hans Iggiaq,False, Hans Iggiaq,+299 44 84 80,Electrician,8:00-18:00,Inuitgade 1,True
+NUU,Torben Raldorf,False,Torben Raldorf,+299 35 66 80,Plumber,9:00-14:00,Imartaaq 50,False
 
-# Færeyjar:
-xxx,Vigdís Klara Stefánsdóttir,False,Vigdís Klara Stefánsdóttir,+354 6125581,Electrician,8:00-16:00,3 Heiðastubbi,True
-xxx,Tórsteinur Magnussen,False,Tórsteinur Magnussen,+298 ,Plumber,9:00-17:00,32 Torfinsgøta,False
-xxx,Anna Dam,False,Anna Dam,+298 510522,Roofer,8:00-16:00,Íslandsvegur,False
-xxx,Hallmar Joensen,False,Hallmar Joensen,+298 580632,Painter,10:00-18:00,,True
-xxx,C.C.Jensen,True,Olivar Rasmussen,+298 447425,Carpenter,8:00-16:00,380 Sørvágur,True
+FAR,Vigdís Klara Stefánsdóttir,False,Vigdís Klara Stefánsdóttir,+298 612 558,Electrician,8:00-16:00,3 Heiðastubbi,True
+FAR,Tórsteinur Magnussen,False,Tórsteinur Magnussen,+298 597 090,Plumber,9:00-17:00,32 Torfinsgøta,False
+FAR,Anna Dam,False,Anna Dam,+298 510 522,Roofer,8:00-16:00,Íslandsvegur,False
+FAR,Hallmar Joensen,False,Hallmar Joensen,+298 580 632,Painter,10:00-18:00,,True
+FAR,C.C.Jensen,True,Olivar Rasmussen,+298 447 425,Carpenter,8:00-16:00,380 Sørvágur,True
