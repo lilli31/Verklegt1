@@ -1,1 +1,1 @@
-Report_ID,Work_order_ID,Work_done,Additional_report_info,Total_cost
+Report_ID,Work_order_ID,Work_done,Contractor,Contractor_ID,Additional_report_info,Material_cost,Contractor_cost,Total_cost
