@@ -1,21 +1,10 @@
 Destination_ID,Property,Rental_spaces,Address,Additional_info,State_of_property,Special_facility,Active_work_order
-
-
-
 3,iGloo-Ville,10,Fredereciavej 4,Snow House,Good,True,True
-
 4,Hotel Mud,10,Nyggivegur 1,Mud House,Bad,False,True
-
 4,Chess,3,Skakid 15,Town House,Good,True,True
-
 4,Svalla villa,5,Svalbardsvegur 22,House,Very good,True,True
-
 6,Hotel Akula,30,Harbour 1,Submarine,Okay,True,True
-
 6,Lykke,4,Vei 212,House,Bad,False,True
-
 2,Hotel Suma Nuuk,2,Suloraq 42,Town House,Okay,False,True
-
 2,Hotel Aurora,1,Igimaq 7,Snow House,Good,True,True
-
 2,Hotel NK,8,Nuussuaq 4,House,Very good,False,True
