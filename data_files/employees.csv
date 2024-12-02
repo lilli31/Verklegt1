@@ -2,8 +2,8 @@ ID,Job_title,Name,SSN,Address,PostCode,Homephone,Telephone,Email,Place,Place_ID,
 1, Director,Jan Jacobsen,3112992559,Vei 230 12,9170,+47 92 09 77 00,+354 777 1337,jan.jacobsen@nanair.is,Longyearbyen,111,Svalbard
 2, Employee,Jacob Yxa,3112982559,Vei 224 3B,9171,+47 92 09 77 01,+354 777 1338,jacob.yxa@nanair.is,Longyearbyen,222,Svalbard 
 3, Employee,Nanna Daema,3112972559,Ivan Starostin st. 109,9178,+47 92 09 77 02,+354 777 1339,nanna.daema@nanair.is,Barantsburg,333,Svalbard 
-4, Director,Minik Wallace,3112962559,Isaajap Aqqutaa 1,3900,9171,+299 34 24 67,+354 777 1361,minik.wallace@nanair.is,Nuuk,444,Greenland
-5, Employee,Aqqaluk Lynge,3112952559,Qattaaq 44,3905,+299 35 24 66,,+354 777 1362,aqqaluk.lynge@nanair.is,Nuuk,555,Greenland
+4, Director,Minik Wallace,3112962559,Isaajap Aqqutaa 1,3900,+299 34 24 67,+354 777 1361,minik.wallace@nanair.is,Nuuk,444,Greenland
+5, Employee,Aqqaluk Lynge,3112952559,Qattaaq 44,3905,+299 35 24 66,+354 777 1362,aqqaluk.lynge@nanair.is,Nuuk,555,Greenland
 6, Employee,Nauja Lynge, 3112942559,Qunguleq 3759,3905,+299 31 21 64,+354 777 1363,nauja.lynge@nanair.is,Nuuk,666,Greenland
 7, Director,Annette Djurhuus,3112932559,Tjarnardeild 8,100,+298 77 20 00,+354 777 1381,annette.djurhuus@nanair.is,Thorshavn,777,Faroe Islands
 8, Employee,Áki Knudsen,3112922559,Traðartún 3,108,+298 61 72 10,+354 777 1381,aki.knudsen@nanair.is,Thorshavn,888,Faroe Islands
