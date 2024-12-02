@@ -1,37 +1,19 @@
 ID,Job_title,Name,SSN,Address,PostCode,Homephone,Telephone,Email,Place,Place_ID,Country
-
-#Manangers and Employees of Svalbarði#
-
 1, Director,Jan Jacobsen,3112992559,Vei 230 12,9170,+47 92 09 77 00,+354 777 1337,jan.jacobsen@nanair.is,Longyearbyen,111,Svalbard
 2, Employee,Jacob Yxa,3112982559,Vei 224 3B,9171,+47 92 09 77 01,+354 777 1338,jacob.yxa@nanair.is,Longyearbyen,222,Svalbard 
 3, Employee,Nanna Daema,3112972559,Ivan Starostin st. 109,9178,+47 92 09 77 02,+354 777 1339,nanna.daema@nanair.is,Barantsburg,333,Svalbard 
-
-#Manangers and Employees of Nuuk#
-
 4, Director,Minik Wallace,3112962559,Isaajap Aqqutaa 1,3900,9171,+299 34 24 67,+354 777 1361,minik.wallace@nanair.is,Nuuk,444,Greenland
 5, Employee,Aqqaluk Lynge,3112952559,Qattaaq 44,3905,+299 35 24 66,,+354 777 1362,aqqaluk.lynge@nanair.is,Nuuk,555,Greenland
 6, Employee,Nauja Lynge, 3112942559,Qunguleq 3759,3905,+299 31 21 64,+354 777 1363,nauja.lynge@nanair.is,Nuuk,666,Greenland
-
-#Manangers and Employees of Færeyjar#
-
-7, Director,Annette Djurhuus,3112932559,Tjarnardeild 8,100,+298 772000,+354 777 1381,annette.djurhuus@nanair.is,Thorshavn,777,Faroe Islands
-8, Employee,Áki Knudsen,3112922559,Traðartún 3,108,+298 617210,+354 777 1381,aki.knudsen@nanair.is,Thorshavn,888,Faroe Islands
-9, Employee,André Hjaltalin,3112912559,Í Lágni 19,100,+298 661441,+354 777 1382,Andre.hjaltalin@nanair.is,Thorshavn,999,Faroe Islands
-
-#Manangers and Employees of Kulusuk#
-
-10,Director,Anna Bjorhus,3112902559,Gummyvejens 4,3300,+299 665566,+354 999 879,annabjor@nanair
-11,Employee,
-12,Employee,
-
-#Manangers and Employees of Reykjavík#
-
-13,Director,
-14,Employee,
-15,Employee,
-
-#Manangers and Employees of Tingwall#
-
-16,Director,
-17,Employee,
-18,Employee,
+7, Director,Annette Djurhuus,3112932559,Tjarnardeild 8,100,+298 77 20 00,+354 777 1381,annette.djurhuus@nanair.is,Thorshavn,777,Faroe Islands
+8, Employee,Áki Knudsen,3112922559,Traðartún 3,108,+298 61 72 10,+354 777 1381,aki.knudsen@nanair.is,Thorshavn,888,Faroe Islands
+9, Employee,André Hjaltalin,3112912559,Í Lágni 19,100,+298 66 14 41,+354 777 1382,Andre.hjaltalin@nanair.is,Thorshavn,999,Faroe Islands
+10,Director,Anna Bjorhus,3112902559,Gummyvejens 4,3300,+299 66 55 66,+354 999 879,annabjorhus@nanair.is,Kulusuk,100,Greenland
+11,Employee,Frederik Nils,3112892559,Gummyvejens 10,3300,+299 63 11 36,+354 223 1194,frederikn@nanair.is,Kulsuk,111,Greenland
+12,Employee,Libbe Jonger,3112882559,Rajenslig 45,3661,+299 77 22 56,+354 800 0022,libbejo@nanair.is,Kulsuk,122,Greenland
+13,Director,Vigdís Hervör,3112872559,Laugavegur 95,101,+354 554 5555,+354 864 4955, vigdishervor@gmail.is,Reykjavik,133,Reykjavik
+14,Employee,Sandra Gunnarsdóttir, 3112862559,Lindargata 44,101,+354 511 5633,+354 735 5611,sandragunn@nanair.is,Reykjavik,144,Reykjavik
+15,Employee,Valur Valsson,3112852559,Álagrandi 27,107,+354 599 4321,+354 881 3000,valurvals@nanair.is,Reykjavik,155,Reykjavik
+16,Director,Harry Potter,3112842559,Stura 9,ZE29SE,01595 807224,01595 565656,harryp@nanair.is,Tingwall,166,Scotland
+17,Employee,Hermione Granger,3112832559, Stura 11,ZE29SE,01595 807227,01595 446731,hermioneg@nanair.is,Tingwall,177,Scotland
+18,Employee,Ronald Weasly,3112822559, Stura 13,ZE29SE,01595 807225,01595 220046,ronaldw@nanair.is,Tingwall,188,Scotland
