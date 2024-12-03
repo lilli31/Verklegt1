@@ -8,7 +8,6 @@ class DL_Report(Reports):
     def store_reports(self):
         pass
 
-
     def fetch_reports(self):
         file = open("reports.csv", "r")
         reader = csv.reader(file)

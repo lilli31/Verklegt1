@@ -1,12 +1,66 @@
+import sys
+import os
 import csv
 from models.Employees import Employees
 
+class DL_Employees():
+    EMPLOYEE_ID = "Employee_ID"
+    JOB_TITLE = "Job_title"
+    NAME = "Name"
+    SSN = "SSN"
+    ADDRESS = "Address"
+    POSTCODE = "PostCode"
+    HOMEPHONE = "Homephone"
+    TELEPHONE = "Telephone"
+    EMAIL = "Email"
+    DESTINATION_ID= "Destination_ID"
 
-class DL_Employee(Employees):
     def __init__(self):
-        super().__init__()
+        pass
+    """
+    def FetchEmployees(self):
+        file = open("data_files/employees.csv", "r")
+        reader = csv.reader(file)
+        rows = list(reader)
 
+        keys = rows[0]
+
+        employess_dict = {key: [] for key in keys}
+
+        for row in rows[1:]:
+                for key, value in zip(keys, row):
+                    employess_dict[key].append(value)
+        file.close()
+        return employess_dict
+    """   
+    def FetchEmployees(self) -> list[Employees]:
+        all_employees: list[Employees] = []
+        with open("data_files/employees.csv", "r", newline="", encoding="utf-8") as csvfile:
+            reader = csv.DictReader(csvfile)
+
+            for row in reader:
+                all_employees.append(Employees(row[self.EMPLOYEE_ID], 
+                                               row[self.JOB_TITLE],
+                                               row[self.NAME],
+                                               row[self.SSN],
+                                               row[self.ADDRESS],
+                                               row[self.POSTCODE],
+                                               row[self.HOMEPHONE],
+                                               row[self.TELEPHONE],
+                                               row[self.EMAIL],
+                                               row[self.DESTINATION_ID]))
+
+
+                
+
+      
+            
+        return all_employees
     
+
+        
+
+
     # def storeEmployees(self):
 
     #     """Storing all the employees information in the employees.csv file"""
