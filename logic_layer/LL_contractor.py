@@ -1,19 +1,29 @@
-class LL_Contractor:
+import csv
 
-    def getContractorID():
-        pass
 
-    def verifyContractorID():
-        pass
 
-    def verifyContractorInfo():
-        pass
+class Contractor(self):
+    def __init__(self, id, name, phone, email, address):
+        self.id = id
+        self.name = name
+        self.phone = phone
+        self.email = email
+        self.address = address 
 
-    def verifySearchContractor():
-        pass
+    def getContractorId(self):
+        return self.id
 
-    def getFilteredContractor():
-        pass
+    def verifyContractorID(contractor):
+        return contractor.is_valid_id()
 
-    def getContractorID():
-        pass
+    def verifyContractorInfo(contractor):
+        return contractor.is_valid_info()
+
+    def verifySearchContractors(contractor):
+        return contractor.is_valid_search()
+
+    def getFilteredContractor(contractor):
+        return contractor.get_filtered_contractors()
+
+    def getContractorID(contractor):
+        return contractor.get_id()
