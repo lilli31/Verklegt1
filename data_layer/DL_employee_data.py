@@ -43,7 +43,7 @@ class DL_Employees():
         """Storing the employees information in the employees.csv file"""
 
         with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-        writer = csv.writer(csvfile)
+            writer = csv.writer(csvfile)
     #         writer.writerow(["ID","Job_title","Name","SSN","Address","Postcode","Homephone","Telephone","Email","Place","Place_ID","Country"])
     #         writer.writerow([self.ID, 
     #                              self.Job_title, 
