@@ -8,8 +8,3 @@ class contractors:
         self.opening = None
         self.address = None
         self.jobs = None
-
-
-
-
-    
