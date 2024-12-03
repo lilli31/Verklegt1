@@ -1,49 +1,49 @@
 class LL_Employee:
 
-    def verifyEmployeeID(employeeID):
+    # def verifyEmployeeID(employeeID):
         
-        """Checking if the employee ID is valid"""
+    #     """Checking if the employee ID is valid"""
         
-        if len(employeeID)!= 6:
-            return False
-        if not employeeID.isdigit():
-            return False
-        return True
+    #     if len(employeeID)!= 6:
+    #         return False
+    #     if not employeeID.isdigit():
+    #         return False
+    #     return True
     
-    def verifySocialSecurity(self, employee): 
+    # def verifySocialSecurity(self, employee): 
 
-        """Checking if the social security number is valid"""
+    #     """Checking if the social security number is valid"""
 
-        if len(employee.social_security)!= 10:
-            return False
-        if not employee.social_security.isdigit():
-            return False
-        return True
+    #     if len(employee.social_security)!= 10:
+    #         return False
+    #     if not employee.social_security.isdigit():
+    #         return False
+    #     return True
 
-    def verifyEmployeeInfo(employee.info):
+    # def verifyEmployeeInfo(employee.info):
         
-        """Checking if the employee information is valid"""
+    #     """Checking if the employee information is valid"""
         
-        if len(employee.info)< 5 or len(employee.info)> 100:
-            return False
-        return True
+    #     if len(employee.info)< 5 or len(employee.info)> 100:
+    #         return False
+    #     return True
 
-    def verifySearchEmployee(employee):
+    # def verifySearchEmployee(employee):
         
-        """Checking if the employee is valid"""
+    #     """Checking if the employee is valid"""
         
-        if not verifyEmployeeID(employee.employee_id) or not verifySocialSecurity(employee) or not verifyEmployeeInfo(employee.info):
-            return False
-        return True
+    #     if not verifyEmployeeID(employee.employee_id) or not verifySocialSecurity(employee) or not verifyEmployeeInfo(employee.info):
+    #         return False
+    #     return True
 
-    def getEmployeeID(employee_id):
+    # def getEmployeeID(employee_id):
         
-        """Returning the employee ID"""
+    #     """Returning the employee ID"""
         
-        return employee_id
+    #     return employee_id
 
-    def getFilteredEmployees():
-        pass
+    # def getFilteredEmployees():
+    #     pass
 
     def getEmployeeInfo(self, ID_num):
 

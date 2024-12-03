@@ -1,9 +1,11 @@
 from logic_layer.LL_wrapper import LogicLayerWrapper
+from models.Employees import Employees
 
 
-class EmployeeMain:
+class EmployeeMain(Employees):
 
     def __init__(self, id_number):
+        super().__init__()
         self.id_number = id_number
         self.employee_info = LogicLayerWrapper.getEmployee(self.id_number)
         self.job_title = self.employee_info[0]
