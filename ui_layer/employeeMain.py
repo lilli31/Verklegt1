@@ -1,13 +1,25 @@
+from logic_layer.LL_wrapper import LogicLayerWrapper
+
+
 class EmployeeMain:
 
-    def displayEmployeeMain():
+    def __init__(self, id_number):
+        self.id_number = id_number
+        self.employee_info = LogicLayerWrapper.getEmployee(self.id_number)
+        self.job_title = self.employee_info[0]
+        self.name = self.employee_info[1]
+        self.displayEmployeeMain()
+
+    def displayEmployeeMain(self):
+        print("-" * 70)
+        print("|",(self.name.ljust(33)), (self.job_title.rjust(32)), "|")
+        print("-" * 70)
+
+    def backToChoice(self):
         pass
 
-    def backToChoice():
+    def viewMyWorkOrders(self):
         pass
 
-    def viewMyWorkOrders():
-        pass
-
-    def viewMyReports():
+    def viewMyReports(self):
         pass

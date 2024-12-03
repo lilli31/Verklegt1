@@ -9,60 +9,222 @@ Dagbók og samantekt á stöðumati eftir hvern dag gildir 10%.
 -Markmið dagsins og hvað hver og einn ætlar að vinna í 
 -Síðasta færsla dagsins skal svo vera samantekt á því hvað hver og einn kom í verk og má þá nota til að halda tíma tal um hvað hver hefur skilað svo og hvað hver verkþáttur hefur tekinn mikinn tíma.
 
-Dagur 1 (25.11.24) - Morgunfundur
-
-Í dag mættum við þrjár (Regína, Vigdís K og Tinna) á fyrirlesturinn og restin af hópnum (Vigdís H, Rakel og Þorbjörg) horfði á upptökuna.
-Þar sem þetta er fyrsti dagurinn byrjuðum við á því að koma öllum meðlimum hópsins inn á GitHub. 
-Í dag ætlum við að skipuleggja vikuna eins vel og við getum og úthluta öllum meðlimum hópsins verkefni. 
-Vigdís H er með mestu reynsluna af okkur og hefur tekið að sér að vera GitHub sérfræðingur hópsins. Hún ætlar að byrja á GitHub handbókina. 
-Regína ætlar að byrja að gera klasarit, Tinna og Vigdís K notkunartilvik og kröfulista, og Rakel og Þorbjörg notendagreiningar.
-ar á notendagreiningunni sem gekk einnig vel.
-<<<<<<< Updated upstream
-Fórum heim um kl 16 leytið og má segja að við eyddum sirka 2-3 tímum að vinna í okkar "verkefnum" sem við settum á okkur eftir að hafa sett upp github og kynnt okkur verkefnið. Á næsta fundi er markmiðið að allir haldi áfram að vinna í sínu verkefni og tala saman um hver staðan er á verkefnunum og hvað við viljum áorka í lok dags ogútskýra það ítarlegra á morgunfundinum. Annars mjög góður fyrsti dagur og allir vinna mjög vel saman.
 
 
- Dagur 1 (25.11.24) - Fundur í lok dags
+# Vika 1
 
-Eftir fyrirlesturinn í dag fórum við að setja upp Github og github desktop. Það tók sirka klt að koma öllum inn.
-Um hádegi voru allir að vinna í sínu "verkefni" sem við skipulögðum í upphaf dags.
-Það tók langan tíma bara að "skilja" verkefnið og brjóta það upp í litla hluta sem hver og einn tekur að sér.
-Regína er búin að vera vinna í klasaritinu í lucidchart á góðu róli.
-Tinna og Vigdís K eru langt komnar í norkunartilvikunum og kröfulistanum.
-Vigdís H er byrjuð á að gera handbókina fyrir Github og Github dekstop sem gekk mjög vel.
-Rakel og :orbjörg voru byrjað
 
-Dagur 2 (26.11.24) - Morgunfundur
-=======
-Allur hópurinn er mættur og við hefjumst strax handa við að skipuleggja daginn okkar. Við vitum að við eigum eftir að klára use cases, klasarit, stöðurit, happy paths og github verkefnið. Þorbjörg, Rakel, Vigdís K og Tinna byrja á að klára use casein þar sem að þau eru mjög mörg og taka langan tíma. Vigdís H heldur áfram með github verkefnið á meðan Regína einbeitir sér að klasaritinu. Planið í dag er að vonandi geta byrjað á happy paths og verið búnar með use casein.
 
-Dagur 2 (26.11.24) - Kvöldfundur
+#####Dagur 1 (25.11.24) - Morgunfundur######
 
-Vigdís H náði að klára github handbókina og er byrjuð að vinna að klasaritinu með Regínu.
-Regína komst að því að hún þurfti að breyta klasaritinu og ætlar að byrja upp á nýtt. 
-Rakel, Tinna, Vigdís K og Þorbjörg kláruðu use casein og ætla því að byrja á happy paths á morgun. 
-Dagurinn gekk vel en verkefnin drógust aðeins á langinn. Verkefni morgundagsins er að vonandi klára klasaritið, happy paths og fara að huga að stöðuritinu. 
+Mættir:
+    Regína
+    Vigdís K
+    Tinna
+    Vigdís H
+    Rakel
+    Þorbjörg
 
- Dagur 3 (27.11.24) - Morgunfundur
+Markmið dagsins:
+    Við viljum byrja á því að koma öllum meðlimum inn á GitHub og skipuleggja vikuna eins vel og við getum og þar með úthluta verkefnum fyrir meðlimi hópsins.
+        Vigdís H ætlar að taka það á sig að gera GitHub handbókina því hún hefur mestu reynsluna á því.
+        Regína ætlar að byrja að gera klasarit.
+        Tinna og Vigdís K ætla að gera notkunartilvikin og kröfulista.
+        Rakel og Þorbjörg ætla að gera notendagreiningarnar.
 
-Allur hópurinn er mættur og hefur nú verið ákveðið að Þorbjörg og Rakel ætla að byrja á stöðuritinu, Vigdís K og Tinna ætla að gera wireframes og með því lagfæra notkunartilvikin skulu einhverjar breytingar verða út frá wireframes. Regína og Vigdís H ætla að halda áfram með klasaritið og eru nú þegar komnar mjög langt eftir að hafa byrjað aftur. Þetta er því planið í dag hjá öllum meðlimum hópsins og viljum við ná að klára sem mest af því.
+#####Dagur 1 (25.11.24) - Fundur í lok dags#####
 
-Dagur 3 (27.11.24) - Kvöldfundur
+Þessi dagur var afar árangursríkur. Við komumst allar inn á GitHub og er það nú nothæft og gátum við kynnt okkur verkefnið vel. Allir í hópnum náðu að byrja vel á verkefninu og erum við komnar á góðan stað strax.
+    Regína hefur unnið í klasaritinu á lucid chart á góðu róli.
+    Vigdís K og Tinna eru búnar með kröfulistann og komnar langt með A kröfur í kröfulistanum.
+    Rakel og Þorbjörg kláruðu notendagreininguna.
+    Vigdís H er komin langt í handbókinni og gengur það vel.
 
-Við náðum að vinna vel í dag, dagurinn gekk ágætlega. Regína vann allan daginn í klasaritinu því hún fattaði villu sem hún var að gera í því og ákvað að byrja upp á nýtt aftur þannig að þriggja laga högunin sé rétt. Vigdís H hjálpaði við það einnig eftir hádegi og náðu þær að klára UI layer. Þorbjörg og Rakel byrjuðu og kláruðu state diagram og eftir það fóru þær að fínpússa hönnunarskýrsluna. Tinna og Vigdís K byrjuðu á wireframes og með því náðu þær að laga og aðlaga notkunartilvikin í samræmi við það.
-Plan morgundagsins er að Regína og Vigdís H ætla að byrja á logic og data layer. Þorbjörg og Rakel ætla að hjálpa Tinnu og Vigdísi K með wireframe og passa að það tengist vel við use casein. 
 
-Dagur 4 (28.11.24) - Morgunfundur
 
-Við erum mættar og við byrjum á að fara yfir hvað þarf að gera í dag. Regína og Vigdís H ætla að halda áfram í class diagraminu mögulega ná þær að klára en þetta er langt og flókið diagram svo við þurfum að sjá til. Vigdís K og Tinna ætla að halda áfram með wireframe, þær eru komnar langt á leið og telja sig geta mögulega klárað í dag. Rakel og Þorbjörg ætla að fara yfir allt skjalið og passa að allt stemmi, að öll use case séu rétt og með réttu tungumáli og að diagramin stemmi við restina af verkefninu.
+#####Dagur 2 (26.11.24) - Morgunfundur#####
 
-Dagur 4 (28.11.24) - Kvöldfundur
+Mættir:
+    Regína
+    Vigdís K
+    Tinna
+    Vigdís H
+    Rakel
+    Þorbjörg
 
-Þessi dagur hefur verið mjög árangursríkur. Tinna og Vigdís K kláruðu wireframeið og komu því inn í skýrsluna á formi happy-paths. Regína og Vigdís H kláruðu diagramið. Rakel og Þorbjörg gerðu skýrsluna tilbúna, þær komust að því að það þurfti að bæta öllum B og C kröfunum okkar við use casein svo þær gerðu það. Við höfum því nánast lokið hönnunarskýrslunni og á morgun er planið að við allar tökum okkur saman og proof lesum yfir hana til að ganga úr skugga um að allt sé fínt.
+Hvað er eftir að gera: 
+    Use cases, klasarit, stöðurit, happy paths og github verkefnið.
 
-Dagur 5 (29.11.24) - Morgunfundur
+Markmið dagsins:
+    Við viljum ná að klára Use casein eða vera komin sem langst í þeim lok dags og ætla Þorbjörg, Rakel, Vigdís K og Tinna að inna í því þar sem þau eru mörg og taka langan tíma. Vigdís H ætlar að halda áfram með GitHub verkefnið og Regína gerir klasaritið. Við viljum reyna að byrja á Happy paths en sjáum til hvort það náist.
 
-Allur hópurinn er mættur og er áætlunin í dag klára skýrsluna. Við ætlum að lesa yfir hana og laga það sem við sjáum, klára happy path og skila verkefninu inn í lok dags. 
+#####Dagur 2 (26.11.24) - Kvöldfund#####
 
-Dagur 5 (29.11.24) - Kvöldfundur 
+Dagurinn gekk vel en verkefnin drógust aðeins á langinn.
 
-Við náðum að klára skýrsluna í dag! Tinna skrifaði um hvert og eitt happy path, Vigdís K, Vigdís H, Þorbjörg, Rakel og Regína fóru yfir skýrsluna og bættu við inn í use casein þar sem vantaði. Við vorum að skila inn skýrslunni og byrjum þá eftir helgi að kóða. 
+Það sem var gert í dag:
+    Vigdís H klaraði GitHub handbókina og byrjaði að gera klasaritið með Regínu
+    Regína fattaði að hún þyrfti að breyta klasaritinu mikið og ákvað að byrja aftur frá byrjun.
+    Rakel, Tinna, Vigdís K og Þorbjörg kláruðu Use casein.
+
+Áætlun morgundags:
+    Við viljum reyna að klára klasaritið, happy paths og fara að huga að stöðuritinu. 
+
+
+
+#####Dagur 3 (27.11.24) - Morgunfundur#####
+
+Mættir:
+    Regína
+    Vigdís K
+    Tinna
+    Vigdís H
+    Rakel
+    Þorbjörg
+
+Hvað á eftir að gera:
+    Klára klasarit, Happy paths, stöðurit
+
+Markmið dagsins:
+    Ákveðið hefur verið að Rakel og Þorbjörg ætla að gera stöðuritið. Vigdís K og Tinna ætla að byrja á Happy path og á sama tíma laga Use casein til að passa að það sé samræmi þar. Regína og Vigdís H ætla að halda áfram með klasaritið og eru nú þegar komnar mjög langt eftir að hafa byrjað aftur.
+    Þetta er áætlun dagsins og viljum við klára sem mest af því.
+
+#####Dagur 3 (27.11.24) - Kvöldfundur#####
+
+Það sem var gert í dag:
+    Við unnum vel í dag og náðum að gera mikið.
+        Regína vann allan daginn í klasaritinu því hún fattaði villu sem hún var að gera í því og ákvað að byrja upp á nýtt aftur þannig að þriggja laga högunin sé rétt. Vigdís H hjálpaði við það einnig eftir hádegi og náðu þær að klára UI layer.
+        Þorbjörg og Rakel byrjuðu og kláruðu state diagram og eftir það fóru þær að fínpússa hönnunarskýrsluna.
+        Tinna og Vigdís K byrjuðu á wireframes og með því náðu þær að laga og aðlaga notkunartilvikin í samræmi við það.
+
+Áætlun morgundagsins:
+    Regína og Vigdís H ætla að byrja á logic layer og data layer í klasaritinu.
+    Þorbjörg og Rakel ætla að hjálpa Vigdísi K og Tinnu með Happy paths og passa að þau tengjast vel við Use casein.m
+
+
+
+#####Dagur 4 (28.11.24) - Morgunfundur#####
+
+Mættir:
+    Regína
+    Vigdís K
+    Tinna
+    Vigdís H
+    Rakel
+    Þorbjörg
+
+Hvað á eftir að gera:
+    Klasarit, Happy paths
+
+Markmið dagsins:
+    Regína og Vigdís H ætla að halda áfram að gera klasaritið og telja sig geta mögulega klárað það en þetta er langt og flókið diagram svo við þurfum að sjá til.
+    Vigdís K og Tinna ætla að halda áfram með Happy paths, þær eru komnar langt á leið og telja sig geta mögulega klárað í dag.
+    Rakel og Þorbjörg ætla að fara yfir allt skjalið og passa að allt stemmi, að öll use case séu rétt og með réttu tungumáli og að diagramin stemmi við restina af verkefninu.
+
+#####Dagur 4 (28.11.24) - Kvöldfundur#####
+
+Þessi dagur hefur verið mjög árangursríkur.
+
+Það sem var gert í dag:
+    Tinna og Vigdís K kláruðu Happy paths og færðu það inn í skýrsluna.
+    Regína og Vigdís H náðu að klára klasaritið.
+    Rakel og Þorbjörg gerðu skýrsluna tilbúna, þær komust að því að það þurfti að bæta öllum B og C kröfunum okkar við use casein svo þær gerðu það.
+
+Áætlun morgundagsins:
+    Planið fyrir morgundaginn er að við tökum okkur saman og proof lesum yfir skýrsluna til að ganga úr skugga um að allt sé fínt og þar með klára hana.
+
+
+
+#####Dagur 5 (29.11.24) - Morgunfundur#####
+
+Mættir:
+    Regína
+    Vigdís K
+    Tinna
+    Vigdís H
+    Rakel
+    Þorbjörg
+
+Hvað á eftir að gera:
+    Klára skýrsluna og fínpússa
+
+Markmið dagsins:
+    Klára skýrsluna og fínpússa og SKILA INN
+
+#####Dagur 5 (29.11.24) - Kvöldfundur#####
+
+Það sem var gert í dag:
+    Við náðum að klára skýrsluna í dag!
+    Tinna skrifaði um hvert og eitt happy path, Vigdís K, Vigdís H, Þorbjörg, Rakel og Regína fóru yfir skýrsluna og bættu við þeim Use caseum sem vantaði og pössuðu samræmi.
+    Við vorum að skila inn skýrslunni og byrjum að forrita eftir helgi.
+
+
+
+# Vika 2
+
+
+
+#####Dagur 8 (02.12.24) - Morgunfundur#####
+
+Mættir:
+    Regína
+    Vigdís K
+    Tinna
+    Vigdís H
+    Rakel
+
+    Þorbjörg er veik heima
+
+Markmið dagsins:
+    Fara fyrst yfir 
+    Skipuleggja CSV skjölin okkar og sjá hversu vel gengur að gera þau
+
+#####Dagur 8 (02.12.24) - Kvöldfundur#####
+
+Það sem var gert í dag:
+    Við tókum okkur stuttan dag í dag og vorum bara með það markmið að ná að skipuleggja okkur þannig það sé þægilegt að byrja að kóða.
+    Við allar tókum að okkur mismunandi CSV skjöl og bjuggum til headera sem segja til um hvað þarf að koma fram í hverju skjali. Hver og ein fylti út það skjal, unnum saman í því að hafa allt eins og komast að því hvað þyrfti að koma fram í CSV skjölunum.
+    Við náðum að klára alveg CSV skjölin eða allavega það sem er hægt að gera án þess að hafa kóðann og seinna bætum við inn á það ef þarf.
+    Vigdís H fór í data layer fyrir employees og er að vinna í því.
+
+Áætlun morgundagsins:
+    Við viljum byrja á því að kóða á morgun þar sem allur undirbúningur er tilbúinn.
+    Vi ætlum að gera logic layer fyrst á mrg til að sjá hvort það runni með data layerinu sem Vigdís H var að vinna í.
+
+
+
+#####Dagur 9 (03.12.24) - Morgunfundur#####
+
+Mættir:
+    Regína
+    Ísold 
+    Vigdís K 
+    Tinna 
+    Rakel 
+    
+    Vigdís H er veik í dag.
+
+Markmið dagsins:
+    Markmiðið í dag er að klára models, komast eins langt með data layers og byrja smá á ui layers.
+
+#####Dagur 9 (03.12.24) - Kvöldfundur#####
+
+Það sem var gert í dag:
+    Við náðum að klára models og byrja á...
+
+Áætlun morgundagsins:
+
+
+
+
+#####Dagur 10 (04.12.24) - Morgunfundur#####
+
+Mættir: 
+
+Markmið dagsins: 
+
+#####Dagur 10 (04.12.24) - Kvöldfundur#####
+
+Það sem var gert í dag: 
+
+Áætlun morgundagsins:

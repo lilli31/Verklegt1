@@ -38,6 +38,13 @@ class Employee(self):
         if len(employee.info)< 5 or len(employee.info)> 100:
             return False
         return True
+    def verifyEmployeeInfo(employee.info):
+        
+        """Checking if the employee information is valid"""
+        
+        if len(employee.info)< 5 or len(employee.info)> 100:
+            return False
+        return True
 
     def verifySearchEmployee(employee):
         
