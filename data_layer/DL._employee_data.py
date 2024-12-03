@@ -1,11 +1,10 @@
 import csv
+from models.Employees import Employees
 
 
-
-class Employee:
-    def __init__(self,ID,Job_title,Name,SSN,Address,PostCode,Homephone,Telephone,Email,Place,Place_ID,Country):
-        pass
-
+class DL_Employee(Employees):
+    def __init__(self):
+        super().__init__()
     
     def storeEmployees(self):
 
@@ -65,9 +64,9 @@ class Employee:
         self.updated_employees(updated_employees_info)
         return "Employee updated successfully"
     
-   
+
     
-    
+
 
     
     

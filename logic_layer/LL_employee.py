@@ -56,10 +56,11 @@ class LL_Employee:
 
         """Returning all the employee information from the employees.csv file"""
 
-        # employees_info = [] #Getting the information from the employees.csv file#
-        # with open("data_files/employees.csv", newline='') as csvfile: #Reading the data files#
-        #     csvreader = csv.reader(csvfile) #Reading the data from the employees.csv file#
-        #     next(csvreader)  
-        #     for row in csvreader:    
-        #         employees_info.append(Employee(*row)) #Getting the list of employees and their information#     
-        # return employees_info
+        employees_info = [] #Getting the information from the employees.csv file#
+        with open("data_files/employees.csv", newline='') as csvfile: #Reading the data files#
+            csvreader = csv.reader(csvfile) #Reading the data from the employees.csv file#
+            next(csvreader)  
+            for row in csvreader:    
+                employees_info.append(Employee(*row)) #Getting the list of employees and their information#     
+        return employees_info
+            
