@@ -196,11 +196,35 @@ Markmið dagsins:
 #####Dagur 9 (03.12.24) - Morgunfundur#####
 
 Mættir:
+    Regína
+    Ísold 
+    Vigdís K 
+    Tinna 
+    Rakel 
+    
+    Vigdís H er veik í dag.
 
 Markmið dagsins:
+    Markmiðið í dag er að klára models, komast eins langt með data layers og byrja smá á ui layers.
 
 #####Dagur 9 (03.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag:
+    Við náðum að klára models og byrja á...
+
+Áætlun morgundagsins:
+
+
+
+
+#####Dagur 10 (04.12.24) - Morgunfundur#####
+
+Mættir: 
+
+Markmið dagsins: 
+
+#####Dagur 10 (04.12.24) - Kvöldfundur#####
+
+Það sem var gert í dag: 
 
 Áætlun morgundagsins:
