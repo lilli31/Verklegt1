@@ -17,23 +17,11 @@ class DL_Employees():
 
     def __init__(self):
         pass
-    """
-    def FetchEmployees(self):
-        file = open("data_files/employees.csv", "r")
-        reader = csv.reader(file)
-        rows = list(reader)
-
-        keys = rows[0]
-
-        employess_dict = {key: [] for key in keys}
-
-        for row in rows[1:]:
-                for key, value in zip(keys, row):
-                    employess_dict[key].append(value)
-        file.close()
-        return employess_dict
-    """   
+   
     def FetchEmployees(self) -> list[Employees]:
+
+        """Fetching all the employees"""
+
         all_employees: list[Employees] = []
         with open("data_files/employees.csv", "r", newline="", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
@@ -48,25 +36,14 @@ class DL_Employees():
                                                row[self.HOMEPHONE],
                                                row[self.TELEPHONE],
                                                row[self.EMAIL],
-                                               row[self.DESTINATION_ID]))
-
-
-                
-
-      
-            
+                                               row[self.DESTINATION_ID])) 
         return all_employees
     
+    def StoreEmployees(self):
+        """Storing the employees information in the employees.csv file"""
 
-        
-
-
-    # def storeEmployees(self):
-
-    #     """Storing all the employees information in the employees.csv file"""
-        
-    #     with open("data_files/employees.csv", 'a', newline='') as csvfile:
-    #         writer = csv.writer(csvfile)
+        with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
+        writer = csv.writer(csvfile)
     #         writer.writerow(["ID","Job_title","Name","SSN","Address","Postcode","Homephone","Telephone","Email","Place","Place_ID","Country"])
     #         writer.writerow([self.ID, 
     #                              self.Job_title, 
