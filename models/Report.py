@@ -1,4 +1,4 @@
-class reports:
+class Reports:
     def __init__(self):
         self.report_ID = None
         self.work_order_ID = None

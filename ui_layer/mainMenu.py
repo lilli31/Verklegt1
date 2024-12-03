@@ -1,5 +1,5 @@
-from employeeMain import EmployeeMain
-from directorMain import DirectorMain
+from ui_layer.employeeMain import EmployeeMain
+from ui_layer.directorMain import DirectorMain
 
 class MainMenu:
 
@@ -8,8 +8,6 @@ class MainMenu:
 
         self.displayLogo()
         self.displayChoice() 
-
-
 
     def displayLogo(self):
         """ prints a formatted string of the logo """
@@ -26,9 +24,9 @@ class MainMenu:
 
         self.choice = input("1) Employee\n2) Director\nq) Quit\n\nSign in as: ")
         
-        while self.choice != "q":
+        if self.choice != "q":
             if self.choice == "1":
-                EmployeeMain()
+                EmployeeMain(19)
             elif self.choice == "2":
                 DirectorMain()
             else:

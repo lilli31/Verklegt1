@@ -4,3 +4,4 @@ class Destination:
         self.country = None
         self.destination = None
         
+        

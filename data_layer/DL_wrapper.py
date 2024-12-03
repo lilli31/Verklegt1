@@ -1,3 +1,8 @@
-class DataLayerWrapper:
+from data_layer.DL_employee_data import DL_Employees
 
-    pass
+class DataLayerWrapper:
+    
+    @classmethod
+    def getAllEmployees(cls) -> dict:
+        dl_employee_instance = DL_Employees()
+        return dl_employee_instance.FetchEmployees()
