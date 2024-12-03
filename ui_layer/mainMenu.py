@@ -24,13 +24,11 @@ class MainMenu:
 
         self.choice = input("1) Employee\n2) Director\nq) Quit\n\nSign in as: ")
         
-        while self.choice != "q":
+        if self.choice != "q":
             if self.choice == "1":
                 EmployeeMain(19)
-                self.choice = "q" #Fyrir test
             elif self.choice == "2":
                 DirectorMain()
-                self.choice = "q" #Fyrir test
             else:
                 print("\nInvalid choice, try again!\n")
                 self.choice = input("1) Employee\n2) Director\n\nSign in as: ")
