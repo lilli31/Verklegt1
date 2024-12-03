@@ -1,1 +1,12 @@
-Work_order_ID,Work_order_address,Maintenance_info,Regular,Days_between,Finished,Approved,State_of_work_order,Priority
+Work_order_ID,Employee,Contractor,Contractor_ID,Property_IDs,Maintenance_info,Regular,Days_between_or_when,Visible,Opens,Finished,Approved,State_of_work_order,Priority
+1,None,False,None,HAR11-HAR130,Make nuclear oven subcritical,True,<= 7,01.01-31.12,x Day after finished,False,False,Closed,B
+2,None,False,None,HAR11-HAR130,Hang up christmas decoration,True,01.11,15.10-01.11,01.11 x,False,False,Closed,C
+3,None,False,None,HAR11-HAR130,Take down christmas decoration,True,10.01,01.01-10.01,10.01 x,False,False,Closed,C
+4,None,False,None,FRE41-FRE410,Cool down igloos and stop loopholes,True,1,01.07-25.08,15.07 Day after finished,False,False,Closed,B
+5,None,False,None,NYG11-NYG110,Pull weeds from dirthouses,True,7,15.04-30.09,01.05 7 days after finished,False,False,Closed,C
+6,None,False,None,SUL421-SUL422,Clean windows,True,7,01.01-31.12,x 7 days after finished,False,False,Closed,C
+7,None,False,None,IGI71,Clean windows,True,7,01.01-31.12,x 7 days after finished,False,False,Closed,C
+8,None,False,None,NUU41-NUU48,Clean windows,True,7,01.01-31.12,x 7 days after finished,False,False,Closed,C
+9,None,False,None,VEI2121-VEI2124,Clean windows,True,7,01.01-31.12,x 7 days after finished,False,False,Closed,C
+10,None,False,None,SKA151-SKA153,Clean windows,True,7,01.01-31.12,x 7 days after finished,False,False,Closed,C
+11,None,False,None,SVA221-SVA225,Clean windows,True,7,01.01-31.12,x 7 days after finished,False,False,Closed,C
