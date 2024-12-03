@@ -45,22 +45,35 @@ class LL_Employee:
     # def getFilteredEmployees():
     #     pass
 
-    def getEmployeeInfo(self, ID_num):
+    def getEmployeeInfo(self, ID_num) -> list:
 
-        self.ID_num = ID_num #Fyrir test
-        Employee = "Employee" #Fyrir test
-        Name = "The Best Employee" #Fyrir test
+        all_employees_info = dict
+        name_and_job_list = []
+
+        for id_number in all_employees_info:
+            if id_number == ID_num:
+                name = id_number[1]
+                job = id_number[0]
+                name_and_job_list.append(name)
+                name_and_job_list.append(job)
+
+        return name_and_job_list
 
 
-        return [Employee, Name] #Fyrir test
+        # self.ID_num = ID_num #Fyrir test
+        # Employee = "Employee" #Fyrir test
+        # Name = "The Best Employee" #Fyrir test
 
-        """Returning all the employee information from the employees.csv file"""
 
-        employees_info = [] #Getting the information from the employees.csv file#
-        with open("data_files/employees.csv", newline='') as csvfile: #Reading the data files#
-            csvreader = csv.reader(csvfile) #Reading the data from the employees.csv file#
-            next(csvreader)  
-            for row in csvreader:    
-                employees_info.append(Employee(*row)) #Getting the list of employees and their information#     
-        return employees_info
+        # return [Employee, Name] #Fyrir test
+
+        # """Returning all the employee information from the employees.csv file"""
+
+        # employees_info = [] #Getting the information from the employees.csv file#
+        # with open("data_files/employees.csv", newline='') as csvfile: #Reading the data files#
+        #     csvreader = csv.reader(csvfile) #Reading the data from the employees.csv file#
+        #     next(csvreader)  
+        #     for row in csvreader:    
+        #         employees_info.append(Employee(*row)) #Getting the list of employees and their information#     
+        # return employees_info
             

@@ -13,7 +13,7 @@ class EmployeeMain(Employees):
         self.displayEmployeeMain()
 
     def displayEmployeeMain(self):
-        print("-" * 70)
+        print("\n", ("-" * 70))
         print("|",(self.name.ljust(33)), (self.job_title.rjust(32)), "|")
         print("-" * 70)
 
