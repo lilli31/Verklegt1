@@ -41,7 +41,7 @@ class DL_Employees():
      
     def UpdateEmployees(self, employee_to_update: Employees):
 
-        """Update all the employees"""
+        """Update information for employee"""
 
         employees=self.FetchEmployees()
         with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
@@ -52,7 +52,7 @@ class DL_Employees():
                 i = employees.index(employee_to_update)
                 employees[i] = employee_to_update
             except:
-                    pass
+                pass
                 
             for employee in employees:
 

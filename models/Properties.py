@@ -7,3 +7,5 @@ class Properties:
         self.address = address
         self.rental_space = rental_space 
 
+    def __eq__(self, other):
+        return self.destination_ID == other.destination_ID

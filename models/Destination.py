@@ -4,4 +4,5 @@ class Destination:
         self.country = country
         self.destination = destination
         
-        
+    def __eq__(self, other):
+        return self.destination_ID == other.destination_ID    

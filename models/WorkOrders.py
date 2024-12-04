@@ -16,3 +16,5 @@ class WorkOrders:
         self.state_of_work_order = state_of_work_order
         self.priority = priority
 
+    def __eq__(self, other):
+        return self.work_order_id == other.work_order_id

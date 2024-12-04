@@ -9,6 +9,7 @@ class contractors:
         self.address = address
         self.jobs = jobs
 
-
+def __eq__(self, other):
+        return self.contractor_id == other.contractor_id
       
     
