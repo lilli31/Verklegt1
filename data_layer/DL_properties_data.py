@@ -49,7 +49,7 @@ class DL_Properties():
 
 
 
-    def delete_property(self, property: Property):   
+    def DeleteProperty(self, property: Property):   
         with open(self.filepath, 'r+') as file:
             rows = file.readlines()
             file.seek(0)
@@ -61,7 +61,7 @@ class DL_Properties():
 
 
 
-    def update_properties(self, property: Property): #þarf að breyta í eintölu
+    def UpdateProperties(self, property: Property): #þarf að breyta í eintölu
         with open(self.filepath, 'w') as file:
             for row in reader:
                 if row[]
