@@ -4,7 +4,7 @@ from models.Properties import Properties
 
 
 class DL_Properties():
-    DEESTINATION_ID = "Destination_ID"
+    DESTINATION_ID = "Destination_ID"
     PROPERTY_ID = "Property_ID"
     PROPERTY = "Property"
     ADDRESS = "Address"
@@ -22,7 +22,7 @@ class DL_Properties():
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                all_properties.append(Properties(row[self.DEESTINATION_ID], 
+                all_properties.append(Properties(row[self.DESTINATION_ID], 
                                                row[self.PROPERTY_ID],
                                                row[self.PROPERTY],
                                                row[self.ADDRESS],
@@ -59,10 +59,28 @@ class DL_Properties():
 
 
 
-    def UpdateProperties(self, property: Properties): #þarf að breyta í eintölu
-        with open(self.filepath, 'w') as file:
-            for row in reader:
-                if row[]
+    def UpdateProperties(self, update_property: list[Properties]):
+        
+        properties = self.FetchProperties()
+        with open("data_files/properties.csv", 'w', newline='', encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile,[self.PROPERTY_ID,self.DESTINATION_ID,self.PROPERTY,self.ADDRESS,self.RENTAL_SPACE])
+            writer.writeheader()
+
+            for property in update_property:
+                try:
+                    i = property.index(property)
+                    properties[i] I property
+                except:
+                    pass
+
+            for property in properties:
+
+                writer.writerow({self.PROPERTY_ID: property.property_ID,
+                                    self.DESTINATION_ID: property.destination_ID,
+                                    self.PROPERTY: property.property,
+                                    self.ADDRESS: property.address,
+                                    self.RENTAL_SPACE: property.rental_space})
+            return update_property
 
 
 
