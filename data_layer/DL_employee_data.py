@@ -38,64 +38,63 @@ class DL_Employees():
                                                row[self.EMAIL],
                                                row[self.DESTINATION_ID])) 
         return all_employees
-    
-    def StoreEmployees(self):
-        """Storing the employees information in the employees.csv file"""
-
+     
+    def StoreEmployees(self, store_employees: list[Employees]):
+        
+        """Storing all the employees"""
+        with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile)
+            writer.writeheader()
+            for employee in store_employees:
+                writer.writerow({self.EMPLOYEE_ID: employee.employee_id, 
+                                     self.JOB_TITLE: employee.job_title,
+                                     self.NAME: employee.name,
+                                     self.SSN: employee.ssn,
+                                     self.ADDRESS: employee.address,
+                                     self.POSTCODE: employee.postcode,
+                                     self.HOMEPHONE: employee.homephone,
+                                     self.TELEPHONE: employee.telephone,
+                                     self.EMAIL: employee.email,
+                                     self.DESTINATION_ID: employee.destination_id})
+            return store_employees
+   
+    def AddEmployees(self,employee:Employees):
+        
+        """Adding a new employee to the employees.csv file"""
+        
         with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-        writer = csv.writer(csvfile)
-    #         writer.writerow(["ID","Job_title","Name","SSN","Address","Postcode","Homephone","Telephone","Email","Place","Place_ID","Country"])
-    #         writer.writerow([self.ID, 
-    #                              self.Job_title, 
-    #                              self.Name, 
-    #                              self.SSN, 
-    #                              self.Address, 
-    #                              self.Postcode, 
-    #                              self.Homephone, 
-    #                              self.Telephone, 
-    #                              self.Email, 
-    #                              self.Place, 
-    #                              self.Place_ID, 
-    #                              self.Country])
+            writer = csv.writer(csvfile)
+            writer.writerow([employee.employee_id,
+                            employee.job_title,
+                            employee.name,
+                            employee.ssn,
+                            employee.address,
+                            employee.postcode,
+                            employee.homephone,
+                            employee.telephone,
+                            employee.email,
+                            employee.destination_id])
+        return "Employee added successfully"
 
-    # def FetchEmployees(self):
         
-    #     """Fetching all the employees information from the employees.csv file"""
+    def DeleteEmployee(self, employee_id):
         
-    #     employees_info = []
-    #     with open("data_files/employees.csv", 'r') as csvfile:
-    #         reader = csv.reader(csvfile)
-    #         next(reader) # skipping header
-    #         for row in reader:
-    #             employees_info.append(Employee(*row))
-    #     return employees_info
-    
-    # def AddEmployee(employee):
+        """Deleting an employee from the employees.csv file"""
         
-    #     """Adding a new employee to the employees.csv file"""
+        employees_info = self.FetchEmployees() #Getting the list of the employees 
+        updated_employees_info = [employee for employee in employees_info if employee.ID!= employee]
+        self.Store_employees(updated_employees_info)
+        return "Employee deleted successfully"
         
-    #     self.store_employees(employee)
-    #     return "Employee added successfully"
-    
-    # def DeleteEmployee(self.employee):
+    def UpdateEmployee(self, updated_employee):
         
-    #     """Deleting an employee from the employees.csv file"""
+        """Updating an employee in the employees.csv file"""
         
-    #     employees_info = self.get_all_employees_info()
-    #     updated_employees_info = [employee for employee in employees_info if employee.ID!= employee]
-    #     self.updated_employees(updated_employees_info)
-    #     return "Employee deleted successfully"
-    
-    # def UpdateEmployee(self, employee):
-        
-    #     """Updating an employee's information in the employees.csv file"""
-        
-    #     employees_info = self.get_all_employees_info()
-    #     updated_employees_info = [employee if employee.ID == employee.ID else employee for employee in employees_info]
-    #     updated_employees_info.append(employee)
-    #     self.updated_employees(updated_employees_info)
-    #     return "Employee updated successfully"
-    
+        employees_info = self.FetchEmployees() 
+        updated_employees_info = [employee if employee.ID == employee.ID else employee for employee in employees_info]
+        self.StoreEmployees(updated_employees_info)
+        return "Employee updated successfully"
+
 
     
 

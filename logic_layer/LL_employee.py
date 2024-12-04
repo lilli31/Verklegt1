@@ -1,3 +1,5 @@
+from data_layer.DL_wrapper import DataLayerWrapper
+
 class LL_Employee:
 
     # def verifyEmployeeID(employeeID):
@@ -47,7 +49,7 @@ class LL_Employee:
 
     def getEmployeeInfo(self, ID_num) -> list:
 
-        all_employees_info = dict
+        all_employees_info = DataLayerWrapper.getAllEmployees()
         name_and_job_list = []
 
         for id_number in all_employees_info:
