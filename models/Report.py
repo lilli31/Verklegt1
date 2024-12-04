@@ -10,4 +10,5 @@ class Reports:
         self.contractor_cost = contractor_cost
         self.total_cost = total_cost
 
-        
+    def __eq__(self, other):
+        return self.report_ID == other.report_id    

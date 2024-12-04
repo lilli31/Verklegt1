@@ -15,6 +15,6 @@ class Employees:
         self.destination_id = destination_id
 
     def __eq__(self, other):
-        return self.ssn == other.ssn
+        return self.employee_id == other.employee_id
 
 

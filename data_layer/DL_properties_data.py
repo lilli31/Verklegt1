@@ -4,7 +4,7 @@ from models.Properties import Properties
 
 
 class DL_Properties():
-    DEESTINATION_ID = "Destination_ID"
+    DESTINATION_ID = "Destination_ID"
     PROPERTY_ID = "Property_ID"
     PROPERTY = "Property"
     ADDRESS = "Address"
@@ -12,8 +12,6 @@ class DL_Properties():
 
     def __init__ (self):
         pass
-
-
 
     def FetchProperties(self) -> list[Properties]: 
 
@@ -24,7 +22,7 @@ class DL_Properties():
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                all_properties.append(Properties(row[self.DEESTINATION_ID], 
+                all_properties.append(Properties(row[self.DESTINATION_ID], 
                                                row[self.PROPERTY_ID],
                                                row[self.PROPERTY],
                                                row[self.ADDRESS],
@@ -49,30 +47,32 @@ class DL_Properties():
 
 
 
-    def DeleteProperty(self, property: Properties):   
-        with open(self.filepath, 'r+') as file:
-            rows = file.readlines()
-            file.seek(0)
-            for property_to_delete in rows:    
-                if property_to_delete.strip() != format(property): #if property is not the one we want to delete we keep it by writing
-                    file.write(property_to_delete)
-                #if it is the property we want to delete it will not be written and truncated from file
-                file.truncate()
+
+    def UpdateProperties(self, property_to_update: Properties):
+
+        """Update information for a property"""
+        
+        properties = self.FetchProperties()
+        with open("data_files/properties.csv", 'w', newline='', encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile,[self.PROPERTY_ID,self.DESTINATION_ID,self.PROPERTY,self.ADDRESS,self.RENTAL_SPACE])
+            writer.writeheader()
+
+            try:
+                i = property.index(property_to_update)
+                properties[i] = property_to_update
+            except:
+                pass
+               
+
+            for property in properties:
+                writer.writerow({self.PROPERTY_ID: property.property_ID,
+                                    self.DESTINATION_ID: property.destination_ID,
+                                    self.PROPERTY: property.property,
+                                    self.ADDRESS: property.address,
+                                    self.RENTAL_SPACE: property.rental_space})
+            return property_to_update
 
 
 
-    def UpdateProperties(self, property: Properties): #þarf að breyta í eintölu
-        with open(self.filepath, 'w') as file:
-            for row in reader:
-                if row[]
-
-
-
-
-
-#dl_properties = DL_Properties()
-#properties = dl_properties.fetch_properties()
-#dl_properties.add_properties(properties[0])
-#dl_properties.delete_property(properties[1])
 
 

@@ -57,14 +57,36 @@ class DL_Report(Reports):
                             report.total_cost])
         return "Report added successfully"
 
-    def DeleteReports(self):
-        pass
 
 
-    def UpdateReports(self):
-        pass
+    def UpdateReports(self, report_to_update: Reports):
 
-    def MarkReportAsDone(self):
+        """Update information for a report"""
+
+        reports = self.FetchReports()
+        with open("data_files/properties.csv", 'w', newline='', encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile,[self.REPORT_ID,self.WORK_ORDER_ID,self.WORK_DONE,self.CONTRACTOR,self.CONTRACTOR_ID,self.ADDITIONAL_REPORT_INFO,self.MATERIAL_COST,self.CONTRACTOR_COST,self.TOTAL_COST])
+            writer.writeheader()
+
+        try:
+            i = reports.index(report_to_update)
+            reports[i] = report_to_update
+        except:
+            pass
+
+        for report in reports:
+            writer.writerow({self.REPORT_ID: report.report_ID,
+                                self.WORK_ORDER_ID: report.work_order_ID,
+                                self.WORK_DONE: report.work_done,
+                                self.CONTRACTOR: report.contractor,
+                                self.CONTRACTOR_ID: report.contractor_ID,
+                                self.ADDITIONAL_REPORT_INFO: report.additional_report_info,
+                                self.MATERIAL_COST: report.material_cost,
+                                self.CONTRACTOR_COST: report.contractor_cost,
+                                self.TOTAL_COST: report.total_cost})
+        return report_to_update
+
+
 
 
 
