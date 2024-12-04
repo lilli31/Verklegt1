@@ -1,10 +1,14 @@
 class contractors:
-    def __init__(self):
-        self.contractor_id = None
-        self.name = None
-        self.company = None
-        self.phone = None
-        self.contact_name = None
-        self.opening = None
-        self.address = None
-        self.jobs = None
+    def __init__(self, contractor_id: int = None, name: str = None, company: bool = None, phone: int = None, contact_name: str = None, opening: str = None, address: str = None, jobs: dict = None):
+        self.contractor_id = contractor_id
+        self.name = name
+        self.company = company
+        self.phone = phone
+        self.contact_name = contact_name
+        self.opening = opening
+        self.address = address
+        self.jobs = jobs
+
+
+      
+    
