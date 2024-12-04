@@ -6,7 +6,7 @@ Job_title,Address,Email,PostCode,SSN,Telephone,Homephone,Destination_ID,Name,Emp
  Employee,Qunguleq 3759,nauja.lynge@nanair.is,3905, 3112942559,+354 777 1363,+299 31 21 64,2,Nauja Lynge,6
  Director,Tjarnardeild 8,annette.djurhuus@nanair.is,100,3112932559,+354 777 1381,+298 77 20 00,4,Annette Djurhuus,7
  Employee,Traðartún 3,aki.knudsen@nanair.is,108,3112922559,+354 777 1381,+298 61 72 10,4,Áki Knudsen,8
- Employee,Í Lágni 19,Andre.hjaltalin@nanair.is,100,3112912559,+354 777 1382,+298 66 14 41,4,André Hjaltalin,9
+Employee,Í Lágni 19,Andre.hjaltalin@nanair.is,100,3112912559,+354 777 1382,+298 66 14 41,4,André Hjaltalin,9
 Director,Gummyvejens 4,annabjorhus@nanair.is,3300,3112902559,+354 999 879,+299 66 55 66,3,Anna Bjorhus,10
 Employee,Gummyvejens 10,frederikn@nanair.is,3300,3112892559,+354 223 1194,+299 63 11 36,3,Frederik Nils,11
 Employee,Rajenslig 45,libbejo@nanair.is,3661,3112882559,+354 800 0022,+299 77 22 56,3,Libbe Jonger,12
@@ -17,12 +17,5 @@ Director,Stura 9,harryp@nanair.is,ZE29SE,3112842559,01595 565656,01595 807224,5,
 Employee,Stura 11,hermioneg@nanair.is,ZE29SE,3112832559,01595 446731,01595 807227,5,Hermione Granger,17
 Employee,Stura 13,ronaldw@nanair.is,ZE29SE,3112822559,01595 220046,01595 807225,5,Ronald Weasly,18
 Employee,Skvisustraeti 8,bestofthebest@nanair.is,888,0601037777,+354 666 9999,+354 566 9999,2,The Best Employee,19
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,siggi,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
-Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+
+

@@ -9,6 +9,7 @@ class MainMenu:
 
         self.logic_layer_wrapper = LogicLayerWrapper()
         self.employee_main = EmployeeMain(19, self.logic_layer_wrapper)
+        self.director_main = DirectorMain(13, self.logic_layer_wrapper)
 
         self.displayLogo()
         self.displayChoice() 
@@ -27,13 +28,13 @@ class MainMenu:
     def displayChoice(self):
         """ displays the user interface choice """
 
-        self.choice = input("1) Employee\n2) Director\nq) Quit\n\nSign in as: ")
+        self.choice = input("1) Employee\n2) Director\n\nq) Quit\n\nSign in as: ")
         
         if self.choice != "q":
             if self.choice == "1":
                 self.employee_main.displayEmployeeMain()
             elif self.choice == "2":
-                DirectorMain()
+                self.director_main.displayDirectorMain()
             else:
                 print("\nInvalid choice, try again!\n")
                 self.choice = input("1) Employee\n2) Director\n\nSign in as: ")

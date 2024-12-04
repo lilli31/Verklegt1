@@ -39,20 +39,19 @@ class DL_Employees():
                                                row[self.DESTINATION_ID])) 
         return all_employees
      
-    def UpdateEmployees(self, update_employees: list[Employees]):
-        #append
+    def UpdateEmployees(self, employee_to_update: Employees):
+
         """Update all the employees"""
 
         employees=self.FetchEmployees()
         with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
-            writer = csv.DictWriter(csvfile, [self.JOB_TITLE,self.ADDRESS,self.EMAIL,self.POSTCODE,self.SSN,self.TELEPHONE,self.HOMEPHONE,self.DESTINATION_ID,self.NAME, self.EMPLOYEE_ID])
+            writer = csv.DictWriter(csvfile, [self.EMPLOYEE_ID, self.JOB_TITLE, self.NAME, self.SSN, self.ADDRESS, self.POSTCODE, self.HOMEPHONE, self.TELEPHONE, self.EMAIL, self.DESTINATION_ID])
             writer.writeheader()
 
-            for employee in update_employees:
-                try: 
-                    i = employees.index(employee)
-                    employees[i] = employee
-                except:
+            try: 
+                i = employees.index(employee_to_update)
+                employees[i] = employee_to_update
+            except:
                     pass
                 
             for employee in employees:
@@ -67,7 +66,7 @@ class DL_Employees():
                                      self.TELEPHONE: employee.telephone,
                                      self.EMAIL: employee.email,
                                      self.DESTINATION_ID: employee.destination_id})
-            return update_employees
+            return employee_to_update
    
     def AddEmployees(self,employee:Employees):
         

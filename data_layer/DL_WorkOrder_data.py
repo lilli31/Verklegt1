@@ -53,7 +53,7 @@ class DL_WorkOrders():
 
         with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow([workorder.work_order_id],
+            writer.writerow([workorder.work_order_id,
                             workorder.employee,
                             workorder.contractor,
                             workorder.contractor_id,
@@ -66,17 +66,52 @@ class DL_WorkOrders():
                             workorder.finished,
                             workorder.approved,
                             workorder.state_of_work_order,
-                            workorder.priority)
+                            workorder.priority])
             
         return "Work Order added successfully"
 
        
-    def FinishedWorkOrder(self):
-        pass
 
-    def ApprovedWorkOrder(self):
-        pass
+    def FinishedWorkOrder(self, workorder: WorkOrders):
+        workorder.finished = True
+        self.UpdateWorkOrders([workorder])
 
-    def UpdateWorkOrders(self):
-        pass
+    def ApprovedWorkOrder(self, workorder: WorkOrders):
+        workorder.approved = True
+        self.UpdateWorkOrders([workorder])
+
+
+
+    def UpdateWorkOrders(self, update_workorders: list[WorkOrders]):
+
+
+        workorders = self.FetchWorkOrders()
+        with open("data_files/work_orders.csv", "w", newline="", encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile, [self.WORK_ORDER_ID, self.EMPLOYEE, self.CONTRACTOR, self.CONTRACTOR_ID, self.PROPERTY_IDS, self.MAINTENANCE_INFO, self.REGULAR, self.DAYS_BETWEEN_OR_WHEN, self.VISIBLE, self.OPENS, self.FINISHED, self.APPROVED, self.STATE_OF_WORK_ORDER, self.PRIORITY])
+            writer.writeheader()
+
+            for workorder in update_workorders:
+                try:
+                    i = workorders.index(workorder)
+                    workorders[i] = workorder
+                except:
+                    pass
+
+            for workorder in workorders:
+                writer.writerow({self.WORK_ORDER_ID: workorder.work_order_id,
+                                 self.EMPLOYEE: workorder.employee,
+                                 self.CONTRACTOR: workorder.contractor,
+                                 self.CONTRACTOR_ID: workorder.contractor_id,
+                                 self.PROPERTY_IDS: workorder.property_ids,
+                                 self.MAINTENANCE_INFO: workorder.maintenance_info,
+                                 self.REGULAR: workorder.regular,
+                                 self.DAYS_BETWEEN_OR_WHEN: workorder.days_between_or_when,
+                                 self.VISIBLE: workorder.visible,
+                                 self.OPENS: workorder.opens,
+                                 self.FINISHED: workorder.finished,
+                                 self.APPROVED: workorder.approved,
+                                 self.STATE_OF_WORK_ORDER: workorder.state_of_work_order,
+                                 self.PRIORITY: workorder.priority})
+            return update_workorders
+        
 

@@ -13,8 +13,6 @@ class DL_Properties():
     def __init__ (self):
         pass
 
-
-
     def FetchProperties(self) -> list[Properties]: 
 
         """Fetching all the properties"""
