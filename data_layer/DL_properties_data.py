@@ -8,7 +8,7 @@ class DL_Properties():
     PROPERTY_ID = "Property_ID"
     PROPERTY = "Property"
     ADDRESS = "Address"
-    RENTAL_SPACE = "Rental space" 
+    RENTAL_SPACE = "Rental_space" 
 
     def __init__ (self):
         pass
@@ -26,20 +26,20 @@ class DL_Properties():
                                                row[self.PROPERTY_ID],
                                                row[self.PROPERTY],
                                                row[self.ADDRESS],
-                                               row[self.RENTAL_SPACE],)) 
+                                               row[self.RENTAL_SPACE])) 
         return all_properties
     
             
 
 
-    def AddProperty(self,property:Property):
+    def AddProperty(self,property:Properties):
         
         """Adding a new property to the properties.csv file"""
         
         with open("data_files/properties.csv", 'a', newline='', encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow([property.property_id,
-                            property.destination_id,
+            writer.writerow([property.property_ID,
+                            property.destination_ID,
                             property.property, 
                             property.address,
                             property.rental_space])
