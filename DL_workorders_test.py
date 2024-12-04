@@ -9,27 +9,27 @@ for workorder in wo_data:
 
 
 
-new_workorder = WorkOrders("12", "None", "False", "None", "Blaaaaa", "gera hitt og þetta",
+new_workorder = WorkOrders("99", "None", "False", "None", "Blaaaaa", "gera hitt og þetta",
                          "true", "7", "01.01", "now", "false", "false", "closed", "B")
 
 try:
     # Adding a new employee VIRKAR
-    result = data_layer.AddWorkOrders(new_workorder)
+    result = data_layer.AddWorkOrder(new_workorder)
     print(result) 
-    
-except Exception as e:
-    print("An error occurred during testing:", e)
-
-
-new_workorder.contractor = "True"
-
-try:
-    # Adding a new employee VIRKAR
-    result = data_layer.UpdateWorkOrders([new_workorder])
-    print([r.contractor for r in result]) 
     
 except Exception as e:
     print("An error occurred during testing:")
     print(e)
 
+
+new_workorder.work_order_id = "6"
+new_workorder.contractor = "ja"
+
+try:
+    # Adding a new employee EKKI VIRKAR
+    result = data_layer.UpdateWorkOrder(new_workorder)
+    print(result)
+    #print([r.contractor for r in result]) 
+    
+except Exception as e:
     print("An error occurred during testing:", e)

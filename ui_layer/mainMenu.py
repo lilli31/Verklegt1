@@ -1,14 +1,21 @@
 from ui_layer.employeeMain import EmployeeMain
 from ui_layer.directorMain import DirectorMain
 from logic_layer.LL_wrapper import LogicLayerWrapper
+import os
 
 class MainMenu:
 
     def __init__(self):
         """ displays the main menu """
 
+        self.logo = f"""
+                                ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
+               __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
+         ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
+                " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
+              """
         self.logic_layer_wrapper = LogicLayerWrapper()
-        self.employee_main = EmployeeMain(19, self.logic_layer_wrapper)
+        self.employee_main = EmployeeMain(9, self.logic_layer_wrapper)
         self.director_main = DirectorMain(13, self.logic_layer_wrapper)
 
         self.displayLogo()
@@ -18,12 +25,16 @@ class MainMenu:
     def displayLogo(self):
         """ prints a formatted string of the logo """
 
-        print(f"""
-                                ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
-               __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
-         ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
-                " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
-              """)
+        self.clear_display()
+        BLUE = f"\033[96m{self.logo}\033[0m"
+
+        print(BLUE)
+        # print(f"""
+        #                         ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
+        #        __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
+        #  ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
+        #         " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
+        #       """)
         
     def displayChoice(self):
         """ displays the user interface choice """
@@ -32,9 +43,14 @@ class MainMenu:
         
         if self.choice != "q":
             if self.choice == "1":
-                self.employee_main.displayEmployeeMain()
+                self.clear_display()
+                self.employee_main.displayEmployeeMain(self.logo)
             elif self.choice == "2":
-                self.director_main.displayDirectorMain()
+                self.clear_display()
+                self.director_main.displayDirectorMain(self.logo)
             else:
                 print("\nInvalid choice, try again!\n")
                 self.choice = input("1) Employee\n2) Director\n\nSign in as: ")
+
+    def clear_display(self) -> None:
+        os.system('cls' if os.name == 'nt' else 'clear')

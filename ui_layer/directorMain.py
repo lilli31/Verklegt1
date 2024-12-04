@@ -5,13 +5,14 @@ class DirectorMain:
         self.job_title = employee_info[1]
         self.name = employee_info[0]
 
-    def displayDirectorMain(self):
+    def displayDirectorMain(self, logo):
+        print(f"\033[96m{logo}\033[0m")
         print("\n")
-        print("-" * 85)
-        print("|",(self.name.ljust(33)), (self.job_title.rjust(47)), "|")
-        print("-" * 85)
-        print("|", "Employees".ljust(10), "|", "Contractors".ljust(10), "|", "Properties".ljust(10), "|", "Work-orders".ljust(10), "|", "My work-orders".ljust(10), "|", "My reports".ljust(10), "|")
-        print("-" * 85)
+        print("-" * 100)
+        print("|",(self.name.ljust(33)), (self.job_title.rjust(62)), "|")
+        print("-" * 100)
+        print("|", "Employees".ljust(13), "|", "Contractors".ljust(13), "|", "Properties".ljust(13), "|", "Work-orders".ljust(13), "|", "My work-orders".ljust(15), "|", "My reports".ljust(14), "|")
+        print("-" * 100)
         print("\n")
 
     def backToChoice(): #Sama fall til í employeeMain, skoða það
