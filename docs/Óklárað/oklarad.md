@@ -11,3 +11,5 @@ Taka út delete alls staðar
 Userinn þarf að geta sláð inn ID hjá employee t.d. og fengið upp þann employee. Hann breytir síðan uppl. og þá breytum við bara þeim user. Hvernig veit userinn að hann er að breyta rétt? To files?
 
 Þurfum að geta eytt út óbreytta employee og sett inn í staðinn breytta employee
+
+Laga skil í add DL
