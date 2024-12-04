@@ -1,5 +1,5 @@
 class contractors:
-    def __init__(self, contractor_id: int = None, name: str = None, company: str = None, phone: int = None, contact_name: str = None, opening: int = None, address: str = None, jobs: str = None):
+    def __init__(self, contractor_id: int = None, name: str = None, company: bool = None, phone: int = None, contact_name: str = None, opening: str = None, address: str = None, jobs: dict = None):
         self.contractor_id = contractor_id
         self.name = name
         self.company = company
