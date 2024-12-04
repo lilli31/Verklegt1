@@ -50,7 +50,7 @@ class LL_Employee:
     # def getFilteredEmployees():
     #     pass
 
-    def getEmployeeInfo(self, ID_num: int) -> tuple:
+    def getAllEmployeeInfo(self, ID_num: int) -> tuple:
 
         # all_employees_info = DataLayerWrapper.getAllEmployees()
         all_info = self.dl_wrapper.getAllEmployees()

@@ -18,9 +18,6 @@ class DL_Contractor():
     def __init__(self):
         pass
 
-    def StoreContractors(self):
-        pass
-
     def FetchContractors(self) -> list[Contractors]:
 
         """Fetching all contractors"""
@@ -44,49 +41,49 @@ class DL_Contractor():
 
 
     def UpdateContractors(self, UpdateContractors: list[Contractors]):
-        #append
         """Update all the contractors"""
 
         contractors=self.FetchContractors()
         with open("data_files/contractors.csv", 'w', newline='', encoding="utf-8") as csvfile:
-            writer = csv.DictWriter(csvfile, [self.CONTRACTOR_ID,self.NAME,self.COMPANY,self.CONTACT_PHONE,self.CONTACT_NAME,self.OPENING,self.ADDRESS,self.JOBS])
+            writer = csv.DictWriter(csvfile, [self.CONTRACTOR_ID,self.NAME,self.COMPANY,self.CONTACT_PHONE,self.CONTACT_NAME,self.SPECIALTY,self.OPENING,self.ADDRESS,self.JOBS])
             writer.writeheader()
 
-            for employee in UpdateContractors:
+            for contractor in UpdateContractors:
                 try: 
-                    i = contractors.index(contractors)
-                    contractors[i] = contractors
+                    i = contractors.index(contractor)
+                    contractors[i] = contractor
                 except:
                     pass
                 
-            for contractors in contractors:
+            for contractor in contractors:
 
-                writer.writerow({self.CONTRACTOR_ID: contractors.contractor_id, 
-                                 self.NAME: contractors.name,
-                                 self.COMPANY: contractors.company,
-                                 self.CONTACT_NAME: contractors.contact_name,
-                                 self.CONTACT_PHONE: contractors.contact_phone,
-                                 self.ADDRESS: contractors.address,
-                                 self.SPECIALTY: contractors.specialty,
-                                 self.OPENING: contractors.opening_hours,
-                                 self.JOBS: contractors.jobs})
+                writer.writerow({self.CONTRACTOR_ID: contractor.contractor_id, 
+                                 self.NAME: contractor.name,
+                                 self.COMPANY: contractor.company,
+                                 self.CONTACT_NAME: contractor.contact_name,
+                                 self.CONTACT_PHONE: contractor.contact_phone,
+                                 self.ADDRESS: contractor.address,
+                                 self.SPECIALTY: contractor.specialty,
+                                 self.OPENING: contractor.opening_hours,
+                                 self.JOBS: contractor.former_jobs})
             return UpdateContractors
 
 
     def AddContractors(self,contractors: Contractors):
         
         """Adding a new contractor to the employees.csv file"""
-        
-        with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([contractors.contractor_id,
-                             contractors.name,
-                             contractors.contact_name,
-                             contractors.contact_phone,
-                             contractors.address,
-                             contractors.opening_hours,
-                             contractors.jobs])
+        try:
+            with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([contractors.contractor_id,
+                                contractors.name,
+                                contractors.contact_name,
+                                contractors.contact_phone,
+                                contractors.address,
+                                contractors.opening_hours,
+                                contractors.former_jobs])
+            return "Contractor added successfully"
+        except Exception:
+            pass
+            
                              
-        return "Contractor added successfully"
-    
-#þarf að vera hægt að vísa í contractor

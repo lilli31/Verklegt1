@@ -71,21 +71,22 @@ class DL_Employees():
     def AddEmployees(self,employee:Employees):
         
         """Adding a new employee to the employees.csv file"""
-        
-        with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([employee.employee_id,
-                            employee.job_title,
-                            employee.name,
-                            employee.ssn,
-                            employee.address,
-                            employee.postcode,
-                            employee.homephone,
-                            employee.telephone,
-                            employee.email,
-                            employee.destination_id])
-        return "Employee added successfully"
-
+        try:
+            with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([employee.employee_id,
+                                employee.job_title,
+                                employee.name,
+                                employee.ssn,
+                                employee.address,
+                                employee.postcode,
+                                employee.homephone,
+                                employee.telephone,
+                                employee.email,
+                                employee.destination_id])
+            return "Employee added successfully"
+        except Exception:
+            pass
         
     
         

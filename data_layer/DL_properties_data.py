@@ -35,16 +35,17 @@ class DL_Properties():
     def AddProperty(self,property:Properties):
         
         """Adding a new property to the properties.csv file"""
-        
-        with open("data_files/properties.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([property.property_ID,
-                            property.destination_ID,
-                            property.property, 
-                            property.address,
-                            property.rental_space])
-        return "Property added successfully"
-
+        try:
+            with open("data_files/properties.csv", 'a', newline='', encoding="utf-8") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([property.property_ID,
+                                property.destination_ID,
+                                property.property, 
+                                property.address,
+                                property.rental_space])
+            return "Property added successfully"
+        except Exception:
+            pass
 
 
 
