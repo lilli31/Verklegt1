@@ -47,48 +47,32 @@ class DL_Properties():
 
 
 
-    def DeleteProperty(self, property: Properties):   
-        with open(self.filepath, 'r+') as file:
-            rows = file.readlines()
-            file.seek(0)
-            for property_to_delete in rows:    
-                if property_to_delete.strip() != format(property): #if property is not the one we want to delete we keep it by writing
-                    file.write(property_to_delete)
-                #if it is the property we want to delete it will not be written and truncated from file
-                file.truncate()
 
+    def UpdateProperties(self, property_to_update: Properties):
 
-
-    def UpdateProperties(self, update_property: list[Properties]):
+        """Update information for a property"""
         
         properties = self.FetchProperties()
         with open("data_files/properties.csv", 'w', newline='', encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile,[self.PROPERTY_ID,self.DESTINATION_ID,self.PROPERTY,self.ADDRESS,self.RENTAL_SPACE])
             writer.writeheader()
 
-            for property in update_property:
-                try:
-                    i = property.index(property)
-                    properties[i] I property
-                except:
-                    pass
+            try:
+                i = property.index(property_to_update)
+                properties[i] = property_to_update
+            except:
+                pass
+               
 
             for property in properties:
-
                 writer.writerow({self.PROPERTY_ID: property.property_ID,
                                     self.DESTINATION_ID: property.destination_ID,
                                     self.PROPERTY: property.property,
                                     self.ADDRESS: property.address,
                                     self.RENTAL_SPACE: property.rental_space})
-            return update_property
+            return property_to_update
 
 
 
-
-
-#dl_properties = DL_Properties()
-#properties = dl_properties.fetch_properties()
-#dl_properties.add_properties(properties[0])
-#dl_properties.delete_property(properties[1])
 
 
