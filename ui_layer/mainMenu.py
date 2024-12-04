@@ -8,8 +8,14 @@ class MainMenu:
     def __init__(self):
         """ displays the main menu """
 
+        self.logo = f"""
+                                ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
+               __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
+         ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
+                " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
+              """
         self.logic_layer_wrapper = LogicLayerWrapper()
-        self.employee_main = EmployeeMain(19, self.logic_layer_wrapper)
+        self.employee_main = EmployeeMain(9, self.logic_layer_wrapper)
         self.director_main = DirectorMain(13, self.logic_layer_wrapper)
 
         self.displayLogo()
@@ -19,14 +25,8 @@ class MainMenu:
     def displayLogo(self):
         """ prints a formatted string of the logo """
 
-
-        logo = f"""
-                                ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
-               __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
-         ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
-                " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
-              """
-        BLUE = f"\033[96m{logo}\033[0m"
+        self.clear_display()
+        BLUE = f"\033[96m{self.logo}\033[0m"
 
         print(BLUE)
         # print(f"""
@@ -44,9 +44,10 @@ class MainMenu:
         if self.choice != "q":
             if self.choice == "1":
                 self.clear_display()
-                self.employee_main.displayEmployeeMain()
+                self.employee_main.displayEmployeeMain(self.logo)
             elif self.choice == "2":
-                self.director_main.displayDirectorMain()
+                self.clear_display()
+                self.director_main.displayDirectorMain(self.logo)
             else:
                 print("\nInvalid choice, try again!\n")
                 self.choice = input("1) Employee\n2) Director\n\nSign in as: ")
