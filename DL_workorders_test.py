@@ -19,3 +19,17 @@ try:
     
 except Exception as e:
     print("An error occurred during testing:", e)
+
+
+new_workorder.contractor = "True"
+
+try:
+    # Adding a new employee VIRKAR
+    result = data_layer.UpdateWorkOrders([new_workorder])
+    print([r.contractor for r in result]) 
+    
+except Exception as e:
+    print("An error occurred during testing:")
+    print(e)
+
+    print("An error occurred during testing:", e)
