@@ -8,6 +8,7 @@ class MainMenu:
 
         self.displayLogo()
         self.displayChoice() 
+        self.employee_main = EmployeeMain(19)
 
     def displayLogo(self):
         """ prints a formatted string of the logo """
@@ -26,7 +27,7 @@ class MainMenu:
         
         if self.choice != "q":
             if self.choice == "1":
-                EmployeeMain(19)
+                self.employee_main()
             elif self.choice == "2":
                 DirectorMain()
             else:
