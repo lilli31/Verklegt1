@@ -6,9 +6,11 @@ class MainMenu:
     def __init__(self):
         """ displays the main menu """
 
+        self.employee_main = EmployeeMain(19)
+
         self.displayLogo()
         self.displayChoice() 
-        self.employee_main = EmployeeMain(19)
+        
 
     def displayLogo(self):
         """ prints a formatted string of the logo """
@@ -27,7 +29,7 @@ class MainMenu:
         
         if self.choice != "q":
             if self.choice == "1":
-                self.employee_main()
+                self.employee_main.displayEmployeeMain()
             elif self.choice == "2":
                 DirectorMain()
             else:

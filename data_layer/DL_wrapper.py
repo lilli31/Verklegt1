@@ -1,8 +1,9 @@
 from data_layer.DL_employee_data import DL_Employees
 
 class DataLayerWrapper:
+
+    def __init__(self):
+        self.dl_employee_instance = DL_Employees()
     
-    @classmethod
-    def getAllEmployees(cls) -> list:
-        dl_employee_instance = DL_Employees()
-        return dl_employee_instance.FetchEmployees()
+    def getAllEmployees(self) -> list:
+        return self.dl_employee_instance.FetchEmployees()
