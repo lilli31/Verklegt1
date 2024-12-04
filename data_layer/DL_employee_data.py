@@ -39,13 +39,13 @@ class DL_Employees():
                                                row[self.DESTINATION_ID])) 
         return all_employees
      
-    def StoreEmployees(self, store_employees: list[Employees]):
-        
+    def UpdateEmployees(self, update_employees: list[Employees]):
+        #append
         """Storing all the employees"""
         with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile)
             writer.writeheader()
-            for employee in store_employees:
+            for employee in update_employees:
                 writer.writerow({self.EMPLOYEE_ID: employee.employee_id, 
                                      self.JOB_TITLE: employee.job_title,
                                      self.NAME: employee.name,
@@ -56,7 +56,7 @@ class DL_Employees():
                                      self.TELEPHONE: employee.telephone,
                                      self.EMAIL: employee.email,
                                      self.DESTINATION_ID: employee.destination_id})
-            return store_employees
+            return update_employees
    
     def AddEmployees(self,employee:Employees):
         
@@ -77,6 +77,7 @@ class DL_Employees():
         return "Employee added successfully"
 
         
+    #Passa að þetta virkar
     def DeleteEmployee(self, employee_id):
         
         """Deleting an employee from the employees.csv file"""
@@ -86,15 +87,7 @@ class DL_Employees():
         self.Store_employees(updated_employees_info)
         return "Employee deleted successfully"
         
-    def UpdateEmployee(self, updated_employee):
-        
-        """Updating an employee in the employees.csv file"""
-        
-        employees_info = self.FetchEmployees() 
-        updated_employees_info = [employee if employee.ID == employee.ID else employee for employee in employees_info]
-        self.StoreEmployees(updated_employees_info)
-        return "Employee updated successfully"
-
+    
 
     
 

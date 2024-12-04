@@ -6,7 +6,9 @@ data_layer = DL_Employees()
 
 emp_data = data_layer.FetchEmployees()
 for employee in emp_data:
-    print(employee.address)
+    print(employee.telephone)
+
+    #Ef það er til 1 núþegar þá má ekki adda 1 laga;)
 
 new_employee = Employees("1", "Employee", "Yeehaw", "333", "505 Laugavegur", "67890",
                          "+354 555 5555", "+354 555 0000", "jessir@example.com", "5")
