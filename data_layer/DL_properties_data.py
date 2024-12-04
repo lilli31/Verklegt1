@@ -1,6 +1,6 @@
 import csv
 import os
-from models.properties import Properties
+from models.Properties import Properties
 
 
 class DL_Properties():
@@ -40,16 +40,16 @@ class DL_Properties():
         
         with open("data_files/properties.csv", 'a', newline='', encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow([properties.property_id,
+            writer.writerow([property.property_id,
                             property.destination_id,
-                            property.property,
+                            property.property, 
                             property.address,
                             property.rental_space])
         return "Property added successfully"
 
 
 
-    def delete_property(self, property: Property):   
+    def DeleteProperty(self, property: Properties):   
         with open(self.filepath, 'r+') as file:
             rows = file.readlines()
             file.seek(0)
@@ -61,7 +61,7 @@ class DL_Properties():
 
 
 
-    def update_properties(self, property: Property): #þarf að breyta í eintölu
+    def UpdateProperties(self, property: Properties): #þarf að breyta í eintölu
         with open(self.filepath, 'w') as file:
             for row in reader:
                 if row[]
@@ -70,8 +70,8 @@ class DL_Properties():
 
 
 
-dl_properties = DL_Properties()
-properties = dl_properties.fetch_properties()
+#dl_properties = DL_Properties()
+#properties = dl_properties.fetch_properties()
 #dl_properties.add_properties(properties[0])
 #dl_properties.delete_property(properties[1])
 

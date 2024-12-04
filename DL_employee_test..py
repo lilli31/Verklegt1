@@ -6,7 +6,7 @@ data_layer = DL_Employees()
 
 emp_data = data_layer.FetchEmployees()
 for employee in emp_data:
-    print(employee.telephone)
+    print(employee.email)
 
     #Ef það er til 1 núþegar þá má ekki adda 1 laga;)
 
@@ -20,3 +20,16 @@ try:
     
 except Exception as e:
     print("An error occurred during testing:")
+
+new_employee.name = "siggi"
+
+try:
+    # Adding a new employee VIRKAR
+    result = data_layer.UpdateEmployees([new_employee])
+    print([r.name for r in result]) 
+    
+except Exception as e:
+    print("An error occurred during testing:")
+    print(e)
+
+    print("An error occurred during testing:", e)
