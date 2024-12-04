@@ -3,11 +3,11 @@ from models.WorkOrders import WorkOrders
 
 
 class DL_WorkOrders():
-    WORK_ORDER_ID = "WorkOrder_ID"
+    WORK_ORDER_ID = "Work_order_ID"
     EMPLOYEE = "Employee"
     CONTRACTOR = "Contractor"
     CONTRACTOR_ID = "Contractor_ID"
-    PROPERTY_IDS = "Property_ID"
+    PROPERTY_IDS = "Property_IDs"
     MAINTENANCE_INFO = "Maintenance_info"
     REGULAR = "Regular"
     DAYS_BETWEEN_OR_WHEN = "Days_between_or_when"
@@ -18,7 +18,7 @@ class DL_WorkOrders():
     STATE_OF_WORK_ORDER = "State_of_work_order"
     PRIORITY = "Priority"
 
-    DATA_FILES = "data_files/work_orders.csv"
+
 
 
 
@@ -28,7 +28,7 @@ class DL_WorkOrders():
     def FetchWorkOrders(self) -> list[WorkOrders]:
 
         all_WorkOrders: list[WorkOrders] = []
-        with open("DATA_FILES", "r", newline="", encoding="utf-8") as csvfile:
+        with open("data_files/work_orders.csv", "r", newline="", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
 
             for row in reader:
@@ -51,7 +51,7 @@ class DL_WorkOrders():
 
     def AddWorkOrders(self, workorder: WorkOrders):
 
-        with open("DATA_FILES", "a", newline= "", encoding="utf-8") as csvfile:
+        with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow([workorder.work_order_id],
                             workorder.employee,

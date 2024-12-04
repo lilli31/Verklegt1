@@ -1,12 +1,10 @@
-from logic_layer.LL_wrapper import LogicLayerWrapper
 
 
 class EmployeeMain:
 
-    def __init__(self, id_number):
+    def __init__(self, id_number, ll_wrapper):
         self.id_number = id_number
-        self.ll_instance = LogicLayerWrapper()
-        self.employee_info = self.ll_instance.getEmployee(self.id_number)
+        self.employee_info = ll_wrapper.getEmployee(self.id_number)
         self.job_title = self.employee_info[0]
         self.name = self.employee_info[1]
         self.displayEmployeeMain()

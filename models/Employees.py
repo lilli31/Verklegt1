@@ -1,5 +1,6 @@
 
 
+
 class Employees:
     def __init__ (self, employee_id: int = None, job_title: str = None, name: str = None, SSN: int = None, address: str = None, postcode : int = None, homephone : int = None, telephone : int = None, email : int = None, destination_id : int = None):
         self.employee_id = employee_id
@@ -12,6 +13,8 @@ class Employees:
         self.telephone = telephone
         self.email = email
         self.destination_id = destination_id
-      
+
+    def __eq__(self, other):
+        return self.ssn == other.ssn
 
 

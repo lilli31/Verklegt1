@@ -1,28 +1,28 @@
-Employee_ID,Job_title,Name,SSN,Address,PostCode,Homephone,Telephone,Email,Destination_ID
-2, Employee,Jacob Yxa,3112982559,Vei 224 3B,9171,+47 92 09 77 01,+354 777 1338,jacob.yxa@nanair.is,6
-3, Employee,Nanna Daema,3112972559,Ivan Starostin st. 109,9178,+47 92 09 77 02,+354 777 1339,nanna.daema@nanair.is,6
-4, Director,Minik Wallace,3112962559,Isaajap Aqqutaa 1,3900,+299 34 24 67,+354 777 1361,minik.wallace@nanair.is,2
-5, Employee,Aqqaluk Lynge,3112952559,Qattaaq 44,3905,+299 35 24 66,+354 777 1362,aqqaluk.lynge@nanair.is,2
-6, Employee,Nauja Lynge, 3112942559,Qunguleq 3759,3905,+299 31 21 64,+354 777 1363,nauja.lynge@nanair.is,2
-7, Director,Annette Djurhuus,3112932559,Tjarnardeild 8,100,+298 77 20 00,+354 777 1381,annette.djurhuus@nanair.is,4
-8, Employee,Áki Knudsen,3112922559,Traðartún 3,108,+298 61 72 10,+354 777 1381,aki.knudsen@nanair.is,4
-9, Employee,André Hjaltalin,3112912559,Í Lágni 19,100,+298 66 14 41,+354 777 1382,Andre.hjaltalin@nanair.is,4
-10,Director,Anna Bjorhus,3112902559,Gummyvejens 4,3300,+299 66 55 66,+354 999 879,annabjorhus@nanair.is,3
-11,Employee,Frederik Nils,3112892559,Gummyvejens 10,3300,+299 63 11 36,+354 223 1194,frederikn@nanair.is,3
-12,Employee,Libbe Jonger,3112882559,Rajenslig 45,3661,+299 77 22 56,+354 800 0022,libbejo@nanair.is,3
-13,Director,Vigdís Hervör,3112872559,Laugavegur 95,101,+354 554 5555,+354 864 4955,vigdishervor@gmail.is,1
-14,Employee,Sandra Gunnarsdóttir, 3112862559,Lindargata 44,101,+354 511 5633,+354 735 5611,sandragunn@nanair.is,1
-15,Employee,Valur Valsson,3112852559,Álagrandi 27,107,+354 599 4321,+354 881 3000,valurvals@nanair.is,1
-16,Director,Harry Potter,3112842559,Stura 9,ZE29SE,01595 807224,01595 565656,harryp@nanair.is,5
-17,Employee,Hermione Granger,3112832559,Stura 11,ZE29SE,01595 807227,01595 446731,hermioneg@nanair.is,5
-18,Employee,Ronald Weasly,3112822559,Stura 13,ZE29SE,01595 807225,01595 220046,ronaldw@nanair.is,5
-19,Employee,The Best Employee,0601037777,Skvisustraeti 8,888,+354 566 9999,+354 666 9999,bestofthebest@nanair.is,2
-
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
-1,Employee,Yeehaw,333,505 Laugavegur,67890,+354 555 5555,+354 555 0000,jessir@example.com,5
+Job_title,Address,Email,PostCode,SSN,Telephone,Homephone,Destination_ID,Name,Employee_ID
+ Employee,Vei 224 3B,jacob.yxa@nanair.is,9171,3112982559,+354 777 1338,+47 92 09 77 01,6,Jacob Yxa,2
+ Employee,Ivan Starostin st. 109,nanna.daema@nanair.is,9178,3112972559,+354 777 1339,+47 92 09 77 02,6,Nanna Daema,3
+ Director,Isaajap Aqqutaa 1,minik.wallace@nanair.is,3900,3112962559,+354 777 1361,+299 34 24 67,2,Minik Wallace,4
+ Employee,Qattaaq 44,aqqaluk.lynge@nanair.is,3905,3112952559,+354 777 1362,+299 35 24 66,2,Aqqaluk Lynge,5
+ Employee,Qunguleq 3759,nauja.lynge@nanair.is,3905, 3112942559,+354 777 1363,+299 31 21 64,2,Nauja Lynge,6
+ Director,Tjarnardeild 8,annette.djurhuus@nanair.is,100,3112932559,+354 777 1381,+298 77 20 00,4,Annette Djurhuus,7
+ Employee,Traðartún 3,aki.knudsen@nanair.is,108,3112922559,+354 777 1381,+298 61 72 10,4,Áki Knudsen,8
+ Employee,Í Lágni 19,Andre.hjaltalin@nanair.is,100,3112912559,+354 777 1382,+298 66 14 41,4,André Hjaltalin,9
+Director,Gummyvejens 4,annabjorhus@nanair.is,3300,3112902559,+354 999 879,+299 66 55 66,3,Anna Bjorhus,10
+Employee,Gummyvejens 10,frederikn@nanair.is,3300,3112892559,+354 223 1194,+299 63 11 36,3,Frederik Nils,11
+Employee,Rajenslig 45,libbejo@nanair.is,3661,3112882559,+354 800 0022,+299 77 22 56,3,Libbe Jonger,12
+Director,Laugavegur 95,vigdishervor@gmail.is,101,3112872559,+354 864 4955,+354 554 5555,1,Vigdís Hervör,13
+Employee,Lindargata 44,sandragunn@nanair.is,101, 3112862559,+354 735 5611,+354 511 5633,1,Sandra Gunnarsdóttir,14
+Employee,Álagrandi 27,valurvals@nanair.is,107,3112852559,+354 881 3000,+354 599 4321,1,Valur Valsson,15
+Director,Stura 9,harryp@nanair.is,ZE29SE,3112842559,01595 565656,01595 807224,5,Harry Potter,16
+Employee,Stura 11,hermioneg@nanair.is,ZE29SE,3112832559,01595 446731,01595 807227,5,Hermione Granger,17
+Employee,Stura 13,ronaldw@nanair.is,ZE29SE,3112822559,01595 220046,01595 807225,5,Ronald Weasly,18
+Employee,Skvisustraeti 8,bestofthebest@nanair.is,888,0601037777,+354 666 9999,+354 566 9999,2,The Best Employee,19
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,siggi,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
+Employee,505 Laugavegur,jessir@example.com,67890,333,+354 555 0000,+354 555 5555,5,Yeehaw,1
