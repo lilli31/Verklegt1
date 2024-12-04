@@ -18,7 +18,7 @@ class DL_WorkOrders():
     STATE_OF_WORK_ORDER = "State_of_work_order"
     PRIORITY = "Priority"
 
-    #DATA_FILES = "data_files/work_orders.csv"
+
 
 
 
@@ -51,7 +51,7 @@ class DL_WorkOrders():
 
     def AddWorkOrders(self, workorder: WorkOrders):
 
-        with open("DATA_FILES", "a", newline= "", encoding="utf-8") as csvfile:
+        with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow([workorder.work_order_id],
                             workorder.employee,
