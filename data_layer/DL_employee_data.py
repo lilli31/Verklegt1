@@ -38,45 +38,34 @@ class DL_Employees():
                                                row[self.EMAIL],
                                                row[self.DESTINATION_ID])) 
         return all_employees
-    
-    def StoreEmployees(self):
-        """Storing the employees information in the employees.csv file"""
-
-        with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-        writer = csv.writer(csvfile)
-    #         writer.writerow(["ID","Job_title","Name","SSN","Address","Postcode","Homephone","Telephone","Email","Place","Place_ID","Country"])
-    #         writer.writerow([self.ID, 
-    #                              self.Job_title, 
-    #                              self.Name, 
-    #                              self.SSN, 
-    #                              self.Address, 
-    #                              self.Postcode, 
-    #                              self.Homephone, 
-    #                              self.Telephone, 
-    #                              self.Email, 
-    #                              self.Place, 
-    #                              self.Place_ID, 
-    #                              self.Country])
-
-    # def FetchEmployees(self):
+     
+    #def StoreEmployees(self, store_employees: list[Employees]):
         
-    #     """Fetching all the employees information from the employees.csv file"""
+        """Storing all the employees"""
+        with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
+            writer = csv.DictWriter(csvfile)
+            writer.writeheader()
+            for employee in store_employees:
+                writer.writerow({self.EMPLOYEE_ID: employee.ID, 
+                                     self.JOB_TITLE: employee.job_title,
+                                     self.NAME: employee.name,
+                                     self.SSN: employee.ssn,
+                                     self.ADDRESS: employee.address,
+                                     self.POSTCODE: employee.postcode,
+                                     self.HOMEPHONE: employee.homephone,
+                                     self.TELEPHONE: employee.telephone,
+                                     self.EMAIL: employee.email,
+                                     self.DESTINATION_ID: employee.destination_id})
+            return store_employees
+   
+    def AddEmployee(employee):
         
-    #     employees_info = []
-    #     with open("data_files/employees.csv", 'r') as csvfile:
-    #         reader = csv.reader(csvfile)
-    #         next(reader) # skipping header
-    #         for row in reader:
-    #             employees_info.append(Employee(*row))
-    #     return employees_info
-    
-    # def AddEmployee(employee):
+        """Adding a new employee to the employees.csv file"""
         
-    #     """Adding a new employee to the employees.csv file"""
+        Self.store_employees(employee)
+        return "Employee added successfully"
         
-    #     self.store_employees(employee)
-    #     return "Employee added successfully"
-    
+  
     # def DeleteEmployee(self.employee):
         
     #     """Deleting an employee from the employees.csv file"""
@@ -95,7 +84,7 @@ class DL_Employees():
     #     updated_employees_info.append(employee)
     #     self.updated_employees(updated_employees_info)
     #     return "Employee updated successfully"
-    
+  
 
     
 
