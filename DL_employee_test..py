@@ -31,3 +31,5 @@ try:
 except Exception as e:
     print("An error occurred during testing:")
     print(e)
+
+    print("An error occurred during testing:", e)
