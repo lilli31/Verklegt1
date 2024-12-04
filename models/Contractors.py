@@ -1,5 +1,5 @@
 class Contractors:
-    def __init__(self, contractor_id: int = None, name: str = None, company: bool = None, contact_phone: int = None, specialty: str = None, contact_name: str = None, opening_hours: str = None, address: str = None, former_jobs: dict = None):
+    def __init__(self, contractor_id: int = None, name: str = None, company: bool = None, contact_phone: int = None, contact_name: str = None, specialty: str = None, opening_hours: str = None, address: str = None, former_jobs: dict = None):
         self.contractor_id = contractor_id
         self.name = name
         self.company = company
@@ -13,7 +13,6 @@ class Contractors:
     def __eq__(self,other):
         return self.contractor_id == other.contractor_id
 
-def __eq__(self, other):
-        return self.contractor_id == other.contractor_id
+
       
     
