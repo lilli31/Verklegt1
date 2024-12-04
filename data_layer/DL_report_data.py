@@ -5,20 +5,20 @@ class DL_Report(Reports):
     def __init__(self):
          super().__init__()
 
-    def store_reports(self):
-        pass
+    #def store_reports(self):
+        
 
 
     def fetch_reports(self):
-        file = open("reports.csv", "r")
-        reader = csv.reader(file)
-        rows = list(reader)
+        with open("reports.csv", "r") as file:
+            reader = csv.reader(file)
+            lines = list(reader)
 
-        keys = rows[0]
+            keys = lines[0]
 
-        reports_dict = {key: [] for key in keys}
+            reports_dict = {key: [] for key in keys}
 
-        for row in rows[1:]:
+            for row in lines[1:]:
                 for key, value in zip(keys, row):
                     reports_dict[key].append(value)
         return reports_dict
