@@ -3,11 +3,11 @@ from models.Employees import Employees
 
 
 data_layer = DL_Employees()
-"""
-emp_data = data.AddEmployees()
+
+emp_data = data_layer.FetchEmployees()
 for employee in emp_data:
-    print(employee)
-"""
+    print(employee.address)
+
 new_employee = Employees("1", "Employee", "Yeehaw", "333", "505 Laugavegur", "67890",
                          "+354 555 5555", "+354 555 0000", "jessir@example.com", "5")
 
