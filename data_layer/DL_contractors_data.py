@@ -41,7 +41,6 @@ class DL_Contractor():
 
 
     def UpdateContractors(self, UpdateContractors: list[Contractors]):
-        #append
         """Update all the contractors"""
 
         contractors=self.FetchContractors()
