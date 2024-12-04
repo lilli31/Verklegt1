@@ -230,15 +230,15 @@ Mættir:
     Rakel
 
 Markmið dagsins: 
-    Markmiðið í dag er að klára data layers, byrja á wrapperum, komast sem lengst í UI layers og gera testing fyrir data layers.
+    Markmiðið í dag er að klára data layers, byrja á wrapperum og gera testing fyrir data layers.
 
 #####Dagur 10 (04.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag: 
-    Regína komst langt með UI main layer-in og Tinna, Vigdís K, Þorbjörg, Rakel og Vigdís H náðu að klára öll data layer-in ásamt testing fyrir þau. 
+    Regína vann í mainmenu, employee main og director main í UI layerinu. Hún lagaði klasa instance-in þannig að þau yrðu bara til einu sinni og tengdi alla employee klasana saman til að prufa virknina. Það tókst að senda input frá UI niður í data og fá allar réttu upplýsingarnar upp svo nú er hún meira confidant varðandi samvinnu lagana þriggja. Vigdís H kláraði flest föllin í employee data layerinu og lét testin virka, allt nema update. Hún hjálpaði svo Tinnu, Rakel, Þorbjörgu og Vigdísi K að gera hina data layer klasana. Þær fjórar höfðu klasann hennar Vigdísar H til hliðsjónar og hún sá um að hjálpa þeim að útfæra föllin í himum data klösunum. 
 
 Áætlun morgundagsins:
-    Áætlun morgundagsins er að byrja á logic layer-inu og halda áfram með UI layer-in.
+    Áætlun morgundagsins er að Vigdís H og Regína ætla að útfæra wrapper-anna og hjálpa stelpunum með logic-layerið. Vigdís K, Rakel, Þorbjörg og Tinna ætla að byrja í logic-layerinu. 
 
 
 #####Dagur 11 (05.12.24) - Morgunfundur#####  
