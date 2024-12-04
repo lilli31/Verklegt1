@@ -57,14 +57,18 @@ class DL_Report(Reports):
                             report.total_cost])
         return "Report added successfully"
 
-    def DeleteReports(self):
-        pass
-
 
     def UpdateReports(self):
         pass
 
+
     def MarkReportAsDone(self):
+        pass
+
+
+    def ReopenReport(self):
+        pass
+
 
 
 
