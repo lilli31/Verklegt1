@@ -19,4 +19,4 @@ try:
     print(result) 
     
 except Exception as e:
-    print("An error occurred during testing:")
+    print("An error occurred during testing:", e)

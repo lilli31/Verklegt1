@@ -17,6 +17,7 @@ class DL_Report(Reports):
         pass
         
 
+
     def FetchReports(self) -> list[Reports]: 
 
         """Fetching all the reports"""
@@ -26,22 +27,45 @@ class DL_Report(Reports):
             reader = csv.DictReader(csvfile)
 
             for row in reader:
-                all_properties.append(Properties(row[self.DEESTINATION_ID], 
-                                               row[self.PROPERTY_ID],
-                                               row[self.PROPERTY],
-                                               row[self.ADDRESS],
-                                               row[self.RENTAL_SPACE],)) 
-        return all_properties
+                all_reports.append(Reports(row[self.REPORT_ID], 
+                                               row[self.WORK_ORDER_ID],
+                                               row[self.WORK_DONE],
+                                               row[self.CONTRACTOR],
+                                               row[self.CONTRACTOR_ID],
+                                               row[self.ADDITIONAL_REPORT_INFO],
+                                               row[self.MATERIAL_COST],
+                                               row[self.CONTRACTOR_COST],
+                                               row[self.TOTAL_COST])) 
+        return all_reports
 
-    def add_reports(self):
+
+
+    def AddReport(self,report:Reports):
+        
+        """Adding a new report to the reports.csv file"""
+        
+        with open("data_files/reports.csv", 'a', newline='', encoding="utf-8") as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow([report.report_ID,
+                            report.work_order_ID,
+                            report.work_done,
+                            report.contractor,
+                            report.contractor_ID,
+                            report.additional_report_info,
+                            report.material_cost,
+                            report.contractor_cost,
+                            report.total_cost])
+        return "Report added successfully"
+
+    def DeleteReports(self):
         pass
 
 
-    def delete_reports(self):
+    def UpdateReports(self):
         pass
 
+    def MarkReportAsDone(self):
 
-    def update_reports(self):
-        pass
+
 
  
