@@ -40,12 +40,12 @@ class DL_Employees():
         return all_employees
      
     def UpdateEmployees(self, update_employees: list[Employees]):
-        #append
+
         """Update all the employees"""
 
         employees=self.FetchEmployees()
         with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
-            writer = csv.DictWriter(csvfile, [self.JOB_TITLE,self.ADDRESS,self.EMAIL,self.POSTCODE,self.SSN,self.TELEPHONE,self.HOMEPHONE,self.DESTINATION_ID,self.NAME, self.EMPLOYEE_ID])
+            writer = csv.DictWriter(csvfile, [self.EMPLOYEE_ID, self.JOB_TITLE, self.NAME, self.SSN, self.ADDRESS, self.POSTCODE, self.HOMEPHONE, self.TELEPHONE, self.EMAIL, self.DESTINATION_ID])
             writer.writeheader()
 
             for employee in update_employees:
