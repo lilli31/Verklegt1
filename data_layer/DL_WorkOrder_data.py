@@ -55,24 +55,26 @@ class DL_WorkOrders():
 
         """Adding a new work order to work_orders.csv file"""
 
-        with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([workorder.work_order_id,
-                            workorder.employee,
-                            workorder.contractor,
-                            workorder.contractor_id,
-                            workorder.property_ids,
-                            workorder.maintenance_info,
-                            workorder.regular,
-                            workorder.days_between_or_when,
-                            workorder.visible,
-                            workorder.opens,
-                            workorder.finished,
-                            workorder.approved,
-                            workorder.state_of_work_order,
-                            workorder.priority])
-            
-        return "Work Order added successfully"
+        try:
+            with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([workorder.work_order_id,
+                                workorder.employee,
+                                workorder.contractor,
+                                workorder.contractor_id,
+                                workorder.property_ids,
+                                workorder.maintenance_info,
+                                workorder.regular,
+                                workorder.days_between_or_when,
+                                workorder.visible,
+                                workorder.opens,
+                                workorder.finished,
+                                workorder.approved,
+                                workorder.state_of_work_order,
+                                workorder.priority])    
+            return "Work Order added successfully"
+        except Exception:
+            pass
 
        
 
