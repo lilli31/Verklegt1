@@ -197,7 +197,7 @@ Markmið dagsins:
 
 Mættir:
     Regína
-    Ísold 
+    Þórbjörg
     Vigdís K 
     Tinna 
     Rakel 
@@ -210,9 +210,12 @@ Markmið dagsins:
 #####Dagur 9 (03.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag:
-    Við náðum að klára models og byrja á...
+
+    Tinna, Þórbjörg, Rakel og Vigdís K gerðu alla model klasana og byrjuðu að skoða data layer-ið. Regína gerði main skjal og vann í nokkrum klösum. Hún gerði MainMenu klasann svo að hann virkar núna þó að hann sé ekki fullkláraður útlitslega séð. Regína útbjó föll í báðum wrapper-unum og eitt í LL_Employee klasanum. Hún er komin langleiðina með að skilja hvernig á að útbúa tilvik af klösum og er alveg að fatta hvernig layer-in vinna saman. Vigdís H mætti þrátt fyrir veikindin uppúr 14 og hjálpaði Tinnu, Rakel, Þórbjörgu og Vigdísi að laga/skilja data-layer-ið. Vigdís H kláraði einnig datalayerið fyrir employees og náði að testa alla klasana nema einn, fær aðstoð á mrg.
 
 Áætlun morgundagsins:
+
+    Þar sem dagurinn í dag fór mikið í útskýringar og skilning þá er markmiðið okkar að taka góðan stöðufund í fyrramálið til þess að sjá hvað hver og ein okkar getur gert. 
 
 
 
