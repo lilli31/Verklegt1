@@ -5,4 +5,4 @@ data_layer = DL_WorkOrders()
 
 wo_data = data_layer.FetchWorkOrders()
 for workorder in wo_data:
-    print(workorder.property_ids)
+    print(workorder.work_order_id, workorder.property_ids)

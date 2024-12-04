@@ -3,11 +3,11 @@ from models.WorkOrders import WorkOrders
 
 
 class DL_WorkOrders():
-    WORK_ORDER_ID = "WorkOrder_ID"
+    WORK_ORDER_ID = "Work_order_ID"
     EMPLOYEE = "Employee"
     CONTRACTOR = "Contractor"
     CONTRACTOR_ID = "Contractor_ID"
-    PROPERTY_IDS = "Property_ID"
+    PROPERTY_IDS = "Property_IDs"
     MAINTENANCE_INFO = "Maintenance_info"
     REGULAR = "Regular"
     DAYS_BETWEEN_OR_WHEN = "Days_between_or_when"
