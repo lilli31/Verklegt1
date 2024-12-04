@@ -2,25 +2,25 @@ from data_layer.DL_wrapper import DataLayerWrapper
 
 class LL_Employee:
 
-    # def verifyEmployeeID(employeeID):
+    def verifyEmployeeID(employeeID):
         
-    #     """Checking if the employee ID is valid"""
+         """Checking if the employee ID is valid"""
         
-    #     if len(employeeID)!= 6:
-    #         return False
-    #     if not employeeID.isdigit():
-    #         return False
-    #     return True
+         if len(employeeID)!= 6:
+             return False
+         if not employeeID.isdigit():
+             return False
+         return True
     
-    # def verifySocialSecurity(self, employee): 
+    def verifySocialSecurity(self, employee): 
 
-    #     """Checking if the social security number is valid"""
+         """Checking if the social security number is valid"""
 
-    #     if len(employee.social_security)!= 10:
-    #         return False
-    #     if not employee.social_security.isdigit():
-    #         return False
-    #     return True
+         if len(employee.social_security)!= 10:
+             return False
+         if not employee.social_security.isdigit():
+             return False
+         return True
 
     # def verifyEmployeeInfo(employee.info):
         
@@ -53,10 +53,13 @@ class LL_Employee:
 
         for employee in all_employees_info:
             if employee.employee_id == ID_num:
+                # name = id_number[1]
+                # job = id_number[0]
+                # name_and_job_list.append(name)
+                # name_and_job_list.append(job)
                 name = employee.name
                 job_title = employee.job_title
-        if name is None or job_title is None:
-            raise ValueError(f"Employee with ID {ID_num} not found")
+    
         return name, job_title
         # return name_and_job_list
 
