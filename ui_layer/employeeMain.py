@@ -21,3 +21,4 @@ class EmployeeMain:
 
     def displayChoices(self):
         choice = input("1) View my work-orders\n2) View my reports\n\nq) Quit\n\nInput choice: ")
+        
