@@ -9,16 +9,6 @@ class DL_Report(Reports):
         
 
     def fetch_reports(self):
-        with open("reports.csv", "r") as file:
-            reader = csv.reader(file)
-            lines = list(reader)
-            
-            keys = lines[0]
-            reports_dict = {key: [] for key in keys}
-            for row in lines[1:]:
-                for key, value in zip(keys, row):
-                    reports_dict[key].append(value)
-        return reports_dict
 
 
     def add_reports(self):
