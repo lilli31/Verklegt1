@@ -67,6 +67,6 @@ class DL_Properties():
 dl_properties = DL_Properties()
 properties = dl_properties.fetch_properties()
 #dl_properties.add_properties(properties[0])
-dl_properties.delete_property(properties[1])
+#dl_properties.delete_property(properties[1])
 
 
