@@ -10,7 +10,7 @@ for employee in emp_data:
 
     #Ef það er til 1 núþegar þá má ekki adda 1 laga;)
 
-new_employee = Employees("1", "Employee", "Yeehaw", "333", "505 Laugavegur", "67890",
+new_employee = Employees("20", "Employee", "Yeehaw", "333", "505 Laugavegur", "67890",
                          "+354 555 5555", "+354 555 0000", "jessir@example.com", "5")
 
 try:
@@ -21,11 +21,12 @@ try:
 except Exception as e:
     print("An error occurred during testing:")
 
-new_employee.name = "siggi"
+new_employee.employee_id = "19"
+new_employee.name = "kiki"
+
 
 try:
-    # Adding a new employee VIRKAR
-    result = data_layer.UpdateEmployees([new_employee])
+    result = data_layer.UpdateEmployees(new_employee)
     print([r.name for r in result]) 
     
 except Exception as e:
