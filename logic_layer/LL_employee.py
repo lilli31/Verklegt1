@@ -47,19 +47,21 @@ class LL_Employee:
     # def getFilteredEmployees():
     #     pass
 
-    def getEmployeeInfo(self, ID_num) -> list:
+    def getEmployeeInfo(self, ID_num) -> tuple:
 
         all_employees_info = DataLayerWrapper.getAllEmployees()
-        name_and_job_list = []
 
-        for id_number in all_employees_info:
-            if id_number == ID_num:
-                name = id_number[1]
-                job = id_number[0]
-                name_and_job_list.append(name)
-                name_and_job_list.append(job)
+        for employee in all_employees_info:
+            if employee.employee_id == ID_num:
+                # name = id_number[1]
+                # job = id_number[0]
+                # name_and_job_list.append(name)
+                # name_and_job_list.append(job)
+                name = employee.name
+                job_title = employee.job_title
 
-        return name_and_job_list
+        return name, job_title
+        # return name_and_job_list
 
 
         # self.ID_num = ID_num #Fyrir test
