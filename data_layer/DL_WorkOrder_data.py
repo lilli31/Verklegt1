@@ -18,7 +18,7 @@ class DL_WorkOrders():
     STATE_OF_WORK_ORDER = "State_of_work_order"
     PRIORITY = "Priority"
 
-    DATA_FILES = "data_files/work_orders.csv"
+    #DATA_FILES = "data_files/work_orders.csv"
 
 
 
@@ -28,7 +28,7 @@ class DL_WorkOrders():
     def FetchWorkOrders(self) -> list[WorkOrders]:
 
         all_WorkOrders: list[WorkOrders] = []
-        with open("DATA_FILES", "r", newline="", encoding="utf-8") as csvfile:
+        with open("data_files/work_orders.csv", "r", newline="", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
 
             for row in reader:
