@@ -1,12 +1,14 @@
 from ui_layer.employeeMain import EmployeeMain
 from ui_layer.directorMain import DirectorMain
+from logic_layer.LL_wrapper import LogicLayerWrapper
 
 class MainMenu:
 
     def __init__(self):
         """ displays the main menu """
 
-        self.employee_main = EmployeeMain(19)
+        self.logic_layer_wrapper = LogicLayerWrapper()
+        self.employee_main = EmployeeMain(19, self.logic_layer_wrapper)
 
         self.displayLogo()
         self.displayChoice() 

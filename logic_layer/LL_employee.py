@@ -2,8 +2,8 @@ from data_layer.DL_wrapper import DataLayerWrapper
 from models.Employees import Employees
 
 class LL_Employee:
-    def __init__(self):
-        self.all_employees_info = DataLayerWrapper()
+    def __init__(self, dl_wrapper):
+        self.dl_wrapper = dl_wrapper
 
     def verifyEmployeeID(employeeID):
         
@@ -53,7 +53,7 @@ class LL_Employee:
     def getEmployeeInfo(self, ID_num: int) -> tuple:
 
         # all_employees_info = DataLayerWrapper.getAllEmployees()
-        all_info = self.all_employees_info.getAllEmployees(ID_num)
+        all_info = self.dl_wrapper.getAllEmployees()
 
         for employee in all_info:
             if int(employee.employee_id) == ID_num:
