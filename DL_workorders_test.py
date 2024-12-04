@@ -23,13 +23,16 @@ except Exception as e:
 
 
 new_workorder.work_order_id = "6"
-new_workorder.contractor = "ja"
+new_workorder.contractor = "True"
 
-try:
+#try:
     # Adding a new employee EKKI VIRKAR
-    result = data_layer.UpdateWorkOrder(new_workorder)
-    print(result)
+    #result = data_layer.UpdateWorkOrder(new_workorder)
+    #print(result)
     #print([r.contractor for r in result]) 
     
-except Exception as e:
-    print("An error occurred during testing:", e)
+#except Exception as e:
+    #print("An error occurred during testing:", e)
+
+result = data_layer.UpdateWorkOrder(new_workorder)
+print(result.work_order_id, result.contractor)

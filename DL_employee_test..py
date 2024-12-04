@@ -14,23 +14,27 @@ new_employee = Employees("20", "Employee", "Yeehaw", "333", "505 Laugavegur", "6
                          "+354 555 5555", "+354 555 0000", "jessir@example.com", "5")
 
 try:
-    # Adding a new employee VIRKAR
+    #Adding a new employee VIRKAR
     result = data_layer.AddEmployees(new_employee)
     print(result) 
     
 except Exception as e:
-    print("An error occurred during testing:")
-
-new_employee.employee_id = "19"
-new_employee.name = "kiki"
-
-
-try:
-    result = data_layer.UpdateEmployees(new_employee)
-    print([r.name for r in result]) 
-    
-except Exception as e:
-    print("An error occurred during testing:")
-    print(e)
-
     print("An error occurred during testing:", e)
+
+new_employee.employee_id = "11"
+new_employee.name = "pippi"
+
+
+# try:
+    # result = data_layer.UpdateEmployees(new_employee)
+    # print([r.name for r in result])
+    
+# except Exception as e:
+#     print("An error occurred during testing:")
+#     print(e)
+
+#     print("An error occurred during testing:", e)
+
+
+result = data_layer.UpdateEmployees(new_employee)
+print(result.name, result.address)

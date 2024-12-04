@@ -14,17 +14,18 @@ try:
     result = data_layer.AddContractors(new_contractor)
     print(result) 
     
-except Exception as e:
-    print("An error occurred during testing:")
+except Exception as c:
+    print("An error occurred during testing:", c)
 
-new_contractor.name = "Biggi"
+new_contractor.contractor_id = "4"
+new_contractor.address = "Biggastræti"
 
 try:
     result = data_layer.UpdateContractors([new_contractor])
     print([r.name for r in result]) 
     
-except Exception as e:
+except Exception as c:
     print("An error occurred during testing:")
-    print(e)
+    print(c)
 
-    print("An error occurred during testing:", e)
+    print("An error occurred during testing:", c)
