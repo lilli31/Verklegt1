@@ -5,6 +5,7 @@ class LL_Property:
 
     def __init__(self, dl_property: DL_Properties) -> None:
         self.dl_property = dl_property
+        #nota dependency injection, design patternið
 
     def verifyPropertyID(self, propertyID: str):
         if len(propertyID)!= 5:
@@ -36,3 +37,7 @@ class LL_Property:
 
     def getAllProperties(self):
         return self.dl_property.FetchProperties()
+    
+dl = DL_Properties()
+a = LL_Property(dl)
+
