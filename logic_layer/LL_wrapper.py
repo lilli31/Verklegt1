@@ -2,10 +2,9 @@ from logic_layer.LL_employee import LL_Employee
 
 class LogicLayerWrapper:
 
-    # def __init__(self):
-    #     pass
+    def __init__(self):
+        self.ll_employee_instance = LL_Employee()
 
-    @classmethod
-    def getEmployee(cls, id_number) -> list:
-        ll_employee_instance = LL_Employee()
-        return ll_employee_instance.getEmployeeInfo(id_number)
+    def getEmployee(self, id_number) -> list:
+      
+        return self.ll_employee_instance.getEmployeeInfo(id_number)

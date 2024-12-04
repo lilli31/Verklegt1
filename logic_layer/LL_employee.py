@@ -1,6 +1,9 @@
 from data_layer.DL_wrapper import DataLayerWrapper
+from models.Employees import Employees
 
 class LL_Employee:
+    def __init__(self):
+        self.all_employees_info = DataLayerWrapper()
 
     # def verifyEmployeeID(employeeID):
         
@@ -47,17 +50,18 @@ class LL_Employee:
     # def getFilteredEmployees():
     #     pass
 
-    def getEmployeeInfo(self, ID_num) -> tuple:
+    def getEmployeeInfo(self, ID_num: int) -> tuple:
 
-        all_employees_info = DataLayerWrapper.getAllEmployees()
+        # all_employees_info = DataLayerWrapper.getAllEmployees()
+        all_info = self.all_employees_info.getAllEmployees(ID_num)
 
-        for employee in all_employees_info:
-            if employee.employee_id == ID_num:
+        for employee in all_info:
+            if int(employee.employee_id) == ID_num:
                 name = employee.name
                 job_title = employee.job_title
 
         return name, job_title
-      
+     
 
 
         # self.ID_num = ID_num #Fyrir test
