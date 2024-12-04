@@ -29,12 +29,7 @@ class MainMenu:
         BLUE = f"\033[96m{self.logo}\033[0m"
 
         print(BLUE)
-        # print(f"""
-        #                         ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖     ▗▄▖ ▗▄▄▄▖▗▄▄▖     
-        #        __!__            ▐▛▚▖▐▌▐▌ ▐▌▐▛▚▖▐▌    ▐▌ ▐▌  █  ▐▌ ▐▌            ,____,
-        #  ^----o-(_)-o----^      ▐▌ ▝▜▌▐▛▀▜▌▐▌ ▝▜▌    ▐▛▀▜▌  █  ▐▛▀▚▖           /__\___\    
-        #         " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
-        #       """)
+        
         
     def displayChoice(self):
         """ displays the user interface choice """
