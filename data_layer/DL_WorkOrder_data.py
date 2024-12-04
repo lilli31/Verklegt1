@@ -53,7 +53,7 @@ class DL_WorkOrders():
 
         with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow([workorder.work_order_id],
+            writer.writerow([workorder.work_order_id,
                             workorder.employee,
                             workorder.contractor,
                             workorder.contractor_id,
@@ -66,16 +66,21 @@ class DL_WorkOrders():
                             workorder.finished,
                             workorder.approved,
                             workorder.state_of_work_order,
-                            workorder.priority)
+                            workorder.priority])
             
         return "Work Order added successfully"
 
        
-    def FinishedWorkOrder(self):
-        pass
 
-    def ApprovedWorkOrder(self):
-        pass
+    def FinishedWorkOrder(self, workorder: WorkOrders):
+        workorder.finished = True
+        self.UpdateWorkOrders([workorder])
+
+    def ApprovedWorkOrder(self, workorder: WorkOrders):
+        workorder.approved = True
+        self.UpdateWorkOrders([workorder])
+
+
 
     def UpdateWorkOrders(self):
         pass
