@@ -72,15 +72,18 @@ class DL_Contractor():
     def AddContractors(self,contractors: Contractors):
         
         """Adding a new contractor to the employees.csv file"""
-        
-        with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([contractors.contractor_id,
-                             contractors.name,
-                             contractors.contact_name,
-                             contractors.contact_phone,
-                             contractors.address,
-                             contractors.opening_hours,
-                             contractors.former_jobs])
+        try:
+            with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([contractors.contractor_id,
+                                contractors.name,
+                                contractors.contact_name,
+                                contractors.contact_phone,
+                                contractors.address,
+                                contractors.opening_hours,
+                                contractors.former_jobs])
+            return "Contractor added successfully"
+        except Exception:
+            pass
+            
                              
-        return "Contractor added successfully"

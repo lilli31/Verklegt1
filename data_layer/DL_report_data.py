@@ -43,19 +43,21 @@ class DL_Report(Reports):
     def AddReport(self,report:Reports):
         
         """Adding a new report to the reports.csv file"""
-        
-        with open("data_files/reports.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            writer = csv.writer(csvfile)
-            writer.writerow([report.report_ID,
-                            report.work_order_ID,
-                            report.work_done,
-                            report.contractor,
-                            report.contractor_ID,
-                            report.additional_report_info,
-                            report.material_cost,
-                            report.contractor_cost,
-                            report.total_cost])
-        return "Report added successfully"
+        try:
+            with open("data_files/reports.csv", 'a', newline='', encoding="utf-8") as csvfile:
+                writer = csv.writer(csvfile)
+                writer.writerow([report.report_ID,
+                                report.work_order_ID,
+                                report.work_done,
+                                report.contractor,
+                                report.contractor_ID,
+                                report.additional_report_info,
+                                report.material_cost,
+                                report.contractor_cost,
+                                report.total_cost])
+            return "Report added successfully"
+        except Exception:
+            pass
 
 
 
