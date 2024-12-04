@@ -1,5 +1,4 @@
 Employee_ID,Job_title,Name,SSN,Address,PostCode,Homephone,Telephone,Email,Destination_ID
-1, Director,Jan Jacobsen,3112992559,Vei 230 -12,9170,+47 92 09 77 00,+354 777 1337,jan.jacobsen@nanair.is,6
 2, Employee,Jacob Yxa,3112982559,Vei 224 3B,9171,+47 92 09 77 01,+354 777 1338,jacob.yxa@nanair.is,6
 3, Employee,Nanna Daema,3112972559,Ivan Starostin st. 109,9178,+47 92 09 77 02,+354 777 1339,nanna.daema@nanair.is,6
 4, Director,Minik Wallace,3112962559,Isaajap Aqqutaa 1,3900,+299 34 24 67,+354 777 1361,minik.wallace@nanair.is,2

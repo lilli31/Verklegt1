@@ -6,7 +6,7 @@ data_layer = DL_Employees()
 
 emp_data = data_layer.FetchEmployees()
 for employee in emp_data:
-    print(employee.telephone)
+    print(employee.email)
 
     #Ef það er til 1 núþegar þá má ekki adda 1 laga;)
 

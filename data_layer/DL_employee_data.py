@@ -42,10 +42,12 @@ class DL_Employees():
     def UpdateEmployees(self, update_employees: list[Employees]):
         #append
         """Storing all the employees"""
+
         with open("data_files/employees.csv", 'w', newline='', encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile)
-            writer.writeheader()
+            writer.writeheader()            
             for employee in update_employees:
+
                 writer.writerow({self.EMPLOYEE_ID: employee.employee_id, 
                                      self.JOB_TITLE: employee.job_title,
                                      self.NAME: employee.name,
@@ -77,7 +79,7 @@ class DL_Employees():
         return "Employee added successfully"
 
         
-    #Passa að þetta virkar
+    #Passa að þetta virkar, passa að hann megi sjast tjekka á TA
     def DeleteEmployee(self, employee_id):
         
         """Deleting an employee from the employees.csv file"""
@@ -85,6 +87,7 @@ class DL_Employees():
         employees_info = self.FetchEmployees() #Getting the list of the employees 
         updated_employees_info = [employee for employee in employees_info if employee.ID!= employee]
         self.Store_employees(updated_employees_info)
+
         return "Employee deleted successfully"
         
     

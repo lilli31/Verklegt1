@@ -2,25 +2,25 @@ from data_layer.DL_wrapper import DataLayerWrapper
 
 class LL_Employee:
 
-    # def verifyEmployeeID(employeeID):
+    def verifyEmployeeID(employeeID):
         
-    #     """Checking if the employee ID is valid"""
+         """Checking if the employee ID is valid"""
         
-    #     if len(employeeID)!= 6:
-    #         return False
-    #     if not employeeID.isdigit():
-    #         return False
-    #     return True
+         if len(employeeID)!= 6:
+             return False
+         if not employeeID.isdigit():
+             return False
+         return True
     
-    # def verifySocialSecurity(self, employee): 
+    def verifySocialSecurity(self, employee): 
 
-    #     """Checking if the social security number is valid"""
+         """Checking if the social security number is valid"""
 
-    #     if len(employee.social_security)!= 10:
-    #         return False
-    #     if not employee.social_security.isdigit():
-    #         return False
-    #     return True
+         if len(employee.social_security)!= 10:
+             return False
+         if not employee.social_security.isdigit():
+             return False
+         return True
 
     # def verifyEmployeeInfo(employee.info):
         
@@ -55,7 +55,7 @@ class LL_Employee:
             if employee.employee_id == ID_num:
                 name = employee.name
                 job_title = employee.job_title
-
+    
         return name, job_title
       
 
