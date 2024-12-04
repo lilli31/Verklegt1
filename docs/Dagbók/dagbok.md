@@ -197,7 +197,7 @@ Markmið dagsins:
 
 Mættir:
     Regína
-    Þórbjörg
+    Þorbjörg
     Vigdís K 
     Tinna 
     Rakel 
@@ -211,7 +211,7 @@ Markmið dagsins:
 
 Það sem var gert í dag:
 
-    Tinna, Þórbjörg, Rakel og Vigdís K gerðu alla model klasana og byrjuðu að skoða data layer-ið. Regína gerði main skjal og vann í nokkrum klösum. Hún gerði MainMenu klasann svo að hann virkar núna þó að hann sé ekki fullkláraður útlitslega séð. Regína útbjó föll í báðum wrapper-unum og eitt í LL_Employee klasanum. Hún er komin langleiðina með að skilja hvernig á að útbúa tilvik af klösum og er alveg að fatta hvernig layer-in vinna saman. Vigdís H mætti þrátt fyrir veikindin uppúr 14 og hjálpaði Tinnu, Rakel, Þórbjörgu og Vigdísi að laga/skilja data-layer-ið. Vigdís H kláraði einnig datalayerið fyrir employees og náði að testa alla klasana nema einn, fær aðstoð á mrg.
+    Tinna, Þorbjörg, Rakel og Vigdís K gerðu alla model klasana og byrjuðu að skoða data layer-ið. Regína gerði main skjal og vann í nokkrum klösum. Hún gerði MainMenu klasann svo að hann virkar núna þó að hann sé ekki fullkláraður útlitslega séð. Regína útbjó föll í báðum wrapper-unum og eitt í LL_Employee klasanum. Hún er komin langleiðina með að skilja hvernig á að útbúa tilvik af klösum og er alveg að fatta hvernig layer-in vinna saman. Vigdís H mætti þrátt fyrir veikindin uppúr 14 og hjálpaði Tinnu, Rakel, Þorbjörgu og Vigdísi að laga/skilja data-layer-ið. Vigdís H kláraði einnig datalayerið fyrir employees og náði að testa alla klasana nema einn, fær aðstoð á morgun.
 
 Áætlun morgundagsins:
 
@@ -219,15 +219,36 @@ Markmið dagsins:
 
 
 
-
 #####Dagur 10 (04.12.24) - Morgunfundur#####
 
 Mættir: 
+    Regína 
+    Þorbjörg
+    Vigdís K 
+    Vigdís H 
+    Tinna 
+    Rakel
 
 Markmið dagsins: 
+    Markmiðið í dag er að klára data layers, byrja á wrapperum, komast sem lengst í UI layers og gera testing fyrir data layers.
 
 #####Dagur 10 (04.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag: 
+    Regína komst langt með UI main layer-in og Tinna, Vigdís K, Þorbjörg, Rakel og Vigdís H náðu að klára öll data layer-in ásamt testing fyrir þau. 
 
 Áætlun morgundagsins:
+    Áætlun morgundagsins er að byrja á logic layer-inu og halda áfram með UI layer-in.
+
+
+#####Dagur 11 (05.12.24) - Morgunfundur#####  
+
+Mættir:
+
+Markmið dagsins: 
+
+#####Dagur 11 (05.12.24) - Kvöldfundur#####
+
+Það sem var gert í dag: 
+
+Áætlun morgundagsins: 
