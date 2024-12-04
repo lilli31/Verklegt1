@@ -27,6 +27,8 @@ class DL_WorkOrders():
 
     def FetchWorkOrders(self) -> list[WorkOrders]:
 
+        """Fetching all the employees"""
+
         all_WorkOrders: list[WorkOrders] = []
         with open("data_files/work_orders.csv", "r", newline="", encoding="utf-8") as csvfile:
             reader = csv.DictReader(csvfile)
@@ -49,7 +51,9 @@ class DL_WorkOrders():
         return all_WorkOrders
 
 
-    def AddWorkOrders(self, workorder: WorkOrders):
+    def AddWorkOrder(self, workorder: WorkOrders):
+
+        """Adding a new work order to work_orders.csv file"""
 
         with open("data_files/work_orders.csv", "a", newline= "", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
@@ -74,28 +78,29 @@ class DL_WorkOrders():
 
     def FinishedWorkOrder(self, workorder: WorkOrders):
         workorder.finished = True
-        self.UpdateWorkOrders([workorder])
+        self.UpdateWorkOrder([workorder])
 
     def ApprovedWorkOrder(self, workorder: WorkOrders):
         workorder.approved = True
-        self.UpdateWorkOrders([workorder])
+        self.UpdateWorkOrder([workorder])
 
 
 
-    def UpdateWorkOrders(self, update_workorders: list[WorkOrders]):
+    def UpdateWorkOrder(self, workorder_to_update: WorkOrders):
 
+        """Update information for a work order"""
 
         workorders = self.FetchWorkOrders()
         with open("data_files/work_orders.csv", "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile, [self.WORK_ORDER_ID, self.EMPLOYEE, self.CONTRACTOR, self.CONTRACTOR_ID, self.PROPERTY_IDS, self.MAINTENANCE_INFO, self.REGULAR, self.DAYS_BETWEEN_OR_WHEN, self.VISIBLE, self.OPENS, self.FINISHED, self.APPROVED, self.STATE_OF_WORK_ORDER, self.PRIORITY])
             writer.writeheader()
 
-            for workorder in update_workorders:
-                try:
-                    i = workorders.index(workorder)
-                    workorders[i] = workorder
-                except:
-                    pass
+
+            try:
+                i = workorders.index(workorder_to_update)
+                workorders[i] = workorder_to_update
+            except:
+                pass
 
             for workorder in workorders:
                 writer.writerow({self.WORK_ORDER_ID: workorder.work_order_id,
@@ -112,6 +117,6 @@ class DL_WorkOrders():
                                  self.APPROVED: workorder.approved,
                                  self.STATE_OF_WORK_ORDER: workorder.state_of_work_order,
                                  self.PRIORITY: workorder.priority})
-            return update_workorders
+            return workorder_to_update
         
 
