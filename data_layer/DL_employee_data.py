@@ -77,7 +77,7 @@ class DL_Employees():
         return "Employee added successfully"
 
         
-    def DeleteEmployee(self:Employees):
+    def DeleteEmployee(self, employee_id):
         
         """Deleting an employee from the employees.csv file"""
         
@@ -86,7 +86,7 @@ class DL_Employees():
         self.Store_employees(updated_employees_info)
         return "Employee deleted successfully"
         
-    def UpdateEmployee(self:Employees):
+    def UpdateEmployee(self, updated_employee):
         
         """Updating an employee in the employees.csv file"""
         
