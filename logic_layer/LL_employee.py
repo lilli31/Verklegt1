@@ -53,13 +53,10 @@ class LL_Employee:
 
         for employee in all_employees_info:
             if employee.employee_id == ID_num:
-                # name = id_number[1]
-                # job = id_number[0]
-                # name_and_job_list.append(name)
-                # name_and_job_list.append(job)
                 name = employee.name
                 job_title = employee.job_title
-
+        if name is None or job_title is None:
+            raise ValueError(f"Employee with ID {ID_num} not found")
         return name, job_title
         # return name_and_job_list
 
