@@ -78,15 +78,15 @@ class LL_Property:
         return matched_properties
     
 
-    def getPropertyInfo(self, property_id: int) -> tuple:
-        all_info = self.dl_wrapper.getAllEmployees()
+    # def getPropertyInfo(self, property_id: int) -> tuple:
+    #     all_info = self.dl_wrapper.getAllEmployees()
 
-        for property in all_info:
-            if int(property).property_id) == employee_id:
-                address = property.name
-                property_id = property.job_title
+    #     for property in all_info:
+    #         if int(property).property_id) == employee_id:
+    #             address = property.name
+    #             property_id = property.job_title
     
-        return address, property_id
+    #     return address, property_id
 
     def getAllProperties(self, all_properties):
         all_properties = self.DL_property.FetchProperties()
