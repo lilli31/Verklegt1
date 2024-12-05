@@ -47,25 +47,25 @@ class LL_Property:
         return True
 
 
-    def searchProperty(properties_data, Destination_ID=None, Property_ID=None, Property=None, Address=None):
-        properties_that_match = []
-
-        #Fara yfir hverja property í datanu
-        for property in properties_data:
-
-            if Destination_ID and property['Destination_ID'] != Destination_ID:
-                continue
-            if Property_ID and property['Property_ID'] != Property_ID:
-                continue
-            if Property and property['Property'] != Property:
-                continue
-            if Address and property['Address'] != Address:
-                continue
-
-            #Ef allt passar er hægt að bæta við
-            properties_that_match.append(property)
-
-        return properties_that_match
+    #def searchProperty(properties_data, Destination_ID=None, Property_ID=None, Property=None, Address=None):
+    #    properties_that_match = []
+#
+    #    #Fara yfir hverja property í datanu
+    #    for property in properties_data:
+#
+    #        if Destination_ID and property['Destination_ID'] != Destination_ID:
+    #            continue
+    #        if Property_ID and property['Property_ID'] != Property_ID:
+    #            continue
+    #        if Property and property['Property'] != Property:
+    #            continue
+    #        if Address and property['Address'] != Address:
+    #            continue
+#
+    #        #Ef allt passar er hægt að bæta við
+    #        properties_that_match.append(property)
+#
+    #    return properties_that_match
 
 #       def __init__(self, address, property_ID):
         
