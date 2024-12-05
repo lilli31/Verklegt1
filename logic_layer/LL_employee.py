@@ -1,3 +1,4 @@
+from data_layer.DL_employee_data import DL_Employees
 from data_layer.DL_wrapper import DataLayerWrapper
 from models.Employees import Employees
 
@@ -5,13 +6,16 @@ class LL_Employee:
     def __init__(self, dl_wrapper):
         self.dl_wrapper = dl_wrapper
 
-    def verifyEmployeeID(employeeID, ):
+    def verifyEmployeeID(employeeID):
 
-        """Checking the employee ID if it is valid"""
+        """Checking the employee ID if it's valid"""
         
-        all_ids = get.all.employees_ids()
-        return employeeID in all_ids
-        
+        employee_ids = DL_Employees.FetchAllEmployees()
+        employee_ids = [employee['employeeID'] for employee in employee_ids] #Dict for employee
+
+        return employeeID in employee_ids
+    
+
     
     # def verifySocialSecurity(self, employee): 
 
