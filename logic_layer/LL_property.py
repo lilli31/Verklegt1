@@ -8,11 +8,12 @@ class LL_Property:
         #nota dependency injection, design patternið
 
     def verifyPropertyID(self, propertyID: str):
-        if len(propertyID)!= 5:
-             return False
-        if propertyID != propertyID.capitalize():
-             return False
-        return True #og meira
+        if len(propertyID)== 6 and propertyID == propertyID.capitalize():
+            letter = propertyID[:3]
+            digit = propertyID[3:]
+            if letter.isalpha() and digit.isdigit():
+                return True   
+        return False
     
     def getPropertyByID(self,id: str):
         if not self.verifyPropertyID(id):
@@ -23,14 +24,29 @@ class LL_Property:
                 return property
         return False #búa til error?
 
-    def verifyPropertyInfo():
-        pass
+    def verifyPropertyInfo(self,Destination_ID,Property_ID,Property,Address,Rental_space):
+        if not (1 <= Destination_ID <= 6):
+            return False
+        if not Property_ID.strip():
+            return False
+        if not Property.strip():
+            return False
+        if not Address.strip():
+            return False
+        try:
+            Rental_space = int(Rental_space):
+        except ValueError:
+            return False
+        return True
 
-    def verifySearchProperty():
-        pass
+    def verifySearchProperty(properties_data, Destination_ID=None, Property_ID=None, Property=None, Address=None):
 
+
+#staðsetningu, fasteignanúmer,
     def getFilteredProperties():
-        pass
+        
+
+
 
     def getPropertyID():
         pass

@@ -1,19 +1,21 @@
 import csv
+import
+from data_layer.DL_wrapper import DataLayerWrapper
+from models.Contractors import Contractors
 
 
 
-class Contractor(self):
-    def __init__(self, id, name, phone, email, address):
-        self.id = id
-        self.name = name
-        self.phone = phone
-        self.email = email
-        self.address = address 
+class LL_Contractor:
 
-    def getContractorId(self):
-        return self.id
+    def __init__(self, dl_contractor: dl_contractor) -> None:
+        self.dl_contractor = dl_contractor
+        #nota dependency injection, design patternið
+
+    def getContractorId(self, contractorID):
+        return str(contractorID).isdigit()  # Tékka ef það eru bara tölur
 
     def verifyContractorID(contractor):
+        if len(contractorID)
         return contractor.is_valid_id()
 
     def verifyContractorInfo(contractor):
