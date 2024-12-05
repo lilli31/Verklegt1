@@ -1,6 +1,6 @@
 from data_layer.DL_employee_data import DL_Employees
 from data_layer.DL_wrapper import DataLayerWrapper
-from models.Employees import Employees
+
 
 class LL_Employee:
     def __init__(self, dl_wrapper):
@@ -8,27 +8,34 @@ class LL_Employee:
 
     def verifyEmployeeID(employeeID):
 
-        """Checking the employee ID if it's valid"""
+        """Checking the if the employee ID is valid"""
         
         employee_ids = DL_Employees.FetchAllEmployees()
-        employee_ids = [employee['employeeID'] for employee in employee_ids] #Dict for employee
+        employee_ids = [employee['employeeID'] for employee in employee_ids] #Dict fyrir employee
 
         return employeeID in employee_ids
     
-
+    #def MatchEmployeesID, hvort að hvert ID sé rétt við hvern employee??
     
-    # def verifySocialSecurity(self, employee): 
-
-    
-
-    # def verifyEmployeeInfo(employee.info):
+    def verifySocialSecurity(self, ssn): 
         
-    #      """Checking if the employee information is valid"""
+        """Checking if the SSN is valid"""
         
-   
-    # def verifySearchEmployee(employee):
+        employee_ssn = DL_Employees.FetchAllEmployees()
+        employee_ssn = [employee['SSN'] for employee in employee_ssn] 
         
-    #      """Checking if the employee is valid"""
+        
+    def verifyEmployeeInfo(employee.info):
+        
+        """Checking if the employee information is valid"""
+        
+        #Tjekka hvaða info þarf að tjekka á nákvæmlega
+        
+    def verifySearchEmployee(employee):
+        
+        """Checking if the employee is valid"""
+        
+      #Leita að hverju nákvæmelga, hvað á að vera inn í þessu dallli 
         
    
     # def getEmployeeID(employee_id):
