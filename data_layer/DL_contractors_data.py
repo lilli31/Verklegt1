@@ -67,14 +67,15 @@ class DL_Contractor():
                                  self.OPENING: contractor.opening_hours,
                                  self.JOBS: contractor.former_jobs})
             return UpdateContractors
+        
 
 
     def AddContractors(self,contractors: Contractors):
         
-        """Adding a new contractor to the employees.csv file"""
+        """Adding a new contractor to the contractors.csv file"""
         
-        with open("data_files/employees.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            for line in 
+        with open("data_files/contractors.csv", 'a', newline='', encoding="utf-8") as csvfile:
+            for line in contractors.csv
             """ID númer stimpla"""
             writer = csv.writer(csvfile)
             writer.writerow([contractors.contractor_id,
@@ -84,4 +85,5 @@ class DL_Contractor():
                              contractors.address,
                              contractors.opening_hours,
                              contractors.former_jobs])
+            
                              

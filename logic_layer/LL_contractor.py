@@ -7,6 +7,10 @@ from models.Contractors import Contractors
 
 class LL_Contractor:
 
+    def __init__(self, dl_contractor: dl_contractor) -> None:
+        self.dl_contractor = dl_contractor
+        #nota dependency injection, design patternið
+
     def __init__(self, dl_wrapper):
         """Initialize the logic layer with a reference to the data layer"""
         """tengja saman"""

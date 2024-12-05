@@ -86,7 +86,7 @@ class DL_Employees():
                                 employee.destination_id])
             return "Employee added successfully"
         except Exception:
-            pass
+            return "An error accured"
         
     
         
