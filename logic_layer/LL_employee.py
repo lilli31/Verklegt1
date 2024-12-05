@@ -6,59 +6,90 @@ class LL_Employee:
     def __init__(self, dl_wrapper):
         self.dl_wrapper = dl_wrapper
 
-    def verifyEmployeeID(employeeID):
+    def verifyEmployeeID(employeeID): 
 
-        """Checking the if the employee ID is valid"""
-        
-        employee_ids = DL_Employees.FetchAllEmployees()
-        employee_ids = [employee['employeeID'] for employee in employee_ids] #Dict fyrir employee
+        """Checking the if the employee ID is valid
+           Ná í alla employees í data layerinu og gera error message ef ákveðið id finnst ekki eða er ekki til
+           Finna ID hjá hverjum employee og tjekka ef id er til
+           Finna ID hjá hverjum employee (nota dict)
+        """
+        try:   
+            employee_ids = DL_Employees.FetchAllEmployees()
+        except Exception as e:
+            print(f"Error fetching employee data: {e}")
+            return False
 
+        employee_ids = [employee['employeeID'] for employee in employee_ids] 
         return employeeID in employee_ids
     
-    #def MatchEmployeesID, hvort að hvert ID sé rétt við hvern employee??
-    
-    def verifySocialSecurity(self, ssn): 
+    def getEmployeeID(employee_id):
         
-        """Checking if the SSN is valid"""
+        """Returning the employee ID
+           Finna id hjá hverjum employee """
+
+        all_employees = DL_Employees.fetchAllEmployees()
+        [employee['employeeID'] for employee in all_employees]
+
+        return employee_id in all_employees
+        
+    def verifySocialSecurity(self, ssns): 
+        
+        """Checking if the SSN is valid
+           Finna kennitölu hjá hverjum employee og tjekka ef það er til"""
         
         employee_ssn = DL_Employees.FetchAllEmployees()
         employee_ssn = [employee['SSN'] for employee in employee_ssn] 
         
+        return ssns in employee_ssn
+
+    def GetDestinationByID(self) -> List[DL_Employees]:
+
+        """Returning the destination of the employee
+           Finna staðsetningu hvers employee by id-inu hans"""
         
-    def verifyEmployeeInfo(employee.info):
+        all_employees = DL_Employees.fetchAllEmployees()
+        return [employee['destination_id'] for employee in all_employees]
         
-        """Checking if the employee information is valid"""
+    def verifySearchEmployee(employee): #Er að gera þannig allir geta searchað af employee
         
-        #Tjekka hvaða info þarf að tjekka á nákvæmlega
+        """Verify that it is possible to search for employees
+           Náum í alla employees, fyrir alla employees þá erum við að ná í frá csv nöfnin á employees"""
+
+        employees = DL_Employees.FetchAllEmployees()
+        matched_employees = [
+            employee for employee in employees
+            if employee.lower() in employee['name'].lower() or
+               employee.lower() in employee['employeeID'].lower()
+        ]
+        return matched_employees
+
+    #def GetFilteredEmployeesByID(self) -> List[DL_Employees]:
+        pass
+
+    #def GetEmployeeInfo(self, employee_id: int) -> tuple:
+        pass
         
-    def verifySearchEmployee(employee):
-        
-        """Checking if the employee is valid"""
-        
-      #Leita að hverju nákvæmelga, hvað á að vera inn í þessu dallli 
-        
+    #def verifyEmployeeInfo(employee.info):
+        pass
    
-    # def getEmployeeID(employee_id):
-        
-    #      """Returning the employee ID"""
-        
-    #      return employee_id
 
-    # def getFilteredEmployees():
-    #      pass
+    #     # Get_all_employees_info = DataLayerWrapper.getAllEmployees()
+    #     all_info = self.dl_wrapper.getAllEmployees()
 
-    def getEmployeeInfo(self, ID_num: int) -> tuple:
-
-        # all_employees_info = DataLayerWrapper.getAllEmployees()
-        all_info = self.dl_wrapper.getAllEmployees()
-
-        for employee in all_info:
-            if int(employee.employee_id) == ID_num:
-                name = employee.name
-                job_title = employee.job_title
+    #     for employee in all_info:
+    #         if int(employee.employee_id) == ID_num:
+    #             name = employee.name
+    #             job_title = employee.job_title
     
-        return name, job_title
-     
+    #     return name, job_title
+
+
+
+
+
+
+
+
 
 
         # self.ID_num = ID_num #Fyrir test
