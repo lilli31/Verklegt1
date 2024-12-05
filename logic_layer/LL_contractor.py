@@ -11,11 +11,6 @@ class LL_Contractor:
         self.dl_contractor = dl_contractor
         #nota dependency injection, design patternið
 
-    def __init__(self, dl_wrapper):
-        """Initialize the logic layer with a reference to the data layer"""
-        """tengja saman"""
-        self.dl_wrapper = dl_wrapper
-
     def getContractorId(self, contractorID):
         if not contractorID.isdigit():  # Tékka ef það eru bara tölur
             return False
