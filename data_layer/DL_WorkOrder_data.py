@@ -74,7 +74,7 @@ class DL_WorkOrders():
                                 workorder.priority])    
             return "Work Order added successfully"
         except Exception:
-            pass
+            return "An error occured"
 
        
 

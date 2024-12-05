@@ -57,7 +57,7 @@ class DL_Report(Reports):
                                 report.total_cost])
             return "Report added successfully"
         except Exception:
-            pass
+            return "An error occured"
 
 
 
