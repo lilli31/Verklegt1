@@ -25,19 +25,28 @@ class LL_Property:
         return False #búa til error?
 
     def verifyPropertyInfo(self,Destination_ID,Property_ID,Property,Address,Rental_space):
-        if 1 <= Destination_ID <= 6:
-            if Property_ID =: #verifyPropertyID()
-                if Address == bool(Address.strip()):
-                    if Rental_space
+        if not (1 <= Destination_ID <= 6):
+            return False
+        if not Property_ID.strip():
+            return False
+        if not Property.strip():
+            return False
+        if not Address.strip():
+            return False
+        try:
+            Rental_space = int(Rental_space):
+        except ValueError:
+            return False
+        return True
+
+    def verifySearchProperty(properties_data, Destination_ID=None, Property_ID=None, Property=None, Address=None):
 
 
-        pass
-
-    def verifySearchProperty():
-        pass
-
+#staðsetningu, fasteignanúmer,
     def getFilteredProperties():
-        pass
+        
+
+
 
     def getPropertyID():
         pass
