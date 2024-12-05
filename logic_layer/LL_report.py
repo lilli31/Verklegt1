@@ -3,14 +3,16 @@ from models.Report import Reports
 
 class LL_Report:
 
-    def __init__(self):
+    def __init__(self, dl_wrapper):
+        self.dl_wrapper = dl_wrapper
         self.m_reports = Reports()
         self.m_contractors = Contractors()
+        self.reports = dl_wrapper.get_all_reports()
 
-    def get_my_reports(self, id_num, dl_wrapper) -> list:
+    def get_my_reports(self, id_num) -> list:
 
         report_list = []
-        for report in self.m_reports:
+        for report in self.reports:
             if int(report.report_id) == id_num:
                 work_order_id = report.work_order_ID
                 work_done = report.work_done
@@ -20,7 +22,7 @@ class LL_Report:
                 contractor_cost = report.contractor_cost
                 total_cost = report.total_cost
                 if bool(contractor_id) == True:
-                    contractors = dl_wrapper.get_all_contractors()
+                    contractors = self.dl_wrapper.get_all_contractors()
                     for contractor in contractors:
                         if report.contractor_id == contractor.contractor_id:
                             contractor_name = contractor.name
@@ -31,6 +33,7 @@ class LL_Report:
                 else:
                     report_list.append([work_order_id, work_done, additional_info, material_cost, total_cost])
 
+        return [["1", "hsds hdisohdoi", "hjifwh", "25876", "25876"], ["2", "gduio ghjk gh", "Kalli sæti", "696 9999", "Frikki ljóti", "Málari", "erftghjkl", "10000", "20000", "30000"], ["3", "hsds hdisooohdoi", "hjppfwh", "25879", "25879"]]
         return report_list
     
     def sort_my_reports(self, reports: list) -> list:

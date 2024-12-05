@@ -1,31 +1,76 @@
 import csv
-import
+
+
+from data_layer.DL_contractors_data import DL_Contractor
 from data_layer.DL_wrapper import DataLayerWrapper
-from models.Contractors import Contractors
 
 
 
 class LL_Contractor:
+    def __init__(self, DL_wrapper):
+        self.DL_wrapper = DL_wrapper
 
-    def __init__(self, dl_contractor: dl_contractor) -> None:
-        self.dl_contractor = dl_contractor
-        #nota dependency injection, design patternið
 
-    def getContractorId(self, contractorID):
-        return str(contractorID).isdigit()  # Tékka ef það eru bara tölur
 
-    def verifyContractorID(contractor):
-        if len(contractorID)
-        return contractor.is_valid_id()
+    def getContractorId(contractor_ID):
+        all_contractors = DL_Contractor.FetchContractors()
+        [contractor['contractorID'] for contractor in all_contractors]
+
+        return contractor_ID in all_contractors
+    
+
+    def verifyContractorID(contractorID):
+        try:
+            contractor_IDs = DL_Contractor.FetchContractors()
+        except Exception as e:
+            print(f"Error fetching contractor data: {e}")
+            return False
+        
+        contractor_IDs = [contractor['contractorID'] for contractor in contractor_IDs]
+        return contractorID in contractor_IDs
+
 
     def verifyContractorInfo(contractor):
         return contractor.is_valid_info()
 
-    def verifySearchContractors(contractor):
-        return contractor.is_valid_search()
 
-    def getFilteredContractor(contractor):
-        return contractor.get_filtered_contractors()
+
+    def verifySearchContractors(contractor_data, Contractor_ID=None, Name=None, Company=None, Contact_phone=None, Contact_name=None, Specialty=None, Opening_hours=None, Address=None, Former_jobs=None):
+        contractors_that_match = []
+        for contractor in contractor_data:
+            if Contractor_ID and contractor['Contractor_ID'] != Contractor_ID:
+                continue
+            if Name and contractor['Name'] != Name:
+                continue
+            if Company and contractor['Company'] != Company:
+                continue
+            if Contact_phone and contractor['Contact_phone'] != Contact_phone:
+                continue
+            if Contact_name and contractor['Contact_name'] != Contact_name:
+                continue
+            if Specialty and contractor['Specialty'] != Specialty:
+                continue
+            if Opening_hours and contractor['Opening_hours'] != Opening_hours:
+                continue
+            if Address and contractor['Address'] != Address:
+                continue
+            if Former_jobs and contractor['Former_jobs'] != Former_jobs:
+                continue
+
+            contractors_that_match.append(contractor)
+
+        return contractors_that_match
+
+
+    def getFilteredContractor(contractors: str):
+        contractors = DL_Contractor.FetchContractors()
+        matched_contractors = [
+             contractor for contractor in contractors
+             if contractor.lower() in contractor['name'].lower() or
+                contractor.lower() in contractor['contractorID'].lower()
+         ]
+        return matched_contractors
+
 
     def getContractorID(contractor):
         return contractor.get_id()
