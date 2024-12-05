@@ -42,7 +42,7 @@ class LL_Employee:
         
         return ssns in employee_ssn
 
-    def GetDestinationByID(self) -> List[DL_Employees]:
+    def GetDestinationByID(self) -> list[DL_Employees]:
 
         """Returning the destination of the employee
            Finna staðsetningu hvers employee by id-inu hans"""
