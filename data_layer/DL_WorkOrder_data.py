@@ -19,9 +19,6 @@ class DL_WorkOrders():
     PRIORITY = "Priority"
 
 
-
-
-
     def __init__ (self):
         pass
 
