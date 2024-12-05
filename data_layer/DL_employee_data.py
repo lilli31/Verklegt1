@@ -86,11 +86,7 @@ class DL_Employees():
                                 employee.destination_id])
             return "Employee added successfully"
         except Exception:
-<<<<<<< HEAD
             return "An error accured"
-=======
-            return "An error occured"
->>>>>>> main
         
     
         
