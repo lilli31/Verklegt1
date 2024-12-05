@@ -1,5 +1,6 @@
 from data_layer.DL_employee_data import DL_Employees
 from data_layer.DL_wrapper import DataLayerWrapper
+from models.Employees import Employee
 
 
 class LL_Employee:
@@ -27,7 +28,7 @@ class LL_Employee:
         """Returning the employee ID
            Finna id hjá hverjum employee """
 
-        all_employees = DL_Employees.fetchAllEmployees()
+        all_employees = DL_Employees.FetchAllEmployees()
         [employee['employeeID'] for employee in all_employees]
 
         return employee_id in all_employees
@@ -47,10 +48,18 @@ class LL_Employee:
         """Returning the destination of the employee
            Finna staðsetningu hvers employee by id-inu hans"""
         
-        all_employees = DL_Employees.fetchAllEmployees()
+        all_employees = DL_Employees.FetchAllEmployees()
         return [employee['destination_id'] for employee in all_employees]
+    
+ 
+    def SearchEmployee(employee_list, **kwargs):
+
+       return [
+        employee_object for employee_object in employee_list
+        if all(getattr(employee_object, key, None) == value for key, value in kwargs.items())
+    ]
         
-    def verifySearchEmployee(employee): #Er að gera þannig allir geta searchað af employee
+    def GetFilteredEmployees(employee): #Er að gera þannig allir geta searchað af employee
         
         """Verify that it is possible to search for employees
            Náum í alla employees, fyrir alla employees þá erum við að ná í frá csv nöfnin á employees"""

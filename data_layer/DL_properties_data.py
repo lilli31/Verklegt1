@@ -47,8 +47,6 @@ class DL_Properties():
         except Exception:
             return "An error occured"
 
-
-
     def UpdateProperties(self, property_to_update: Properties):
 
         """Update information for a property"""

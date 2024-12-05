@@ -3,69 +3,97 @@ import LL_property
 from data_layer.DL_properties_data import DL_Properties
 class LL_Property:
 
-    def __init__(self, dl_property: DL_Properties) -> None:
-        self.dl_property = dl_property
-        #nota dependency injection, design patternið
+    def __init__(self, dl_wrapper):
+        self.dl_wrapper = dl_wrapper
 
+    def VerifyPropertyID(self, propertyID):
 
-    def verifyPropertyID(self, propertyID: str):
-        if len(propertyID)== 6 and propertyID == propertyID.capitalize():
-            letter = propertyID[:3]
-            digit = propertyID[3:]
-            if letter.isalpha() and digit.isdigit():
-                return True   
-        return False
+        """Checking the if the property ID is valid
+           Ná í öll properties í data layerinu og gera error message ef ákveðið id finnst ekki eða er ekki til
+           Finna ID í hverju property og tjekka ef id er til fyrir það
+           Finna ID hjá hverju property (nota dict)
+        """
+        try:   
+            property_ids = DL_Properties.FetchAllProperties()
+        except Exception as e:
+            print(f"Error fetching employee data: {e}")
+            return False
 
+        property_ids = [employee['employeeID'] for employee in property_ids] 
+        return propertyID in property_ids
 
-    #   def makeNewPropertyID(self, Destination_ID: int, Property_ID: str, Property: str, Address: str, Rental_space: int):
-    #   þetta fer í ui layer held ég
+        # if len(propertyID)== 6 and propertyID == propertyID.capitalize():
+        #     letter = propertyID[:3]
+        #     digit = propertyID[3:]
+        #     if letter.isalpha() and digit.isdigit():
+        #         return True   
+        # return False
 
-#raise an error and the people doing ui should catch the error
-    def getPropertyID(self,id: str):
-        if not self.verifyPropertyID(id):
-            return "Not valid ID"
-        properties = self.dl_property.FetchProperties()
-        for property in properties:
-            if property.property_ID == id:
-                return property
-        return False #búa til error?
+    def getPropertyID(property_id):
 
+        """Returning the employee ID
+           Finna id hjá hverjum employee """
+
+        all_properties = DL_Properties.FetchProperties()
+        [properties['propertiesID'] for properties in all_properties]
+
+        return property_id in all_properties
+
+    # def getPropertyID(self,property_id):
+    #     if not self.verifyPropertyID(id):
+    #         return "Not valid ID"
+    #     properties = self.dl_property.FetchProperties()
+    #     for property in properties:
+    #         if property.property_ID == id:
+    #             return property
+    #     return False 
 
     def verifyPropertyInfo(self,Destination_ID,Property_ID: str,Property: str,Address: str,Rental_space):
-        if not (1 <= Destination_ID <= 6):
-            return False
-        if not Property_ID.strip():
-            return False
-        if not Property.strip():
-            return False
-        if not Address.strip():
-            return False
         try:
-            Rental_space = int(Rental_space):
+            return (
+            1 <= Destination_ID <= 6 and
+            Property_ID.strip() and
+            Property.strip() and
+            Address.strip() and
+            int(Rental_space) > 0
+        )
         except ValueError:
             return False
-        return True
+
+    def SearchProperty(properties_list, **kwargs):
+
+       return [
+        property_object for property_object in properties_list
+        if all(getattr(property_object, key, None) == value for key, value in kwargs.items())
+    ]
+    
+    def GetFilteredProperties(property): #Hægt að searcha fyrir address og property ID
+
+        properties = DL_Properties.FetchAllPropeties()
+        matched_properties = [
+            properties for employee in properties
+            if employee.lower() in property['address'].lower() or
+               employee.lower() in property['propertyID'].lower()
+        ]
+        return matched_properties
+    
+
+    def getPropertyInfo(self, property_id: int) -> tuple:
+        all_info = self.dl_wrapper.getAllEmployees()
+
+        for property in all_info:
+            if int(property).property_id) == employee_id:
+                address = property.name
+                property_id = property.job_title
+    
+        return address, property_id
+
+    def getAllProperties(self, all_properties):
+        all_properties = self.DL_property.FetchProperties()
+        return all_properties
 
 
-    #def searchProperty(properties_data, Destination_ID=None, Property_ID=None, Property=None, Address=None):
-    #    properties_that_match = []
-#
-    #    #Fara yfir hverja property í datanu
-    #    for property in properties_data:
-#
-    #        if Destination_ID and property['Destination_ID'] != Destination_ID:
-    #            continue
-    #        if Property_ID and property['Property_ID'] != Property_ID:
-    #            continue
-    #        if Property and property['Property'] != Property:
-    #            continue
-    #        if Address and property['Address'] != Address:
-    #            continue
-#
-    #        #Ef allt passar er hægt að bæta við
-    #        properties_that_match.append(property)
-#
-    #    return properties_that_match
+
 
 #       def __init__(self, address, property_ID):
         
@@ -78,15 +106,10 @@ class LL_Property:
         
 
 
-    def getAllProperties(self):
-        return self.dl_property.FetchProperties()
+    
 
 
-    def addNewProperty(self, Destination_ID, Property_ID, Property, Address, Rental_space):
-        if not self.verifyPropertyInfo(Destination_ID, Property_ID, Property, Address, Rental_space):
-            return "Invalid information"
-        new_property = {"Destination_ID": Destination_ID, "Property_ID": Property_ID, "Property": Property, "Address": Address, "Rental_space": Rental_space}
-        return "Property added"
+    
     
 
 
