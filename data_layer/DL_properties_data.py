@@ -45,7 +45,7 @@ class DL_Properties():
                                 property.rental_space])
             return "Property added successfully"
         except Exception:
-            pass
+            return "An error occured"
 
 
 
