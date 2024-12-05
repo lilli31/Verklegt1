@@ -75,15 +75,17 @@ class DL_Contractor():
         """Adding a new contractor to the contractors.csv file"""
         
         with open("data_files/contractors.csv", 'a', newline='', encoding="utf-8") as csvfile:
-            for line in contractors.csv
-            """ID númer stimpla"""
-            writer = csv.writer(csvfile)
-            writer.writerow([contractors.contractor_id,
-                             contractors.name,
-                             contractors.contact_name,
-                             contractors.contact_phone,
-                             contractors.address,
-                             contractors.opening_hours,
-                             contractors.former_jobs])
+            for line in contractors.csv:
+                """ID númer stimpla"""
+                writer = csv.writer(csvfile)
+                writer.writerow([contractors.contractor_id,
+                                contractors.name,
+                                contractors.contact_name,
+                                contractors.contact_phone,
+                                contractors.address,
+                                contractors.opening_hours,
+                                contractors.former_jobs])
+            return "Contractor added successfully"
+        
             
                              
