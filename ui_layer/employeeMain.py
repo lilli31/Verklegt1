@@ -42,7 +42,8 @@ class EmployeeMain:
             elif choice == "1":
                 self.wrapper.get_work_orders(self.id_num)
             elif choice == "2":
-                self.wrapper.get_reports(self.id_num)
+                my_reports = self.wrapper.get_reports(self.id_num)
+                my_reports_sorted = self.wrapper.sort_reports(my_reports)
             
            
 

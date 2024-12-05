@@ -1,6 +1,7 @@
 from logic_layer.LL_employee import LL_Employee
 from data_layer.DL_wrapper import DataLayerWrapper
 from logic_layer.LL_workorder import LL_WorkOrder
+from logic_layer.LL_report import LL_Report
 
 class LogicLayerWrapper:
 
@@ -8,6 +9,7 @@ class LogicLayerWrapper:
         self.data_layer_wrapper = DataLayerWrapper()
         self.ll_employee_instance = LL_Employee(self.data_layer_wrapper)
         self.ll_work_order = LL_WorkOrder(self.data_layer_wrapper)
+        self.ll_reports = LL_Report(self.data_layer_wrapper)
 
     def getEmployee(self, id_number) -> tuple:
       
@@ -17,5 +19,10 @@ class LogicLayerWrapper:
         
         return self.ll_work_order.get_my_work_orders(id_number)
     
+    def get_reports(self, id_number) -> list:
+
+        return self.ll_reports.get_my_reports(id_number, self.data_layer_wrapper)
     
-    
+    def sort_reports(self, reports: list) -> list:
+
+        return self.ll_reports.sort_my_reports(reports)
