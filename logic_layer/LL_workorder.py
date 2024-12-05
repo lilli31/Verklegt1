@@ -36,5 +36,5 @@ class LL_WorkOrder:
         pass
 
 
-    def get_my_work_orders():
+    def get_my_work_orders(self, id_num):
         pass
