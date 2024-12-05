@@ -66,22 +66,31 @@ class LL_Employee:
     #def GetFilteredEmployeesByID(self) -> List[DL_Employees]:
         pass
 
-    #def GetEmployeeInfo(self, employee_id: int) -> tuple:
-        pass
+    def getEmployeeInfo(self, employee_id: int) -> tuple:
+        all_info = self.dl_wrapper.getAllEmployees()
+
+        for employee in all_info:
+            if int(employee.employee_id) == employee_id:
+                name = employee.name
+                job_title = employee.job_title
+    
+        return name, job_title
+
         
     #def verifyEmployeeInfo(employee.info):
-        pass
+        #pass
    
 
-    #     # Get_all_employees_info = DataLayerWrapper.getAllEmployees()
-    #     all_info = self.dl_wrapper.getAllEmployees()
+    #def getEmployeeInfo(self):
+        Get_all_employees_info = DataLayerWrapper.getAllEmployees()
+        all_info = self.dl_wrapper.getAllEmployees()
 
-    #     for employee in all_info:
-    #         if int(employee.employee_id) == ID_num:
-    #             name = employee.name
-    #             job_title = employee.job_title
+        for employee in all_info:
+            if int(employee.employee_id) == ID_num:
+                name = employee.name
+                job_title = employee.job_title
     
-    #     return name, job_title
+        return name, job_title
 
 
 

@@ -9,7 +9,7 @@ class LogicLayerWrapper:
         self.data_layer_wrapper = DataLayerWrapper()
         self.ll_employee_instance = LL_Employee(self.data_layer_wrapper)
         self.ll_work_order = LL_WorkOrder(self.data_layer_wrapper)
-        self.ll_reports = LL_Report(self.data_layer_wrapper)
+        self.ll_reports = LL_Report()
 
     def getEmployee(self, id_number) -> tuple:
       
