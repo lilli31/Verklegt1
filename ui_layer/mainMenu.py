@@ -15,7 +15,7 @@ class MainMenu:
                 " "             ▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌    ▐▌ ▐▌▗▄█▄▖▐▌ ▐▌           |__|___|      
               """
         self.logic_layer_wrapper = LogicLayerWrapper()
-        self.employee_main = EmployeeMain(9, self.logic_layer_wrapper)
+        self.employee_main = EmployeeMain(9, self.logic_layer_wrapper, self.logo)
         self.director_main = DirectorMain(13, self.logic_layer_wrapper)
         #self.main = MainMenu()
 
@@ -42,7 +42,7 @@ class MainMenu:
         while self.choice != "q":
             if self.choice == "1":
                 self.clear_display()
-                self.employee_main.displayEmployeeMain(self.logo)
+                self.employee_main.displayEmployeeMain()
                 self.choice = "m"
             elif self.choice == "2":
                 self.clear_display()

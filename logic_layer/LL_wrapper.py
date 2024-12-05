@@ -13,7 +13,7 @@ class LogicLayerWrapper:
       
         return self.ll_employee_instance.getEmployeeInfo(id_number)
     
-    def get_my_work_orders(self, id_number):
+    def get_work_orders(self, id_number):
         
         return self.ll_work_order.get_my_work_orders(id_number)
     
