@@ -34,7 +34,7 @@ class LL_Report:
         return report_list
     
     def sort_my_reports(self, reports: list) -> list:
-        pass
+        return reports # Bara fyrir test
 
 
 

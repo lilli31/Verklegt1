@@ -1,3 +1,4 @@
+import csv
 from data_layer.DL_WorkOrder_data import DL_WorkOrders
 
 class LL_WorkOrder:
@@ -29,8 +30,36 @@ class LL_WorkOrder:
         return workorders, new_id
                     
 
-def verifyWorkOrderInfo():
-    pass
+def verifyWorkOrderInfo(self, Work_order_ID, Employee, Contractor, Contractor_ID, Property_IDs, Maintenance_info, Regular, Days_between_or_when, Visible, Opens, Finished, Approved, State_of_work_order, Priority):
+    if not isinstance(Work_order_ID, int):
+        return False
+    if not isinstance(Employee.strip(), str):
+        return False
+    if not isinstance(Contractor, bool):
+        return False
+    if not isinstance(Contractor_ID.strip(), str):
+        return False
+    if not isinstance(Property_IDs, str) or len(Property_IDs) != 6:
+        return False
+    if not isinstance(Maintenance_info.strip(), str):
+        return False
+    if not isinstance(Regular, bool):
+        return False
+    if not isinstance(Days_between_or_when.strip(), str):
+        return False
+    if not isinstance(Visible.strip(), str):
+        return False
+    if not isinstance(Opens.strip(), str):
+        return False
+    if not isinstance(Finished, bool):
+        return False
+    if not isinstance(Approved, bool):
+        return False
+    if isinstance(State_of_work_order, str) or State_of_work_order.strip() not in ("Closed", "Open"):
+        return False
+    if isinstance(Priority, str) or Priority.strip() not in ("A", "B", "C"):
+        return False
+    return True
 
 def verifySearchWorkOrders():
     pass
@@ -47,3 +76,5 @@ def getWorkOrderID():
 
 def get_my_work_orders(self, id_num):
     pass
+
+isinstance(int)

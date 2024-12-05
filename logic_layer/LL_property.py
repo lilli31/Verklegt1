@@ -20,7 +20,7 @@ class LL_Property:
     #   def makeNewPropertyID(self, Destination_ID: int, Property_ID: str, Property: str, Address: str, Rental_space: int):
     #   þetta fer í ui layer held ég
 
-
+#raise an error and the people doing ui should catch the error
     def getPropertyID(self,id: str):
         if not self.verifyPropertyID(id):
             return "Not valid ID"
