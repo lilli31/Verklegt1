@@ -22,3 +22,16 @@ class EmployeeMain:
     def displayChoices(self):
         choice = input("1) View my work-orders\n2) View my reports\n\nq) Quit\n\nInput choice: ")
         
+        if self.choice != "q":
+            if self.choice == "1":
+                self.clear_display()
+                self.employee_main.displayEmployeeMain(self.logo)
+            elif self.choice == "2":
+                self.clear_display()
+                self.director_main.displayDirectorMain(self.logo)
+            else:
+                print("\nInvalid choice, try again!\n")
+                self.choice = input("1) Employee\n2) Director\n\nSign in as: ")
+
+    def clear_display(self) -> None:
+        os.system('cls' if os.name == 'nt' else 'clear')

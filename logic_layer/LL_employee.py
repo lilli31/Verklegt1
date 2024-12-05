@@ -1,3 +1,4 @@
+from data_layer.DL_employee_data import DL_Employees
 from data_layer.DL_wrapper import DataLayerWrapper
 from models.Employees import Employees
 
@@ -5,42 +6,31 @@ class LL_Employee:
     def __init__(self, dl_wrapper):
         self.dl_wrapper = dl_wrapper
 
-    # def verifyEmployeeID(employeeID):
+    def verifyEmployeeID(employeeID):
+
+        """Checking the employee ID if it's valid"""
         
-    #      """Checking if the employee ID is valid"""
-        
-    #      if len(employeeID)!= 6:
-    #          return False
-    #      if not employeeID.isdigit():
-    #          return False
-    #      return True
+        employee_ids = DL_Employees.FetchAllEmployees()
+        employee_ids = [employee['employeeID'] for employee in employee_ids] #Dict for employee
+
+        return employeeID in employee_ids
+    
+
     
     # def verifySocialSecurity(self, employee): 
 
-    #      """Checking if the social security number is valid"""
-
-    #      if len(employee.social_security)!= 10:
-    #          return False
-    #      if not employee.social_security.isdigit():
-    #          return False
-    #      return True
+    
 
     # def verifyEmployeeInfo(employee.info):
         
     #      """Checking if the employee information is valid"""
         
-    #      if len(employee.info)< 5 or len(employee.info)> 100:
-    #          return False
-    #      return True
-
+   
     # def verifySearchEmployee(employee):
         
     #      """Checking if the employee is valid"""
         
-    #      if not verifyEmployeeID(employee.employee_id) or not verifySocialSecurity(employee) or not verifyEmployeeInfo(employee.info):
-    #          return False
-    #      return True
-
+   
     # def getEmployeeID(employee_id):
         
     #      """Returning the employee ID"""

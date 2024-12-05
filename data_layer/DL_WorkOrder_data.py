@@ -19,9 +19,6 @@ class DL_WorkOrders():
     PRIORITY = "Priority"
 
 
-
-
-
     def __init__ (self):
         pass
 
@@ -74,7 +71,7 @@ class DL_WorkOrders():
                                 workorder.priority])    
             return "Work Order added successfully"
         except Exception:
-            pass
+            return "An error occured"
 
        
 
