@@ -22,5 +22,8 @@ class EmployeeMain:
 
     def displayChoices(self):
         choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\nInput choice: ")
-        if choice == "1":
-            work_orders = self.wrapper.get_my_work_orders(self.id_num)
+
+        while choice != "b":
+            if choice == "1":
+                self.wrapper.get_my_work_orders(self.id_num)
+            
