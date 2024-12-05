@@ -85,4 +85,3 @@ class DL_Contractor():
                              contractors.opening_hours,
                              contractors.former_jobs])
                              
-        return "Contractor added successfully"

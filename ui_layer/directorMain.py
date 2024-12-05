@@ -14,6 +14,10 @@ class DirectorMain:
         print("|", "Employees".ljust(13), "|", "Contractors".ljust(13), "|", "Properties".ljust(13), "|", "Work-orders".ljust(13), "|", "My work-orders".ljust(15), "|", "My reports".ljust(14), "|")
         print("-" * 100)
         print("\n")
+        self.displayChoices()
+
+    def displayChoices(self):
+        choice = input("1) View all employees\n2) View all contractors\n3) View all properties\n4) View all work-orders\n5) View my work-orders\n6) View my reports\n\nq) Quit\n\nInput choice: ")
 
     def backToChoice(): #Sama fall til í employeeMain, skoða það
         pass

@@ -10,3 +10,6 @@ class LogicLayerWrapper:
     def getEmployee(self, id_number) -> tuple:
       
         return self.ll_employee_instance.getEmployeeInfo(id_number)
+    
+    
+    

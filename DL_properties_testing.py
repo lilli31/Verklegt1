@@ -18,16 +18,19 @@ try:
 except Exception as p:
     print("An error occurred during testing:")
 
-new_property.property_ID = "19"
-new_property.address = "kiki"
+new_property.property_ID = "100"
+new_property.address = "Rakel"
 
 
-try:
-    result = data_layer.UpdateProperties(new_property)
-    print([r.name for r in result]) 
-    
-except Exception as p:
-    print("An error occurred during testing:")
-    print(p)
+#try:
+#    result = data_layer.UpdateProperties(new_property)
+#    print([r.name for r in result]) 
+#    
+#except Exception as p:
+#    print("An error occurred during testing:")
+#    print(p)
+#
+#    print("An error occurred during testing:", p)
 
-    print("An error occurred during testing:", p)
+result = data_layer.UpdateProperties(new_property)
+print(result.property_ID, result.address)

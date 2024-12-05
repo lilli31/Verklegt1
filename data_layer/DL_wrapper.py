@@ -7,3 +7,5 @@ class DataLayerWrapper:
     
     def getAllEmployees(self) -> list:
         return self.dl_employee_instance.FetchEmployees()
+    
+  
