@@ -18,7 +18,6 @@ class LL_WorkOrder:
                 for newid in range(0, highestID+1):
                     if newid == id:
                         continue
-                    
 
     def verifyWorkOrderInfo():
         pass

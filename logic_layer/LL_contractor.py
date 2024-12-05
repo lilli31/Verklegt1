@@ -12,9 +12,7 @@ class LL_Contractor:
         #nota dependency injection, design patternið
 
     def getContractorId(self, contractorID):
-        if not contractorID.isdigit():  # Tékka ef það eru bara tölur
-            return False
-        return True
+        return str(contractorID).isdigit()  # Tékka ef það eru bara tölur
 
     def verifyContractorID(contractor):
         if len(contractorID)
