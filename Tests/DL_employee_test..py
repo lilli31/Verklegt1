@@ -1,3 +1,5 @@
+import unittest
+import shutil
 from data_layer.DL_employee_data import DL_Employees
 from models.Employees import Employees
 
@@ -23,6 +25,10 @@ except Exception as e:
 
 new_employee.employee_id = "11"
 new_employee.name = "pippi"
+
+#AddLocation bæta
+
+
 
 
 # try:
