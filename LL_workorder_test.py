@@ -4,13 +4,7 @@ from logic_layer.LL_workorder import LL_WorkOrder
 
 data_layer = DL_WorkOrders()
 
-test_id = "12"
 
-if LL_WorkOrder (test_id, data_layer):
-    print(f"Employee ID {test_id} is valid.")
-else:
-    print(f"Employee ID {test_id} is not valid.")
-"""
 class LL_WorkOrder:
     def __init__(self, dl_workorder: DL_WorkOrders) -> None:
         self.dl_workorder = dl_workorder
@@ -33,8 +27,8 @@ class LL_WorkOrder:
             #print(f"New ID added: {new_id}")  # This will print the new ID - þarf þetta í LL?
             print(workorders, new_id)
 
-    verifyNewWorkOrderID(self)
-"""
+    verifyNewWorkOrderID()
+
 
 
 """
