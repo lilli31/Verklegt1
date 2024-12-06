@@ -91,16 +91,16 @@ class LL_Employee:
         #pass
    
 
-    #def getEmployeeInfo(self):
-        # Get_all_employees_info = DataLayerWrapper.getAllEmployees()
-        # all_info = self.dl_wrapper.getAllEmployees()
+    # def getEmployeeInfo(self):
+    #     Get_all_employees_info = DataLayerWrapper.getAllEmployees()
+    #     all_info = self.dl_wrapper.getAllEmployees()
 
-        # for employee in all_info:
-        #     if int(employee.employee_id) == ID_num:
-        #         name = employee.name
-        #         job_title = employee.job_title
+    #     for employee in all_info:
+    #         if int(employee.employee_id) == ID_num:
+    #             name = employee.name
+    #             job_title = employee.job_title
     
-        # return name, job_title
+    #     return name, job_title
 
 
 
