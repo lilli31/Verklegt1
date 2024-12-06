@@ -270,9 +270,8 @@ Mættir:
     Tinna
     Vigdís K 
     Rakel 
-    Þorbjörg 
-    Vigdís H er að vinna í dag og kemur seinnipartinn 
-    Regína er að einnig að vinna í dag og kemur seinnipartinn
+    Þorbjörg
+    Regína(vann heima)
 
 Markmið dagsins:
     Markmið dagsins er að reyna klára sem mest af logic layerunum og þá er hægt að vinna vel í UI layernum eftir helgi.
