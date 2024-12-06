@@ -12,9 +12,27 @@ class LL_WorkOrder:
         except Exception as e:
             return False  # Gera error message!!!
         
-        workorder_ID = [workorder["workorderID"] for workorder in workorder_ID]
+        workorder_ID = [workorder["Work_Order_ID"] for workorder in workorder_ID]
         return workorderID in workorder_ID
         
+
+    def getWorkOrderID(workorderIDs):
+        all_workorders = DL_WorkOrders.FetchWorkOrders()
+        [workorder["Work_Order_ID"] for workorder in all_workorders]
+
+        return workorderIDs in all_workorders
+    
+
+    
+    def verifySearchWorkOrders(workorder):
+        workorders = DL_WorkOrders.FetchWorkOrders()
+        matched_workorders = [
+            workorder for workorder in workorders
+            if workorder.lower() in workorder["Work_Order_ID"].lower() or
+                workorder.lower() in workorder["Employee"].lower()
+        ]
+        return matched_workorders
+
 
     """    
     def verifyNewWorkOrderID(self):
@@ -35,7 +53,7 @@ class LL_WorkOrder:
         #print(f"New ID added: {new_id}")  # This will print the new ID - þarf þetta í LL?
         return workorders, new_id
     """             
-
+"""
 def verifyWorkOrderInfo(self, Work_order_ID, Employee, Contractor, Contractor_ID, Property_IDs, Maintenance_info, Regular, Days_between_or_when, Visible, Opens, Finished, Approved, State_of_work_order, Priority):
     if not isinstance(Work_order_ID, int):
         return False
@@ -66,19 +84,16 @@ def verifyWorkOrderInfo(self, Work_order_ID, Employee, Contractor, Contractor_ID
     if isinstance(Priority, str) or Priority.strip() not in ("A", "B", "C"):
         return False
     return True
-
-def verifySearchWorkOrders():
-    pass
-
-def getFilteredWorkOrder(filter: str):
-    pass
+"""
 
 def getAllWorkOrder():
     pass
 
-def getWorkOrderID():
+def getWorkOrderInfo(self, workorder_id: int):
     pass
 
+def getFilteredWorkOrder(filter: str):
+    pass
 
 def get_my_work_orders(self, id_num):
     pass

@@ -235,7 +235,7 @@ Markmið dagsins:
 #####Dagur 10 (04.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag: 
-    Regína vann í mainmenu, employee main og director main í UI layerinu. Hún lagaði klasa instance-in þannig að þau yrðu bara til einu sinni og tengdi alla employee klasana saman til að prufa virknina. Það tókst að senda input frá UI niður í data og fá allar réttu upplýsingarnar upp svo nú er hún meira confidant varðandi samvinnu lagana þriggja. Vigdís H kláraði flest föllin í employee data layerinu og lét testin virka, allt nema update. Tinna, Rakel, Þorbjörg og Vigdís K gerðu hina data layer klasana. Núna eru loks allir data layerar tilbúnir og hægt að byrja á logic-layerinu. 
+    Regína vann í mainmenu, employee main og director main í UI layerinu. Hún lagaði klasa instance-in þannig að þau yrðu bara til einu sinni og tengdi alla employee klasana saman til að prufa virknina. Það tókst að senda input frá UI niður í data og fá allar réttu upplýsingarnar upp svo nú er hún meira confidant varðandi samvinnu lagana þriggja. Vigdís H kláraði flest föllin í employee data layerinu og lét testin virka, allt nema update. Tinna, Rakel, Þorbjörg og Vigdís K gerðu hina data layer klasana með klasann hennar Vigdísar H til hliðsjónar og allar náðu að vinna vel saman í data layerinu. Núna eru data layer klasarnir nánast tilbúnir og nú geta allar byrjað að vinna í logic-layerinu. 
 
 Áætlun morgundagsins:
     Áætlun morgundagsins er að Vigdís H og Regína ætla að útfæra wrapper-anna. Vigdís K, Rakel, Þorbjörg og Tinna ætla að byrja í logic-layerinu. 
@@ -244,11 +244,20 @@ Markmið dagsins:
 #####Dagur 11 (05.12.24) - Morgunfundur#####  
 
 Mættir:
+    Regína 
+    Þorbjörg
+    Vigdís K 
+    Vigdís H 
+    Tinna 
+    Rakel
 
 Markmið dagsins: 
+    Í dag ætla Tinna og Vigdís K að vinna í work-order logic layerinu og Rakel og Þorbjörg í properties logic layerinu. Regína ætlar að vinna í UI, wrapperunum og logic layerinu og Vigdís H ætlar að vinna í logic layerinu.
 
 #####Dagur 11 (05.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag: 
+    Regína útfærði back valmöguleika í menu-inu og gerði nokkur föll í logic layerinu. Hún uppfærði einnig wrapperana og útskýrði fyrir hópnum hvernig ætti að nota þá. Rakel og Þorbjörg unnu í properties klasanum í logic layerinu og Vigdís K og Tinna í work-order klasanum. Vigdís H lagfærði nokkur föll í employee logic layerinu og tók svo við af Rakel og Þorbjörgu í properties klasanum. Lentum líka í veseni með github svo Vigdís H gekk í málið.
 
 Áætlun morgundagsins: 
+    Planið er að halda áfram á sömu braut á morgun og halda áfram með verkefnin sem við unnum í í dag.
