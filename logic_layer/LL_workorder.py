@@ -1,9 +1,15 @@
+import csv
+import LL_workorder
 from data_layer.DL_WorkOrder_data import DL_WorkOrders
-from data_layer.DL_wrapper import DataLayerWrapper
-
+from models.WorkOrders import WorkOrders
+#from data_layer.DL_wrapper import DataLayerWrapper
 class LL_WorkOrder:
+
+
     def __init__(self, dl_wrapper):
-        self.dl_wrapper = dl_wrapper
+        self.DL_wrapper = dl_wrapper
+        #self.workorders = dl_wrapper.getAllWorkOrder()
+        self.workorders = dl_wrapper.get_all_work_orders()
 
     def verifyWorkOrderID(workorderID):
 
@@ -24,12 +30,13 @@ class LL_WorkOrder:
     
 
     
-    def verifySearchWorkOrders(workorder):
+    def getFilteredWorkOrder(workorder: int):
         workorders = DL_WorkOrders.FetchWorkOrders()
         matched_workorders = [
             workorder for workorder in workorders
             if workorder.lower() in workorder["Work_Order_ID"].lower() or
-                workorder.lower() in workorder["Employee"].lower()
+                workorder.lower() in workorder["Employee"].lower() or 
+                workorder.lower() in workorder["Property_IDs"].lower()
         ]
         return matched_workorders
 
@@ -53,48 +60,169 @@ class LL_WorkOrder:
         #print(f"New ID added: {new_id}")  # This will print the new ID - þarf þetta í LL?
         return workorders, new_id
     """             
+
+    def verifyWorkOrderInfo(self, Work_order_ID: int, Employee: str, Contractor: bool, Contractor_ID: str, Property_IDs: str, Maintenance_info: str, Regular: bool, Days_between_or_when: str, Visible: str, Opens: str, Finished: bool, Approved: bool, State_of_work_order: str, Priority: str):
+        try:
+            return (
+            Work_order_ID and 
+            Employee.strip() and 
+            Contractor and
+            Contractor_ID.strip() and 
+            Property_IDs.strip() and 
+            Maintenance_info.strip() and
+            Regular and 
+            Days_between_or_when.strip() and 
+            Visible.strip() and 
+            Opens.strip() and 
+            Finished and 
+            Approved and 
+            State_of_work_order.strip() and 
+            Priority.strip()
+        )
+        except ValueError:
+            return False
+    
+
+    def getAllWorkOrders(self):
+        try:
+            # Fetch all work orders from the data layer
+            return DL_WorkOrders.FetchWorkOrders()
+        except Exception:
+            # Return None if fetching fails
+            return None
+
+        
+    def getWorkOrderInfo(self, workorder_id: int):
+        try:
+            # Kalla á data layer til að fetcha work order
+            work_order = DL_WorkOrders.FetchWorkOrderById(workorder_id)
+            
+            # Tékka hvort að work order var fundin
+            if work_order:
+                return work_order  # Skila work order detailum
+            else:
+                return None
+        except Exception:
+            return None
+
+
+
+    def verifySearchWorkOrders(workorder_data, Work_order_ID = None, Employee = None, Contractor = None, Contractor_ID = None, Property_IDs = None, Maintenance_info = None, Regular = None, Days_between_or_when = None, Visible = None, Opens = None, Finished = None, Approved = None, State_of_work_order = None, Priority = None):
+        workorders_that_match = []
+        for workorder in workorder_data:
+            if Work_order_ID and workorder["Work_order_ID"] != Work_order_ID:
+                continue 
+            if Employee and workorder["Employee"] != Employee:
+                continue 
+            if Contractor and workorder["Contractor"] != Contractor:
+                continue 
+            if Contractor_ID and workorder["Contractor_ID"] != Contractor_ID:
+                continue 
+            if Property_IDs and workorder["Property_IDs"] != Property_IDs:
+                continue 
+            if Maintenance_info and workorder["Maintenance_info"] != Maintenance_info:
+                continue 
+            if Regular and workorder["Regular"] != Regular:
+                continue 
+            if Days_between_or_when and workorder["Days_between_or_when"] != Days_between_or_when:
+                continue 
+            if Visible and workorder["Visible"] != Visible:
+                continue 
+            if Opens and workorder["Opens"] != Opens:
+                continue
+            if Finished and workorder["Finished"] != Finished:
+                continue 
+            if Approved and workorder["Approved"] != Approved:
+                continue
+            if State_of_work_order and workorder["State_of_work_order"] != State_of_work_order:
+                continue 
+            if Priority and workorder["Priority"] != Priority:
+                continue 
+
+            workorders_that_match.append(workorder)
+
+        return workorders_that_match
+
+
+    def get_my_work_orders(self, id_num) -> list: 
+        my_work_orders = []
+
+        for work_order in self.workorders:
+            if int(work_order["Work_order_ID"]) == id_num:
+                work_order_id = work_order["Work_order_ID"]
+                employee = work_order["Employee"]
+                contractor = work_order["Contractor"]
+                contractor_id = work_order["Contractor_ID"]
+                property_ids = work_order["Property_IDs"]
+                maintenance_info = work_order["Maintenance_info"]
+                regular = work_order["Regular"]
+                days_between_or_when = work_order["Days_between_or_when"]
+                visible = work_order["Visible"]
+                opens = work_order["Opens"]
+                finished = work_order["Finished"]
+                approved = work_order["Approved"]
+                state_of_work_order = work_order["State_of_work_order"]
+                priority = work_order["Priority"]
+
+                if contractor == "True":
+                    contractors = self.dl_wrapper.get_all_contractors()
+                    for contractor_object in contractors:
+                        if contractor_object.contractor_id == contractor_id:
+                            contractor_name = contractor_object.name
+                            contractor_phone = contractor_object.contant_phone 
+                            contractor_specialty = contractor_object.specialty
+
+                            my_work_orders.append([
+                                work_order_id, employee, contractor_name, contractor_phone, 
+                                contractor_specialty, maintenance_info, regular, 
+                                days_between_or_when, visible, opens, finished, approved, 
+                                state_of_work_order, priority
+                            ])
+                            break
+                else: 
+                    my_work_orders.append([
+                        work_order_id, employee, None, None, None, maintenance_info, 
+                        regular, days_between_or_when, visible, opens, finished, approved, 
+                        state_of_work_order, priority
+                    ])
+                    
+        return my_work_orders
+
+
+
+
+
 """
-def verifyWorkOrderInfo(self, Work_order_ID, Employee, Contractor, Contractor_ID, Property_IDs, Maintenance_info, Regular, Days_between_or_when, Visible, Opens, Finished, Approved, State_of_work_order, Priority):
-    if not isinstance(Work_order_ID, int):
-        return False
-    if not isinstance(Employee.strip(), str):
-        return False
-    if not isinstance(Contractor, bool):
-        return False
-    if not isinstance(Contractor_ID.strip(), str):
-        return False
-    if not isinstance(Property_IDs, str) or len(Property_IDs) != 6:
-        return False
-    if not isinstance(Maintenance_info.strip(), str):
-        return False
-    if not isinstance(Regular, bool):
-        return False
-    if not isinstance(Days_between_or_when.strip(), str):
-        return False
-    if not isinstance(Visible.strip(), str):
-        return False
-    if not isinstance(Opens.strip(), str):
-        return False
-    if not isinstance(Finished, bool):
-        return False
-    if not isinstance(Approved, bool):
-        return False
-    if isinstance(State_of_work_order, str) or State_of_work_order.strip() not in ("Closed", "Open"):
-        return False
-    if isinstance(Priority, str) or Priority.strip() not in ("A", "B", "C"):
-        return False
-    return True
+def get_my_work_orders(self, id_num) -> list:
+
+    workorder_list = []
+    for workorder in self.workorders:
+        if int(workorder.workorder_id) == id_num:
+            employee = workorder.Employee
+            contractor = workorder.Contractor
+            contractor_id = workorder.Contractor_ID
+            property_ids = workorder.Property_IDs
+            maintenance_info = workorder.Maintenance_info
+            regular = workorder.Regular
+            days_between_or_when = workorder.Days_between_or_when
+            visible = workorder.visible 
+            opens = workorder.opens
+            finished = workorder.Finished
+            approved = workorder.approved 
+            state_of_work_order = workorder.State_of_work_order
+            priority = workorder.Priority
+
+
+
+            """
 """
-
-def getAllWorkOrder():
-    pass
-
-def getWorkOrderInfo(self, workorder_id: int):
-    pass
-
-def getFilteredWorkOrder(filter: str):
-    pass
-
-def get_my_work_orders(self, id_num):
-    pass
-
+            if bool(contractor_id) == True:
+                contractor = self.dl_wrapper.get_all_contractors()
+                for contractor in contractor:
+                    if workorder.contractor_id == contractor.contractor_id:
+                        contractor_name = contractor.name
+                        contact_phone = contractor.contant_phone
+                        contact_name = contractor.contact_name
+                        specialty = contractor.specialty
+                        workorder_list.append([ contractor_name,contact_phone,contact_name,specialty])
+                        """
