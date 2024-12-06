@@ -63,10 +63,12 @@ class EmployeeMain:
 
                 self.my_reports = self.wrapper.get_reports(self.id_num) # Gets a list of the "logged in" employees reports
                 self.my_reports_sorted = self.wrapper.sort_reports(self.my_reports) # Gets the reports sorted by prioraty
-                choice = self.display_my_reports()
+                exiting = self.display_my_reports()
 
             if exiting == "x":
 
+                self.clear_display()
+                print(self.blue_logo)
                 choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\n\nInput choice: ")
                 exiting == "Not exiting"
             
@@ -82,15 +84,18 @@ class EmployeeMain:
         for report in self.my_reports: # Breyta í sorted þegar búið er að útfæra
 
             if len(report) == 5:
+
                 work_done = report[1]
                 additional_info = report[2]
                 material_cost = report[3]
                 total_cost = report[4]
+
                 report_display_no_contractor.add_row([work_done, additional_info, material_cost, total_cost])
                 print(f"{report_display_no_contractor}\n")
                 report_display_no_contractor.del_row(0)
-                #print(f"{work_order_id}, {work_done}, {additional_info}, {material_cost}, {total_cost}")
+
             else:
+                
                 work_done = report[1]
                 contractor_name = report[2]
                 contact_phone = report[3]
@@ -100,10 +105,11 @@ class EmployeeMain:
                 material_cost = report[7]
                 contractor_cost = report[8]
                 total_cost = report[9]
+
                 report_display_contractor.add_row([work_done, contractor_name, specialty, (contact_name + ": " + contact_phone), additional_info, material_cost, contractor_cost, total_cost])
                 print(f"{report_display_contractor}\n")
                 report_display_contractor.del_row(0)
-                #print(f"{work_order_id}, {work_done}, {contractor_name}, {contact_phone}, {contact_name}, {specialty}, {additional_info}, {material_cost}, {contractor_cost}, {total_cost}")
+
         input("Enter 'x' to exit my reports: ")
 
         return "x"
