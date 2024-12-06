@@ -1,7 +1,5 @@
-import csv
-import LL_workorder
 from data_layer.DL_WorkOrder_data import DL_WorkOrders
-from models.WorkOrders import WorkOrders
+
 #from data_layer.DL_wrapper import DataLayerWrapper
 class LL_WorkOrder:
 
@@ -189,40 +187,3 @@ class LL_WorkOrder:
         return my_work_orders
 
 
-
-
-
-"""
-def get_my_work_orders(self, id_num) -> list:
-
-    workorder_list = []
-    for workorder in self.workorders:
-        if int(workorder.workorder_id) == id_num:
-            employee = workorder.Employee
-            contractor = workorder.Contractor
-            contractor_id = workorder.Contractor_ID
-            property_ids = workorder.Property_IDs
-            maintenance_info = workorder.Maintenance_info
-            regular = workorder.Regular
-            days_between_or_when = workorder.Days_between_or_when
-            visible = workorder.visible 
-            opens = workorder.opens
-            finished = workorder.Finished
-            approved = workorder.approved 
-            state_of_work_order = workorder.State_of_work_order
-            priority = workorder.Priority
-
-
-
-            """
-"""
-            if bool(contractor_id) == True:
-                contractor = self.dl_wrapper.get_all_contractors()
-                for contractor in contractor:
-                    if workorder.contractor_id == contractor.contractor_id:
-                        contractor_name = contractor.name
-                        contact_phone = contractor.contant_phone
-                        contact_name = contractor.contact_name
-                        specialty = contractor.specialty
-                        workorder_list.append([ contractor_name,contact_phone,contact_name,specialty])
-                        """
