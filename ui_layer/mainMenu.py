@@ -41,14 +41,14 @@ class MainMenu:
             if self.choice == "1":
 
                 self.clear_display()
-                self.employee_main.displayEmployeeMain(self.BLUE)
-                self.choice = "b"
+                self.choice = self.employee_main.displayEmployeeMain(self.BLUE)
+                #self.choice = "b"
 
             elif self.choice == "2":
 
                 self.clear_display()
-                self.director_main.displayDirectorMain(self.BLUE)
-                self.choice = "b"
+                self.choice = self.director_main.displayDirectorMain(self.BLUE)
+                #self.choice = "b"
 
             elif self.choice == "b":
 

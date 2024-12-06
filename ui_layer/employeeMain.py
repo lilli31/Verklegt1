@@ -25,6 +25,8 @@ class EmployeeMain:
 
         self.displayChoices()
 
+        return "b"
+
         # self.emp_main_display = (f"\033[96m{self.logo}\033[0m\n\n{"-" * 100}\n|{self.name.ljust(33)}{self.job_title.rjust(62)}|\n{"-" * 100}\n|{"My work-orders".ljust(45)}|{"My reports".ljust(48)}|\n{"-" * 100}\n")
         # print(self.emp_main_display)
         # print(f"\033[96m{self.logo}\033[0m\n")

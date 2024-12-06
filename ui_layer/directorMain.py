@@ -21,6 +21,8 @@ class DirectorMain:
 
         self.displayChoices()
 
+        return "b"
+
 
     def displayChoices(self):
 
