@@ -261,3 +261,25 @@ Markmið dagsins:
 
 Áætlun morgundagsins: 
     Planið er að halda áfram á sömu braut á morgun og halda áfram með verkefnin sem við unnum í í dag.
+
+
+
+#####Dagur 12 (06.12.24) - Morgunfundur#####  
+
+Mættir:
+    Tinna
+    Vigdís K 
+    Rakel 
+    Þorbjörg 
+    Vigdís H er að vinna í dag og kemur seinnipartinn 
+    Regína er að einnig að vinna í dag og kemur seinnipartinn
+
+Markmið dagsins:
+    Markmið dagsins er að reyna klára sem mest af logic layerunum.
+
+#####Dagur 12 (06.12.24) - Kvöldfundur#####  
+
+Það sem var gert í dag: 
+
+Áætlun morgundagsins: 
+
