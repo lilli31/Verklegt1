@@ -8,7 +8,7 @@ from data_layer.DL_wrapper import DataLayerWrapper
 
 class LL_Contractor:
     def __init__(self, DL_wrapper):
-        self.DL_wrapper = DL_wrapper
+        self.DL_wrapper: DL_Contractor = DL_wrapper
 
 
 
@@ -56,8 +56,9 @@ class LL_Contractor:
 
 
 
-    def verifySearchContractors(contractor_data, Contractor_ID=None, Name=None, Company=None, Contact_phone=None, Contact_name=None, Specialty=None, Opening_hours=None, Address=None, Former_jobs=None):
+    def verifySearchContractors(self, Contractor_ID=None, Name=None, Company=None, Contact_phone=None, Contact_name=None, Specialty=None, Opening_hours=None, Address=None, Former_jobs=None):
         contractors_that_match = []
+        contractor_data = self.DL_wrapper.FetchContractors()
         for contractor in contractor_data:
             if Contractor_ID and contractor['Contractor_ID'] != Contractor_ID:
                 continue
@@ -94,5 +95,7 @@ class LL_Contractor:
         return matched_contractors
 
 
+    def findContractorsByKeyword(self, keyword: str):
+        return self.DL_wrapper.FindContractorByKeyword()
 
     #þarf ekki að hafa addContractor og updateContractor ??

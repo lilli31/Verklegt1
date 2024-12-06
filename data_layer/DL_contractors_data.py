@@ -1,6 +1,4 @@
 import csv
-import sys
-import os
 from models.Contractors import Contractors
 
 class DL_Contractor():
@@ -87,5 +85,15 @@ class DL_Contractor():
                                 contractors.former_jobs])
             return "Contractor added successfully"
         
+
+        
+    def FindContractorByKeyword(self, keyword: str) -> Contractors:
+        found_contractors = []
+        with open("data_files/contractors.csv", 'r') as csvfile:
+            reader = csv.reader(csvfile, delimiter='\n')
+            for line in reader:
+                if keyword.lower() in line[0].lower():
+                    found_contractors.append(line)
+        return found_contractors
+
             
-                             
