@@ -12,26 +12,47 @@ class LL_Contractor:
 
 
 
-    def getContractorId(contractor_ID):
+    
+    def getContractorId(self, contractor_ID):
         all_contractors = DL_Contractor.FetchContractors()
-        [contractor['contractorID'] for contractor in all_contractors]
+        for contractor in all_contractors:
+            if contractor["Contractor_ID"] == contractor_ID:
+                return contractor
+        return None
+    
+    #def getContractorId(contractor_ID):
+    #    all_contractors = DL_Contractor.FetchContractors()
+    #    [contractor['contractorID'] for contractor in all_contractors]
 
-        return contractor_ID in all_contractors
+    #    return contractor_ID in all_contractors
+    
     
 
-    def verifyContractorID(contractorID):
+    def verifyContractorID(contractor_ID):
         try:
-            contractor_IDs = DL_Contractor.FetchContractors()
+            all_contractors = DL_Contractor.FetchContractors()
         except Exception as e:
             print(f"Error fetching contractor data: {e}")
             return False
         
-        contractor_IDs = [contractor['contractorID'] for contractor in contractor_IDs]
-        return contractorID in contractor_IDs
+        for contractor in all_contractors:
+            if contractor["Contractor_ID"] == contractor_ID:
+                return True
+        return False
+        
+        #contractor_IDs = [contractor['contractorID'] for contractor in contractor_IDs]
+        #return contractorID in contractor_IDs
+
 
 
     def verifyContractorInfo(contractor):
-        return contractor.is_valid_info()
+        required = [
+            "Contractor_ID", "Name", "Company", "Contact_phone", "Contact_name", "Specialty", "Opening_hours", "Address", "Former_jobs"
+        ]
+        for variant in required:
+            if not contractor.get(variant):
+                return False
+        return True
 
 
 
@@ -62,6 +83,7 @@ class LL_Contractor:
         return contractors_that_match
 
 
+
     def getFilteredContractor(contractors: str):
         contractors = DL_Contractor.FetchContractors()
         matched_contractors = [
@@ -72,5 +94,5 @@ class LL_Contractor:
         return matched_contractors
 
 
-    def getContractorID(contractor):
-        return contractor.get_id()
+
+    #þarf ekki að hafa addContractor og updateContractor ??
