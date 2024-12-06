@@ -50,7 +50,7 @@ class LL_Contractor:
             "Contractor_ID", "Name", "Company", "Contact_phone", "Contact_name", "Specialty", "Opening_hours", "Address", "Former_jobs"
         ]
         for variant in required:
-            if not contractor.get(variant):
+            if not getattr(contractor, variant, None):
                 return False
         return True
 
