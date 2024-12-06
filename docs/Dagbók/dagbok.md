@@ -257,7 +257,7 @@ Markmið dagsins:
 #####Dagur 11 (05.12.24) - Kvöldfundur#####
 
 Það sem var gert í dag: 
-    Regína útfærði back valmöguleika í menu-inu og gerði nokkur föll í logic layerinu. Hún uppfærði einnig wrapperana og útskýrði fyrir hópnum hvernig ætti að nota þá. Rakel og Þorbjörg unnu í properties klasanum í logic layerinu og Vigdís K og Tinna í work-order klasanum. Vigdís H lagfærði nokkur föll í employee logic layerinu og tók svo við af Rakel og Þorbjörgu í properties klasanum. Lentum líka í veseni með github svo Vigdís H gekk í málið.
+    Regína útfærði back valmöguleika í menu-inu og gerði nokkur föll í reports logic layerinu. Hún uppfærði einnig wrapperana og útskýrði fyrir hópnum hvernig ætti að nota þá. Rakel og Þorbjörg unnu í properties klasanum og contractors klasanum í logic layerinu. Vigdís K og Tinna voru að vinna í work-order klasanum í logic layer. Vigdís H lagfærði nokkur föll í employee logic layerinu og tók svo við af Rakel og Þorbjörgu í properties klasanum þegar þær voru langt komnar. Lentum líka í veseni með github og fengum þá hjálp frá öðrum hóp við að laga það. 
 
 Áætlun morgundagsins: 
     Planið er að halda áfram á sömu braut á morgun og halda áfram með verkefnin sem við unnum í í dag.
@@ -275,7 +275,7 @@ Mættir:
     Regína er að einnig að vinna í dag og kemur seinnipartinn
 
 Markmið dagsins:
-    Markmið dagsins er að reyna klára sem mest af logic layerunum.
+    Markmið dagsins er að reyna klára sem mest af logic layerunum og þá er hægt að vinna vel í UI layernum eftir helgi.
 
 #####Dagur 12 (06.12.24) - Kvöldfundur#####  
 
