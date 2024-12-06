@@ -36,9 +36,8 @@ class UI_WorkOrder:
 
 
 
-
     def searchForWorkOrder(self):
-            search_value = input("Work Order ID: ").strip()
+            search_value = input("Work Order ID: ")
             if not search_value:
 
                 print("You have to enter a valid work order ID:")
@@ -63,9 +62,15 @@ class UI_WorkOrder:
                 print(f"No work order found with ID: {search_value}")
 
 
+                #Samkvæmt kröfulista - það sem þarf að vera hægt að leita: 
+                #yfirmaður - leitað eftir verkbeiðni samkvæmt ID hennar - KOMIÐ
+                #yfirmaður - fundið allar verkbeiðnir fyrir ákveðna fasteign - ÆTTI KANNSKI AÐ VERA Í UI PROPERTY??
+                #yfirmaður - fundið allar verkbeiðnir sem unnar eru af ákveðnum starfsmanni - ÞURFUM AÐ FINNA ÚT HVAR ÞETTA ÆTTI AÐ VERA
+
+
 
     def selectWorkOrder(self):
-            search_value = input("Enter the work order ID to select: ").strip()
+            search_value = input("Enter the work order ID to select: ")
 
             if not search_value:
                 print("You must enter a valid work order ID.")
@@ -87,27 +92,31 @@ class UI_WorkOrder:
             else: 
                  print(f"No work order found with ID: {search_value}")
 
-
-                 #auðkenni - fasteign - starfsmanni 
+                #Samkvæmt kröfulista - það sem þarf að vera hægt að velja:
+                 #starfsmaður - valið verkbeiðni til að vinna í - A krafa - ÆTTI AÐ VERA Í EMPLOYEE
+                 #starfsmaður - valið úr verkbeiðni sem á eftir að úthluta - C krafa - ÆTTI AÐ VERA Í EMPLOYEE
 
 
   
- 
 
 
+#Kröfulisti - allt sem tengist verkbeiðnum:
+#yfirmaður - listað verkbeiðnir 
+#yfirmaður - stofnað nýja verkbeiðni fyrir mínar fasteignir 
+#yfirmaður - breytt verkbeiðni fyrir mínar fasteignir 
+#starfsmaður - merkt verkbeiðnir sem tilbúna fyrir lokun af yfirmanni 
+#yfirmaður - lokað mínum verkbeiðnum
+#B - krafa - yfirmaður - sett forgang á útistandandi verkbeiðnir 
+#B - krafa - yfirmaður - breytt forgang á útistandandi verkbeiðnir, en þó ekki eftir skil 
+#C - krafa - starfsmaður - stöðvað verkbeiðnir tímabundið og haldið síðan áfram 
 
 
+#Má ekki hafa .strip() en má hafa .isdigit()?
 
    
 
 
-
-
-
 """
-
-  
-
     def fileReportOnOrder():
         pass
 
@@ -124,3 +133,6 @@ class UI_WorkOrder:
         pass
         
 """
+
+
+
