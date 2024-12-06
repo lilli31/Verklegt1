@@ -4,18 +4,26 @@ from prettytable import PrettyTable
 class EmployeeMain:
 
     def __init__(self, id_number, ll_wrapper):
+        """ Initializes variables needed in the class, takes an instance of the logic wrapper as a parameter """
+
         self.id_num = id_number
         self.wrapper = ll_wrapper
-        employee_info = self.wrapper.getEmployee(self.id_num)
-        self.job_title = employee_info[1]
+        employee_info = self.wrapper.getEmployee(self.id_num) # A tuple of the name and job title of the "logged in" employee
+        self.job_title = employee_info[1] 
         self.name = employee_info[0]
 
-    def displayEmployeeMain(self, blue_logo):
 
+    def displayEmployeeMain(self, blue_logo):
+        """ Displays the name and job title of the "logged in" employee """
+
+        self.blue_logo = blue_logo
         self.emp_main_display = PrettyTable(["Name", "Job title"])
         self.emp_main_display.add_row([self.name, self.job_title])
-        print(blue_logo)
+
+        print(self.blue_logo)
         print(f"\n{self.emp_main_display}\n")
+
+        self.displayChoices()
 
         # self.emp_main_display = (f"\033[96m{self.logo}\033[0m\n\n{"-" * 100}\n|{self.name.ljust(33)}{self.job_title.rjust(62)}|\n{"-" * 100}\n|{"My work-orders".ljust(45)}|{"My reports".ljust(48)}|\n{"-" * 100}\n")
         # print(self.emp_main_display)
@@ -27,32 +35,34 @@ class EmployeeMain:
         # print("|", "My work-orders".ljust(45), "|", "My reports".ljust(48), "|")
         # print("-" * 100, "\n")
 
-        self.displayChoices()
 
     def displayChoices(self):
+        """ Displays the employees choices """
        
         choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\n\nInput choice: ")
 
-        while choice != "b":
+        while choice != "b": # b will go back to the main menu interface
         
-            if choice != "1" and choice != "2":
+            if choice != "1" and choice != "2": # 1 and 2 are the only valid options (and b)
+
                 self.clear_display()
-                print(f"\033[96m{self.logo}\033[0m")
-                print("\n")
-                print("-" * 100)
-                print("|",(self.name.ljust(33)), (self.job_title.rjust(62)), "|")
-                print("-" * 100)
-                print("|", "My work-orders".ljust(45), "|", "My reports".ljust(48), "|")
-                print("-" * 100, "\n")
+                print(self.blue_logo)
+                print(f"\n{self.emp_main_display}\n")
+
+                # Prints the choices again + Invalid choice, try again!
                 choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\nInvalid choice, try again!\nInput choice: ")
 
             elif choice == "1":
-                self.wrapper.get_work_orders(self.id_num)
+
+                self.wrapper.get_work_orders(self.id_num) # Gets a list of the "logged in" employees work orders
+
             elif choice == "2":
-                self.my_reports = self.wrapper.get_reports(self.id_num)
-                self.my_reports_sorted = self.wrapper.sort_reports(self.my_reports)
+
+                self.my_reports = self.wrapper.get_reports(self.id_num) # Gets a list of the "logged in" employees reports
+                self.my_reports_sorted = self.wrapper.sort_reports(self.my_reports) # Gets the reports sorted by prioraty
                 self.display_my_reports()
             
+
     def display_my_reports(self):
         self.clear_display()
         print(f"\033[96m{self.logo}\033[0m")
