@@ -47,7 +47,7 @@ class MainMenu:
             elif self.choice == "2":
 
                 self.clear_display()
-                self.director_main.displayDirectorMain(self.logo)
+                self.director_main.displayDirectorMain(self.BLUE)
                 self.choice = "b"
 
             elif self.choice == "b":

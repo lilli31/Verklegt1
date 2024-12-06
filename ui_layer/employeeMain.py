@@ -65,7 +65,7 @@ class EmployeeMain:
 
     def display_my_reports(self):
         self.clear_display()
-        print(f"\033[96m{self.logo}\033[0m")
+        print(f"\033[96m{self.blue_logo}\033[0m")
         print("\n")
         for report in self.my_reports:
 
