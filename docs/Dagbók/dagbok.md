@@ -280,7 +280,7 @@ Markmið dagsins:
 #####Dagur 12 (06.12.24) - Kvöldfundur#####  
 
 Það sem var gert í dag:
-Rakel og Þorbjörg kláruðu öll föllin í logic layernum fyrir contractors og eru byrjaðar á UI layernum. Tinna og Vigdís K kláruðu öll föllin í logic layernum fyrir work order 
+Rakel og Þorbjörg kláruðu öll föllin í logic layernum fyrir contractors og eru byrjaðar á UI layernum. Tinna og Vigdís K kláruðu öll föllin í logic layernum fyrir work order og eru byrjaðar á UI layernum fyrir work order. 
 
 Áætlun morgundagsins: 
 
