@@ -63,10 +63,12 @@ class EmployeeMain:
 
                 self.my_reports = self.wrapper.get_reports(self.id_num) # Gets a list of the "logged in" employees reports
                 self.my_reports_sorted = self.wrapper.sort_reports(self.my_reports) # Gets the reports sorted by prioraty
-                choice = self.display_my_reports()
+                exiting = self.display_my_reports()
 
             if exiting == "x":
 
+                self.clear_display()
+                print(self.blue_logo)
                 choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\n\nInput choice: ")
                 exiting == "Not exiting"
             
