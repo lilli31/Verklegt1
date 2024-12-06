@@ -50,6 +50,7 @@ class UI_Contractors:
         else:
             print("Contractor not found")
             return 
+        #þetta þarf kannski ekki
         if contractors:
             print (f"{'ID':<10}{'Name':<20}{'Specialty':<15}")
             for contractor in contractors:
