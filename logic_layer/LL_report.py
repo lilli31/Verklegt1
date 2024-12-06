@@ -33,7 +33,7 @@ class LL_Report:
                 else:
                     report_list.append([work_order_id, work_done, additional_info, material_cost, total_cost])
 
-        return [["1", "hsds hdisohdoi", "hjifwh", "25876", "25876"], ["2", "gduio ghjk gh", "Kalli sæti", "696 9999", "Frikki ljóti", "Málari", "erftghjkl", "10000", "20000", "30000"], ["3", "hsds hdisooohdoi", "hjppfwh", "25879", "25879"]]
+        return [["1", "ekkert :(", "tell me about it", "25876", "25876"], ["2", "slayyy", "Kalli sæti", "696 9999", "Frikki ljóti", "Málari", "Frikki ljót svarar aldrei\nsímanum, ekki hringja.", "10000", "20000", "30000"], ["3", "prump hihihihi", "aaaaaaa", "25879", "25879"]]
         return report_list
     
     def sort_my_reports(self, reports: list) -> list:
