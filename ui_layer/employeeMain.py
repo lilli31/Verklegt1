@@ -1,24 +1,31 @@
 import os
+from prettytable import PrettyTable
 
 class EmployeeMain:
 
-    def __init__(self, id_number, ll_wrapper, logo):
-        self.logo = logo
+    def __init__(self, id_number, ll_wrapper):
         self.id_num = id_number
         self.wrapper = ll_wrapper
         employee_info = self.wrapper.getEmployee(self.id_num)
         self.job_title = employee_info[1]
         self.name = employee_info[0]
 
-    def displayEmployeeMain(self):
+    def displayEmployeeMain(self, blue_logo):
 
-        print(f"\033[96m{self.logo}\033[0m")
-        print("\n")
-        print("-" * 100)
-        print("|",(self.name.ljust(33)), (self.job_title.rjust(62)), "|")
-        print("-" * 100)
-        print("|", "My work-orders".ljust(45), "|", "My reports".ljust(48), "|")
-        print("-" * 100, "\n")
+        self.emp_main_display = PrettyTable(["Name", "Job title"])
+        self.emp_main_display.add_row([self.name, self.job_title])
+        print(blue_logo)
+        print(f"\n{self.emp_main_display}\n")
+
+        # self.emp_main_display = (f"\033[96m{self.logo}\033[0m\n\n{"-" * 100}\n|{self.name.ljust(33)}{self.job_title.rjust(62)}|\n{"-" * 100}\n|{"My work-orders".ljust(45)}|{"My reports".ljust(48)}|\n{"-" * 100}\n")
+        # print(self.emp_main_display)
+        # print(f"\033[96m{self.logo}\033[0m\n")
+        # print("\n")
+        # print("-" * 100)
+        # print("|",(self.name.ljust(33)), (self.job_title.rjust(62)), "|")
+        # print("-" * 100)
+        # print("|", "My work-orders".ljust(45), "|", "My reports".ljust(48), "|")
+        # print("-" * 100, "\n")
 
         self.displayChoices()
 
