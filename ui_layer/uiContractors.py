@@ -6,12 +6,14 @@ class UI_Contractors:
 
     def displayContractors(self, contractors):
         """List of contractors"""
+        #contractors = self.contractor_logic_layer.DL.wrapper.FetchContractors() 
+        #frekar að sækja frá wrappernum?
         if not contractors:
             print("No contractors found")
             return
         for contractor in contractors:
             print(f"Contractor ID: {contractor['Contractor_ID']}, Name: {contractor['Name']}, Company{contractor: ['Company']}, Contact_phone: {contractor['Contact_phone']}, Contact_name: {contractor['Contact_name']}, Specialty: {contractor['Specialty']}, Opening_hours: {contractor['Opening_hours']}, Address: {contractor['Address']}, Former_jobs: {contractor['Former_jobs']}")
-            #Þarf að taka út einhverja upplýsingar
+        #Þarf að taka út einhverja upplýsingar
 
     def displayContractorInfo(contractor):
         if contractor:
