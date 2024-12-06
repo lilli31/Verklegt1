@@ -42,6 +42,7 @@ class EmployeeMain:
         """ Displays the employees choices """
        
         choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\n\nInput choice: ")
+        exiting = "Not exiting"
 
         while choice != "b": # b will go back to the main menu interface
         
@@ -62,7 +63,12 @@ class EmployeeMain:
 
                 self.my_reports = self.wrapper.get_reports(self.id_num) # Gets a list of the "logged in" employees reports
                 self.my_reports_sorted = self.wrapper.sort_reports(self.my_reports) # Gets the reports sorted by prioraty
-                self.display_my_reports()
+                choice = self.display_my_reports()
+
+            if exiting == "x":
+
+                choice = input("1) View my work-orders\n2) View my reports\n\nb) Back\n\n\nInput choice: ")
+                exiting == "Not exiting"
             
 
     def display_my_reports(self):
@@ -73,10 +79,9 @@ class EmployeeMain:
         report_display_no_contractor = PrettyTable(["Work done", "Additional info", "Cost of material", "Total cost"])
         report_display_contractor = PrettyTable(["Work done", "Contractor", "Contractor specialty", "Contact contractor", "Additional info", "Cost of material", "Contractors commission", "Total cost"])
 
-        for report in self.my_reports:
+        for report in self.my_reports: # Breyta í sorted þegar búið er að útfæra
 
             if len(report) == 5:
-                work_order_id = report[0]
                 work_done = report[1]
                 additional_info = report[2]
                 material_cost = report[3]
@@ -86,7 +91,6 @@ class EmployeeMain:
                 report_display_no_contractor.del_row(0)
                 #print(f"{work_order_id}, {work_done}, {additional_info}, {material_cost}, {total_cost}")
             else:
-                work_order_id = report[0]
                 work_done = report[1]
                 contractor_name = report[2]
                 contact_phone = report[3]
@@ -100,7 +104,9 @@ class EmployeeMain:
                 print(f"{report_display_contractor}\n")
                 report_display_contractor.del_row(0)
                 #print(f"{work_order_id}, {work_done}, {contractor_name}, {contact_phone}, {contact_name}, {specialty}, {additional_info}, {material_cost}, {contractor_cost}, {total_cost}")
-        input()
+        input("Enter 'x' to exit my reports: ")
+
+        return "x"
 
 
     def clear_display(self) -> None:
