@@ -270,9 +270,8 @@ Mættir:
     Tinna
     Vigdís K 
     Rakel 
-    Þorbjörg 
-    Vigdís H er að vinna í dag og kemur seinnipartinn 
-    Regína er að einnig að vinna í dag og kemur seinnipartinn
+    Þorbjörg
+    Regína(vann heima)
 
 Markmið dagsins:
     Markmið dagsins er að reyna klára sem mest af logic layerunum og þá er hægt að vinna vel í UI layernum eftir helgi.
@@ -280,7 +279,7 @@ Markmið dagsins:
 #####Dagur 12 (06.12.24) - Kvöldfundur#####  
 
 Það sem var gert í dag:
-Rakel og Þorbjörg kláruðu öll föllin í logic layernum fyrir contractors og eru byrjaðar á UI layernum. Tinna og Vigdís K kláruðu öll föllin í logic layernum fyrir work order og eru byrjaðar á UI layernum fyrir work order. 
+    Rakel og Þorbjörg kláruðu öll föllin í logic layernum fyrir contractors og eru byrjaðar á UI layernum. Tinna og Vigdís K kláruðu öll föllin í logic layernum fyrir work order og eru byrjaðar á UI layernum fyrir work order. 
+    Regína var að vinna í director main og employee main í UI layerinu og breytti töflunum í prettytable.
 
-Áætlun morgundagsins: 
 
