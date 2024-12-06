@@ -66,9 +66,13 @@ class EmployeeMain:
             
 
     def display_my_reports(self):
+
         self.clear_display()
         print(f"\033[96m{self.blue_logo}\033[0m")
         print("\n")
+        report_display_no_contractor = PrettyTable(["Work done", "Additional info", "Cost of material", "Total cost"])
+        report_display_contractor = PrettyTable(["Work done", "Contractor", "Contractor specialty", "Contact contractor", "Additional info", "Cost of material", "Contractors commission", "Total cost"])
+
         for report in self.my_reports:
 
             if len(report) == 5:
@@ -77,7 +81,10 @@ class EmployeeMain:
                 additional_info = report[2]
                 material_cost = report[3]
                 total_cost = report[4]
-                print(f"{work_order_id}, {work_done}, {additional_info}, {material_cost}, {total_cost}")
+                report_display_no_contractor.add_row([work_done, additional_info, material_cost, total_cost])
+                print(f"{report_display_no_contractor}\n")
+                report_display_no_contractor.del_row(0)
+                #print(f"{work_order_id}, {work_done}, {additional_info}, {material_cost}, {total_cost}")
             else:
                 work_order_id = report[0]
                 work_done = report[1]
@@ -89,7 +96,10 @@ class EmployeeMain:
                 material_cost = report[7]
                 contractor_cost = report[8]
                 total_cost = report[9]
-                print(f"{work_order_id}, {work_done}, {contractor_name}, {contact_phone}, {contact_name}, {specialty}, {additional_info}, {material_cost}, {contractor_cost}, {total_cost}")
+                report_display_contractor.add_row([work_done, contractor_name, specialty, (contact_name + ": " + contact_phone), additional_info, material_cost, contractor_cost, total_cost])
+                print(f"{report_display_contractor}\n")
+                report_display_contractor.del_row(0)
+                #print(f"{work_order_id}, {work_done}, {contractor_name}, {contact_phone}, {contact_name}, {specialty}, {additional_info}, {material_cost}, {contractor_cost}, {total_cost}")
         input()
 
 
