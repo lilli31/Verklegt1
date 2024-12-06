@@ -12,7 +12,7 @@ class LL_Report:
     def get_my_reports(self, id_num) -> list:
 
         report_list = []
-        for report in self.reports:
+        for report in self.dl_wrapper.get_all_reports():
             if int(report.report_id) == id_num:
                 work_order_id = report.work_order_ID
                 work_done = report.work_done
