@@ -3,12 +3,13 @@ from models.Contractors import Contractors
 
 data_layer = DL_Contractor()
 
-a = data_layer.FindContractorByKeyword('Carpenter')
-print('Keyword search: ', a)
+# a = data_layer.FindContractorByKeyword('Carpenter')
+# print('Keyword search: ', a)
 
-# con_data = data_layer.FetchContractors()
-# for contractor in con_data:
-#     print(contractor.contact_phone)
+"""gera í UI layer"""
+data = data_layer.FetchContractors()
+for dat in data:
+    print(dat)
 
 # new_contractor = Contractors("2", "Atli", "apple", "Atli Jóns", "+354 888-9999", "Tölvur",
 #                          "08:00-16:00","Grundavegur 3", "Sjoppa")
@@ -32,3 +33,6 @@ print('Keyword search: ', a)
 #     print(c)
 
 #     print("An error occurred during testing:", c)
+
+#update = data_layer.UpdateContractors()
+#print(update)

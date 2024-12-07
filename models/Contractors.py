@@ -12,6 +12,12 @@ class Contractors:
 
     def __eq__(self,other):
         return self.contractor_id == other.contractor_id
+    
+    def __repr__(self):
+        return (f"Contractors ID: {self.contractor_id}, Name: {self.name}, "
+                f"Company: {self.company}, Phone: {self.contact_phone}, "
+                f"Contact: {self.contact_name}, Specialty: {self.specialty}, "
+                f"Opening hours: {self.opening_hours}, Address: {self.address}, Former jobs: {self.former_jobs})")
 
 
       
