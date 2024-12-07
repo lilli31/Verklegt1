@@ -58,7 +58,8 @@ class LL_WorkOrder:
         #print(f"New ID added: {new_id}")  # This will print the new ID - þarf þetta í LL?
         return workorders, new_id
     """             
-
+    """SETJA SVIPAÐA ÚTFÆRSLU Í DATA LAYER (GYLFI)"""
+    
     def verifyWorkOrderInfo(self, Work_order_ID: int, Employee: str, Contractor: bool, Contractor_ID: str, Property_IDs: str, Maintenance_info: str, Regular: bool, Days_between_or_when: str, Visible: str, Opens: str, Finished: bool, Approved: bool, State_of_work_order: str, Priority: str):
         try:
             return (
